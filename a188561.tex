@@ -1,0 +1,3336 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage[draft]{microtype}
+\usepackage{xltxtra}
+\usepackage[margin=1in]{geometry}
+\usepackage{multicol}
+\setmainfont[Numbers=OldStyle,Scale=0.9]{IBM Plex Sans Condensed Light}
+
+\begin{document}
+
+\textbf{Report of the Defense Science Board Task Force on}
+
+\textbf{MILITARY\\ SOFTWARE}
+
+SEPTEMBER 1987
+
+Office of the Under Secretary of Defense for Acquisition\\
+Washington, D.C. 20301
+
+\newpage
+
+% Memo cover page for the report
+
+OFFICE OF THE SECRETARY OF DEFENSE
+WASHINGTON, D.C. 20301-3140
+
+DEFENSE SCIENCE BOARD
+
+October 7, 1987
+
+MEMORANDUM FOR UNDER SECRETARY OF DEFENSE FOR ACQUISITION
+
+SUBJECT: Report of the Defense Science Board Task Force on Military Software
+
+I am pleased to forward the final report of the Defense Sclonce Board Task
+Force on software. This Task Force, chaired by Dr. Frederick Brooks, addressed
+the managerial and technical changes needed to improve the software
+acquisition process within the DoD.
+
+Although the report has been delayed and the technical assessment of the STARS
+program is dated, the report is still a valuable document and should be widely
+distributed. The report's recommendations call for hard management thinking on
+how to accomplish the iterative setting of requirements within the existing
+acquisition structure. The report also concludes that software productivity
+improvements will be achieved mainly through management initiatives within the
+contracting process as opposed to technical "magic."
+
+The Task Force's assessments on the Ada language initiative and the Software
+Engineerine Institute are also valuable.  I recommend that the report be
+distributed to the offices within OSD, OJCS, the Service staffs that deal with
+software technology and acquisition, and to the appropriate Defense related
+industries and organizations.
+
+Charles A. Fowler
+Chairman
+
+Attachment
+
+% Memo from Dr. Brooks submitting the report
+
+OFFICE OF THE SECRETARY OF DEFENSE
+WASHINGTON, D.C. 20301-3140
+
+DEFENSE SCIENCE BOARD
+
+July 1, 1987
+
+MEMORANDUM FOR CHAIRMAN,
+
+SUBJECT: Report of the Defense Science Board Task Force on Military Software
+
+I enclose the final report of the Defense Science Board Task Force on Military
+Software.  Our major findings and recommendations may be found in the
+Executive Summary.  It has been a delight to serve with such an expert and
+diligent group of people on this Task Force. We would all like to express our
+gratitude to the many people who briefed us, and from those supporting this
+effort, especially Lieutenant Colonel Susan Swift, USAF.
+
+I regret that my personal difficulties have so long delayed the report's final
+submission.  As a result of these delays, our technical assessment of STARS is
+dated, although I have been recently briefed on its progress.  The program has
+acquired considerable focus under Colonel Green, and is moving forward.  Our
+recommendation for its organizational transfer remains unchanged, however, by
+these developments.
+
+Some of our recommendations have been implemented already.  The others remain
+current and valid.
+
+Frederick P. Brooks, Jr.
+Chairman
+Defense Science Board
+Task Force on Military Software
+
+Attachment
+
+% title
+Report of the Task Force on Military Software
+Defense Science Board
+
+1. Executive Summary
+
+Many previous studies have provided an abundance of valid conclusions and
+detailed recommendations. Most remain unimplemented. If the military software
+problem is real, it is not perceived as urgent. We do not attempt to prove
+that it is; we do recommend how to attack it if one wants to.
+
+We do not see any single technological development in the next decade that
+promises ten-fold improvement in software productivity, reliability, and
+timeliness. There are several technical developments under way which together
+can be expected to yield one order of magnitude, but not two. Few fields have
+so large a gap between best current practice and average current practice; we
+concur with the priorities that DoD has given tc upgrading average practice by
+more vigorous technology transfer.
+
+Current DoD initiatives in software technology and methodology include the Ada
+effort, the STARS program, DARPA's Strategic Computing Initiative, the
+Software Engineering Institute, and a planned program in the Strategic Defense
+Initiative. These five initiatives are uncoordinated. We recommend that the
+Undersecretary of Defense (Acquisition) establish a formal program
+coordination mechanism for them, (Rec. \#2).
+
+The big problems are not technical. In spite of the substantial technical
+development needed in requirements-setting, metrics and measures, tools, etc.,
+the Task Force is convinced that today's major problems with military software
+development are not technical problems, but management problems. Hence we call
+for no new initiatives in the development of the technology, some modest shift
+of focus in the technology efforts under way, but major re-examination and
+change of attitudes, policies, and practices concerning software acquisition.
+
+\subsection*{STARS}
+
+The DoD program for Software Technology for Adaptable, Reliable Systems,
+STARS, has made little progress in recent years and has had vague and
+ill-focused plans for the future. Service support and enthusiasm is lacking.
+Yet it is very important that such a project-independent methodology
+development effort proceed. We recommend that the STARS Joint Program Office
+be moved from the Office of the Secretary of Defense to the USAF Electronic
+Systems Division. (Rec. \#1) We recommend that a, general officer be given
+responsibility for STARS, the Ada Joint Program Office, and Software
+Engineering Tnstitute (whose contracting office is already in ESD). Deputies
+from the other Services should be appointed.
+
+\subsection*{Ada}
+
+It is very important for DoD to have a standard programming language; Ada is
+by far the strongest candidate in sight. The 1983 mandate for Ada was
+technically premature. DoD commitment to Ada since that time has been weak.
+The state of Ada compiling technology is now such that it is time to commit
+vigorously and wholeheartedly.  The directives 3405.1 and 3405.2 are right
+first steps - management follow-through on enforcement and support is now
+essential.
+
+Ada embodies and facilitates a set of new approaches to building software,
+generally known as "modern software practices." We expect these practices,
+rather than yet another programming language, to make a real difference in
+software robustness, reusability, adaptability, and maintenance. Ada is not
+the only conceivtble vehicle for such practices, but if is here, it has been
+tailored for the embedded software problem, and multiple compilers have- been
+validated. We recommend against further waiting, language tuning, or
+subsetting.
+
+Achieving the benefits of modern programming practices requires the development of
+unified programming environments. This work must continue to be pushed forward.
+Few program managers will want to take on the headaches of being first user of a new
+tool, yet it is essential that all major new programs be committed to that tool if it is to
+be effective. Only top-level DoD commitment and mandate can make that happen.
+We commend AJPO for its technical success in establishing the language definition and
+language validation procedures. We recommend that it be moved from OSD to a unified
+software joint program office in the USAF Electronic Systems Command (Recs. \#6,7).
+
+\subsection*{Acquisition}
+
+\textbf{Mileu}. The civilian software market has exploded in the past decade, so that the total
+civilian market for purchased software, not counting in-house-built application software, is
+now more than ten times larger than the DoD market. This requires a radical update in
+much DoD thinking. Some implications:
+
+\begin{enumerate}
+\item DoD can nf longer create de facto standards and enforce them on the civilian market,
+as it was able to do with COBOL.
+
+\item DoD must not diverge too far from whatever the civilian market is doing in programming methodology, else it will have to support its own methodology by itself, with little
+resource or training commitment from others. (The same thing is true of processor
+architectures.)
+
+\item DoD should be aggressively looking for opportunities to buy, in the civilian market,
+tools, methods, environments, and application software. Whenever it can use these
+instead of custom-built software, it gets big gains in timeliness, cost, reliability,
+completeness of documentation, and training. But today's acquisition regulations
+and procedures are all heavily biased in favor of developing custom-built software
+for individual programs.
+\end{enumerate}
+
+\textbf{Life-cycle model}. DoD Directive 5000.29 and STD 2167 codify the best 1975 thinking
+about software, including a so-called "waterfall" model calling for formal specification, then
+request for bids, then contracting, delivery, installation, and maintenance. In the decade
+since the waterfall model was developed, our discipline has come to recognize that setting
+the requirements is the most difficult and crucial part of the software building process, and
+bne that requires iteration between the designers and users. In best modern practice, the
+ea-.y specification is embodied in a prototype, which the intended users can themselves
+drive in order to see the consequences of their imaginings. Then, as the design effort
+begins to yield data on the cost and schedule consequences of particular specifications, the
+designers and the nsers revise the specifications.
+
+Directive 5000.29 not only does not encourage this best znodern practice, it essentially
+forbids it. We recommend that it be revised immediately to mandate and facilitate early
+prototyping before the baseline specifications are established '(Rec. \#23).
+
+DoD-STD-2167 likewise needs a radical overhaul to reflect best modern practice. Draft
+DoD-STD-2167A is a step, but it does not go nearly far enough. As drafted, it continues to
+reinforce exactly the document-driven, specify-then-build approach that lies at the heart
+of so many DoD software problems.
+
+For major new software builds, we recommend that competitive level-of-effort contracts
+be routinely let for determining specificatlons and preparing an early prototype (Rec. \#26).
+The work of specification is so crucial, and yet its fraction of total cost is so small, that
+we believe duplication in this phase will save money in total program cost, and surely save
+time. After a converged-specification has been prepared and validated by prototyping, a
+single competitively-bid contract for construction is appropriate.
+
+\textbf{Incentives.} Defense procurement procedures discourage contractor investment in the
+development of new software methodology. Any such contractor investment made today
+promises low return. We recommend that the DoD rights-in-data policy be revised to
+distinguish software rights from other rights, and that the policy as it applies to software
+be designed to encourage contractor investment, both with private and IRD funds, in tools,
+methods, and programming environments (Recs. \#17-22).
+
+Similarly, today's policies actively discourage the reuse of software modules from
+one system in another. We recommend a variety of policy changes, each designed to
+encourage reuse, and indeed, the establishment of a public market in reusable software
+parts (Recs. \#29-33).
+
+\subsection*{Personnel}
+
+It appears that the number of software-qualified military officers has been
+essentially constant over the past decade, despite exponential growth in
+software. Many studies have recommended actions that need to be taken re
+training, specialty codes, career paths, etc., to address the shortage of
+uniformed specialists. Some of these have been taken.  Nevertheless, the
+number has not increased.
+
+We doubt that it will. The powerful civilian demand for such persoas will, we expect,
+continue to drain thpm away from the Services as fast as they reach first retairement age,
+or before. % the PDF is missing the word prior to 'before', I believe it is 'or'
+
+Therefore we recommend that the Services now assume that there will not be more
+such people, and concentrate effort on how best to use those they have (Rec. \#34). The
+application-knowledgeable, technically skilled leaders are the military's limiting resource
+in using today's computer technology.
+
+We observe that in the best military software programs, the number of customer
+software people engaged in the acquisition and program oversight approximates 10% of the
+number of contractor personnel. This number does not seem too high. Few program offices
+are staffed so well, however, largely due to the shortage of qualified people. Meanwhile
+one observes some substantial software-building efforts under way within the Services,
+usually done by a combination of civilian and uniformed personnel, generally managed by
+software-qualified officers. This is a second-best use of the available specialist officers.
+
+We recommend phasing out this practice and concentrating the available knowledgeable
+officers on acquisition (Rec. \#35). We see no other way that the exponential growth in
+needed military software can be met.
+
+%2. Introduction
+2.1 The Charge to the Task Force
+Abbreviated Terms of Reference, (Appendix A2 contains the faill text).
+A. Assess and unify various recent studies.
+B. Examine why software costs are high.
+C. Assess STARS for military software; discuss the priority of its components.
+D. Recommend how to enlist industry, Service, and university efforts in a productivity
+thrust.
+E. Assess STARS, etc., for U.S. international competitiveness.
+F. Recommend how to apply R\&D funds to get the most increase in military software
+capability.
+G. Recommend how to implement an incremental and evolutionary approach to (F).
+H. Assess the wisdom of the Ad\& plan, especially in view of "Fourth-Generation' languages.
+What the Task Force Did Not Address
+Problem Seriousness Sizing. It would be presumptuous, and appear to be self-serving
+as well, for this Task Force to tell the Service commanders and the DoD civilian authorities
+that your mission-critical software problem ranks high on your present or future criticalproblem list. Other studies have sized the cost and recounted software-caused delays and
+system malfunctions. Your own experience will have to put this problem into proper
+perspective among all your difficulties.
+What the Task Force is qualified to do for you is to
+
+V
+
+e characterize software, its problems, and its technology
+£
+
+identify trends that will, in the course of time, make today's problems worse or
+better,
+
+* suggest actions to address today's problems and avert tomorrow's calamities.
+Non-Mission-Critical Software.
+The Task Force largely limited itself to missioncritical systems, those wherein military software most differs from civilian-market software.
+Our recommendations wi'.h respect to procurement, however, apply to all DoD acquisition
+of software, In Section 6 we categorize DoD software according to the degree to which it
+
+%nrug
+
+r
+
+r
+
+w I
+
+.
+
+.
+
+-
+
+.
+
+.
+
+-----
+
+--
+
+must be non-standard because of its military function.
+Service-Specific Personrel Problems. We did not address Service-specific personnel
+and skills problems. Thesm have been adequately addrdissed in earlier studies. The careerpath and skills-retention problems continue to be very real in all the Services.
+SE1. We did not review the Software Engineering Institute, other than to hear a briefing
+on its objectives. It, was in the process of being established and finding a permanent
+director during our study; any review would have been premature.
+SDI. The same was true of the SDI plan for developing software methodology. At the
+tit~ie we were briefed by the SDI office, there was no plan to review.
+SCI. We hadi only one briefing on the DARPA soft-ware methodology efforts encompassed
+within the 'Strategic Computing Initiative. These efforts are properly aimed at producing
+results a decade hence. The approaches are sufficiently bold that little in the way of
+directly ?.pplic able short- and mid-term results can be expected.
+New 10echnological Initiatives. We do not recommend any new initiatives or funding
+for n'ýw specific research or technology-development programs. We support the recent
+technological initiatives, but today's major unaddressed problems are not technical, but
+managerial.
+2.2 Military Software
+
+Role.
+
+Software plays a major role in today's weapon systems. The "smarts" of smart
+
+weapons are provided by software. Software is crucial to intelligence, communications,
+command, and control. Software enables computerized systemns for logistics, personnel,
+and finance. The chief "military software problem7 is that we cannot get enough of it,
+soon enough, reliable enough, and cheap enough to meet the demands of weapon systems
+desgnrsand users. Software provides a major Lomponent of U.S. war-fighting capability.
+Growth. DoD software-intensive systems have grown exponentially, reaching an annual
+software expenditure level in mission-critical computer systems of about \$9 billion in 1985,
+
+with projections of \$30 billion annually by 1990 [Taft, 1985).
+
+This continuing growth
+
+has strained the ability of the DoD to manage their development. Because software
+controls system function, deficiencies in software development affect over-all weapon system
+performance and cost quite out of proportion to the software cost itself.
+
+Like Civilian Software.
+
+Military software is fundamentally like advanced civilian
+
+software, only more so. That is, the properties of real-time operational software in civilian
+banking, airline reservations, or process control, are the same as those of weapon-csystem
+software. Big civilian database and file systems look essentially like the military logistics,
+6
+6%
+
+%finance, and persoDnel software. In the operation of a ship or a base, one finds many small
+computers whose tasks are essentially the x.n-e as those in civilian businesses.
+Only More So.
+Mission-critical military software is more universally real-time,
+communications-oriented, and resource-constrained thaw its civilian counterparts. At any
+given time, the demands of weapon systems stress the state of the software art more
+severely than do rivilian demands.
+Timeliness and Reliability. Although the cost of military software is commonly seen
+as the major problem, and is emphasized in our Terms of Reference, both previous studies
+and our briefers suggest that software timeliness and reliability are even more critical
+problems today.
+Software development cycles are long, relatively unpredictable, and come at the end of
+total weapon system development. Thus they frequently encounter delays, delays usually
+on the critical path to operational capability. It also takes too long to adapt running
+software to changing hardware or operational requirements.
+Software reliability is equally of concern. Since operational software i. complex, it
+usually contains design flaws, and these are hard to find and often painful in effect.
+Requirements-Setting Is The Hardest Part.
+As is true for complex hardware
+systems, the hardest part of the software task is the setting of the exact requirements,
+including numbers for size and performance, and including the relative priorities of different
+requirements in the designers' inevitable trade-offs.
+We have no technology and only poor methodologies for establishing such requirements.
+There are not even good ways in common use for even stating detailed requirements and
+trade-off priorities. Misjudgements in requirements badly hurt effectiveness, cost, and
+schedule. Such misjudgements abound. Most common is the specification of over-rich
+function, whose bad effects on size and performance become wvident only late in the design
+cycle. Another common error is the mis-imagination of how user interfaces should work.
+In our view the difficulty is fundamental. We believe that users cannot, with any
+amount of effort and wisdom, accurately describe the operational requirements for a substantial software system without testing by real operato;s in an o~perational environment,
+and iteration on the specification. The systems built today age just too complex for
+the mind of man to foresee all the ramifications purely by the exercise of the analytic
+imagination.
+This inherent difficuiL is unnecessarily compounded in DoD by the presence of too
+many intermediaries be" veen the ultimate user and the software specifier.
+The Big Problems Are Not Technical. In spite of the substantial technical development needed in requirements-setting, metrics and measures, tools, etc., the Task Force
+is convinced that today's major problems with military software development are not
+technical problems, but management problems. Hence we call for no new initiatives in the
+7
+
+%development of the technology, some modest shift of focus in the technology efforts under
+way, but major re-examination and change of attitudes, policies, and practices concerning
+softwa~re acquisition.
+
+2.3 Why Is Software Technology Developing So Sflowly?
+
+*
+
+Participants and observers in the computer game often marvel that the software te~zh~no4ogy develops so slowly, especially in comparison with. computer hardware technology.
+In our Terms of R~eference we are charged with examining the underlying nature of the
+software process so as to explain high costs and slow development.
+
+Hardware Technology Is So Fast.
+The remarkable fact is not Ahe slow rate of development of computer software technology, but the fast rate of hardware technology, a fact especially striking to those of us
+who do both. Today's hardware offers at least a 10,000-fold gain in price-performance over
+that of 30 years ago, and one can choose at least 1000-fold of that gain in either price
+or performance! No other technology has come even close to that rate of development.
+It reflects the shift of computer hardware from ar, asmembly technology to a process
+technology.
+
+Software Is Labor-Intensive.
+Software development is and always will be a labor-intensive technology. The work
+and the time is all in development, not production. Development ib always labor-intensive.
+Moreover, in the ultimate, one is developing conceptual structures, and although our
+machines can do the dog-work and can help us keep track of our edifices, concept
+development is the quintessentially human activity.
+
+The Essence Is Designing Intricate Conceptual Structures Rigorously.
+In Appendix AS, we analyze the software task. We argue that its essence is the
+designing of intricate conceptual structures, rigorously and correctly. The part of software
+development that will not go away is the craftiUng of these conceptual structures; the part
+that can go away is the labor of expressing them. The task is made more difficult by three
+other properties of software products: (1) the necessity for them to conform to complex
+environmental, hardware, and user interfaces; (2) the necessity for them to change as their
+interfaces change; (3) and the invisibility of the structures themselves.
+We believe a significant fraction of software development effort today is expended on
+this essential 1Nbor, rather than on the task of expressing the designs.
+
+%The Removal of ]Expression Difficulties Has Brought Much of the Past Gain.
+The essential labor itself has not always taken most of the effort. Much of the work was
+formerly spent on non-essential, incidental difficulties in the expression of the conceptual
+structures. The three big breakthroughs in software methodology each have consisted of
+removing one of these incidental difficulties.
+First was the avwkwardneis of machine language. High-level languages removed this
+difficulty and improved productivi•yv ten-fold.
+Second was the loss of mental continuity occasioned by slow turn-around batch
+compilation and execution. Time-sharing removed this difficulty, improving productivity
+2-5 times.
+Third was the utter incompatibility of files, formats, and interfaces among various
+software tools. Integrated programming environments such as Unix and Interlisp overcame
+this difficulty, again doubling (or better) productivity.
+What's In the Cards?
+There are stll non-essential expression difficulties, but they do not account for most
+of the development effort in modern software shops. Future methodological imprcvements
+will have to attack the essence - conceptual design itself.
+Examination of the most promising technological developments shows no single technique that can be expected to yield as much as a 10-fold improvement in productivity,
+timeliness, and robustness in the next ten years.
+On the other hand, all of the various technological developments on the horizon
+together should easily yield a 10-fold improvement in the next decade. It is not likely
+that all those developments together will yield a 100-fold improvement.
+
+2.4 Current Software Trends
+Mi
+
+Five developments in the past decade have revolutionized the software scene. DoD
+software practices evolved in the '63's and '70's, and they neither take into account nor
+utilize these advances.
+
+The Microcomputer Revolution and the Personal Computer
+The microcomputer, both as a component, and by its incorporation into personal
+computers, has totally changed the computer field and the software field. Every procedure
+for computer acquisition, etc., must now define a floor in machine size below which it is not
+
+9
+
+%applicable, and machines below the flior should be treated as commodities, components,
+and spare parts. (Not all procedures have yet been so revised.)
+Obviously software standards such as the Ada mandate must have such a floor as well.
+The constraints on embedded microprocessors are su..h that their software often must be
+in machine language. We do not address microprocessor software.
+We likewise do not deal with the software problems of personal computers. DoD,
+like every large enterprise, needs some standards as to h~w such machines are to be
+supplied, how they will be equipped with standard-function programs, and how they are to
+ir.'Prchange information. Such standardization should be minimal and light-handed. We
+Qld not recommend that the Ada mandate cover personal computers.
+America's greatest comparative military advantage is the individual initiative and
+ingenuity of our Service people. We are therefore greatly encouraged to see the Services
+making personal computers readily available to individual units so that individuals can
+solve their own simple computing problems their own way. A personal computer and an
+electronic spread sheet make a powerful combination, sufficient for countless tasks.*
+A Mass Market for Software
+The personal computer revolution has explosively fueled the development of a mass
+market for third-party developed software. This is the most important development in the
+software field in our time.
+Each of several computer architectures (the properties of a computer that determine
+what programs it will run) define a market. The biggest are those for IBM PC-compatibles,
+Apple-compatibles, Macintosh, DEC VAX-compatibles, Unix-compatibles, and IBM 370compatibles. For each of these markets literally hundreds of packages are available, covering
+an immense spectrum of functions and costing from a few dollars to a few hundred
+thousand. The markets are fiercely competitive.
+Technology for Software Modularization and Reuse
+Techniques for designing software in little modules, for defining the module interfaces
+p-ecisely, and for using common file formats have come into standard use during the
+decade. These methods, the backbone of so-called "modern programming practices",
+radically improve the structure and adaptability of large programs. They a~so define
+modules, whose reuse often costs one-tenth as much as writing another module to do the
+same function. Reuse is also much quicker, and it yields better tested, more reliable code.
+taDrs. Jones and Brooks had the opportunity to observe a Blue-Flag simulated Air
+Force-Army-Marine tactical exercise. We saw a number and variety of personal computers
+that have been integrated effectively into unit operational functions; we were pleased to
+see a light dependence on massive computer systems.
+
+10
+
+%The Ada programming language is designed to make such modularization natural,
+and to provide very powerful facilities- for linking modules. Integrat.-d programming
+environments, such as Unix, provide the same kind of facility at another level, that of
+the shell-script linking whole programs together.
+
+Rapid Prototyping and Iterative Development
+As people have recognized that the requirements, and especially the user interface,
+require iterative development, %%-.th interspersed testing by users, there has developed a
+technology for constructing "rapid" prototypes. Such a prototype typically executes the
+mo in-line function of its type, but not the countless exceptions that make programming
+costly. It usually does not have complete error-handling, restart, or help facilities. The
+prototype is often built using a lash-up of handy components that swap performance for
+rapid interconnect ability. It is usually run on a computer that is bigger and faster than
+the target machine.
+Commercial packages enable one to prototype graphics interfaces, for example, so that
+user testing can be done quite early in the development.
+
+ProfessionalHumility and Evolutionary Development
+Experience with confidently specifying and painfully building mammoths has shown it
+to be simplest, safest, and even fastest to develop a complex software system by building
+a mninimaal version, putting it into actual use, and then adding function, enhancing speed,
+reducing size, etL., according to the priorities that emerge from the actual use. Software
+engineers must recognize that we cannot specify mam~moths right the first time. In practice,
+Version 2 is usually under development before Version 1 is delivered, so Version 3 may be
+the first to be affected by actual experience.
+This procedure speeds ffirst delivery. It also provides for the iterative setting of
+requirements. It minimizes '%-he specification of heavy function whose performance penalties
+have not yet been weighed. It tends to concentrate development effort where it will make
+the most difference. Seeing the minimal version run does wonders for the morale of the
+development team and substantially boosts their communication as to further development.
+Evolutionary development is best technically, and it saves time and money. It plays
+
+E
+
+havoc with the customary forms of competitive procurement, however, and they with it.
+
+0
+
+Creativity in acquisition is now needed.
+2.5 Current DoD Programs on Software Technology
+Besides some substantial efforts in individual Service laboratories, DoD has under way
+five programs aimed at enhancing software methodology:
+
+%STARS. The program for Software Technology for Adaptable, Reliable Systems, managed
+by the Undersecretary of Defense (Acquisition), was started in ii80 to address all aspects
+of modern software methodology as applied especially to mission-critical computer systems.
+ADA.
+
+The Ada program, managed by the Ada Joint Program Office under the Under.
+
+secretary of Defense (Acquisition), was started in 1975 to define and develop a standard
+high-level language suitable for embedded computer systems.
+Founded in 1964, the SEI mission is focused on
+Software Engineering Institute.
+technology transfer - bringing the best modern methodology into actual practice in the
+Services and among DoD contractors. The SEI is operated by Carnegie-Mellon University
+un,'er contract from the USAF Electronic Systems Command.
+Strategic Computing Initiative. A software component under the DARPA Strategic
+Computing T-nitiative is aimed at developing radically new methods and tools, especially
+those based or. expert systems and other artificial intelligence techniques. The program
+aims at results a decade ahead of modern practice.
+A software component under the Strategic Defense
+Strategic Defense Initiative.
+Initiative is aimed at providing methodological advances for the building of the massive
+distributed, ultra-high-performance software system demanded by the SDI.
+
+2.6 Recent Previous Studies
+The Task Force reviewed the available studies done since 1982, starting with the
+monumental 1982 Druffel study, which in turn summarized the results of 26 previous
+studies. Appendix A4 lists the recent ones.
+To a surprising degree, the conclusions of these studies agree with each other and
+remain valid; the recommendations continue to be wise. The chairmen of the several study
+groups briefed us. All had one message: very little action, has been taken to implement the
+recommendations. If the military software problem is real, it is not perceived as urgent by
+most high military officers and DoD civilian officials. Our Task Force does not undertake
+to prove that it is urgent; we do tell how to attack it if one wants to.
+
+12
+
+%3. STARS
+
+--
+
+Software Technology for Adaptable, Reliable Systems
+
+The STARS program objective is to achieve by 1995 a dramatic improvement in our
+ability to build reliable, cost-effective defense software by applying known new technology.
+STARS seeks improvement in methods, techniques, tools, personnel practices, and business
+practices.
+The Task Force examined the STARS program on several occasions during the past
+two years. The program is floundering. Little has been achieved during the last several
+years. OSD management has recognized the problems, and some remedial steps are under
+way. It is too early to tell if the~so. steps will work.
+Findings
+STARS as originally formulated is a very good idea.
+
+U
+v
+
+%
+0
+
+Members of the Task Force do not expect to see dramatic near-term research discoveries. However, many incremental improvements in software engineering have been made
+over the last decade, and will continue to be made. These advances could improve our
+war-fighting capability if they were practiced in DoD programs now. STARS can accelerate
+
+their application.
+OSD has not provided the vital leadership needed; until recently STARS
+has lacked a director with strong technical and management ability.
+The program had no permanent program manager for over a year. Consequently, it
+lacked leadership, guidance, and vitality. There has been no single vision of program
+objectives, no coordination of spending, no monitor to ensure that components of the
+program were complementary, and no assurance that the program acted in response to
+the software problems of the Services. Strong top-down leadership, both technical and
+administrative, is required. A new, permanent director has recently been appointed.
+The program plan has been fuzzy.
+The Task Force had difficulty in identifying specific goals or plans to achieve them.
+The program plan does not even recognize the existence of some major software trends,
+such as the personal computer revolution. STARS should enable solutions, not develop
+them from first principles. It should ident~fy possible technical approaches and tools,
+harness the marketplace capability to produce solutions, and ensure early application to
+relmiss ion-cr itical system developments.
+The STARS Program as it stands today has become focussed at a particular, welldefined part of the military software problem - custom systems, new or converted,
+middle-sized to large, whether embedded or command and control. STARS addresses
+folow-hroghsoftware engineering support for ADA software.
+This foctui~sing is entirely commendable and beneficial; indeed, it was badly needed.
+A corollary is that the problems STARS does not address have also become clear. They
+include:
+13
+
+%"*personal computers, workstations, -nd little software systems built on them
+""acquisition of off-the-shelf commercial software
+"osupercomputer calculations (still and perhaps forever in FORTRAT"
+"*old systems not worth converting
+To enumerate these is not to criticize the STARS program. It never ready could address
+all the problem; it only claimed to do so as long as it was fuzzy and unfocussed.
+Balance between program elements has been missing.
+T)evising a single software engineering environment dominates the attention of the
+program. In contrast, emphasis on multiple po3sible environments, even some that are
+off-the-shelf, would serve the objectives better. Most of what the STARS program proposes
+to deliver is scheduled very late in it. lifetime. Early operational milestones would better
+speed transfer of the technology to the DoD and civilian practitioners.
+The program is organized as uncoordinated activities; many are executed
+by part-time volunteers.
+An independent committee explores each activity area; little communication relates
+the committee actions. For example, there is insufficient integration of the activities of the
+business practices area with each of the technical areas.
+STARS needs better coordination with the Services, the Software Engineering Institute, AJPO, DARPA's Strategic Computing Program and the
+Strategic Defense Initiative.
+All these programs have interlocking interests and development programs. Links have
+not been carefully established for the input of Service needs into STARS planning and the
+output of STARS back to the Services.
+It is difficult to get the needed funds allocated for software engineering; if
+STARS is terminated a major opportunity will be lost.
+An effective STARS Program is indeed needed to accelerate the application of the best
+ideas from the laboratory to weapon systems development. If an effective STARS Program
+does not materialize, software risks will remain high.
+Salvage of STARS may not be possible, but it should be attempted. Drastic
+action is required.
+Recommendations
+Recommendation 1: Move STARS and rebuild it.
+Create a Joint Program Office to oversee the STARS program, AJPO, and the Software
+Engineering Institute. This Office should be headed by a flag-rank -military officer in
+order to demonstrate DoD cammitment to provide firm oversight, resources, and control
+14
+
+%over DoD software technology efforts. This Joint Program Office should report to the
+Deputy Undersecretary of Defense for Research and Advanced Technology. Locate it at
+the Electronic Systems Division in Bedford, Massachusetts, with the Air Force as execitive
+agent.
+
+This management organization has been an effective technique for mustering Service
+cooperation on joint efforts in the past. Examples include WIS, Joint Tactical Fusion,
+JTIDS, and the Joint Surveillance and Target Acquisition Radar System. OSD ret,,ns
+oversight authority, and the Joint Program Office organization will ensure that benefits
+accrue across all the Services.
+Recommendation 2: Task th•e STARS Office, the Ada Joint Program Office,
+the Software Engineering Institute, the SDI software methodology program
+element, and the DARPA Strategic Computing Program to produce a one-time
+joint plan to d,-nonstrate a coordinated DoD Software Technology Program.
+This plan must ensure ongoing technical exchange among the five programs.
+Recommendation 3: Task the new STARS Director to define a new set of
+program goals together with an Implementation plan; emphasis should be on
+visible, early milestones that have demonstrable results.
+This plan should emphasize widespread adoption of the best that exists today. It
+should provide incremental products. It should complement what the commercial sector
+is doing and focus on DoD-unique requiremrents. It should be realistic.
+Recommendation 4: Direct STARS to choose several real programs early in
+development and augment their funding to ensure the use of existing modern
+practices and tools.
+
+15
+
+%4. ADA
+DoD defined the Ada language (see MIL-STD-1815A) to be its common, machineindependent programming language for Dr.D-wide use in mission-critical computer applications. This intent was established in 1981 by draft versions of DoD Instruction 5000.31. A
+subsequent June 1983 memorandum from Dr. Richard DeLauer, Undersecretary of Defense
+(R\&E), mandated the use of Ada on all new DoD mission-critical computer procurements
+entering concept definition after I January 1984 or entering full-scale development after 1
+July 1984. Mr. Don Hicks, Undersecretary of Defense (R\&E), reaffirmed thie mandate to
+Ada in December, 1985, a, did Secretary Weinberger in November, 1986.
+The Task Force discussed Ada, its compilers, and its application in military programs
+Lth the three Services, inter-Service programs such as WIS, and the acting Director of
+the Ada Joint Projects Office. ThL Task Force also considered fourth-generation languages
+and their implication for the Ada effort.
+'s
+
+Findings
+Improved Software Engineering Techniques
+meth-ds and techniques have dramatically advanced
+overSoftware
+the last engineering
+decade, yet these techniques are not generally practiced in DoD.
+Ada is not merely a programming language; it is a vehicle for new software practices and
+methods for: specification, program structuring, development and maintenance. Without
+enforced usage of such a vehicle, the radical improvements in software :ngineering will not
+mov" rapidly into use. Standardization on a language is the best way to introduce the new
+practices rapidly.
+Ada, The Standard Language
+It is a major technology step forward for the DoD to iisist that all software
+be built in a "ligh-.evel language. It is a major management step forward to
+stand; rdize or. a single high-level language.
+It is not simple to do so; Fnr4tan and Cobol will each survive in some military
+applications. The driving reasons to standardize new develcpment in one high-level
+language remain valid. Spei.i•,..ally, the quality of th- resulting software will be higher.
+Enhancement of function, adaptation to environmental changes, and fixing of errors will
+be less buggy ax d cheaper.
+Even where exceptions to the use of Ada are granted, all software can and should be
+designed using Ada as a design language.
+
+16
+
+S
+
+%Ada was designed by the DoD to be that standard language; It to the best
+candidate for standardization available today; It promises to remain so for the
+foreseeable future.
+
+1W
+
+Ada's constructs support modern software technology and discipline. Ada supports the
+eviolution and maintenanceu~f reusable software, portable software, and real-time software.
+The langiage definition is precise enough. Other candidate languages have many more
+deficiencies than Ada with respect to the DoD's needs.
+Ada is adrxittedly complex. This complexity has contributed significantly
+to the slow maturation of the language and of Its compilers and tools.
+E~nough Ada compilers now exist to demonstrate they can be built. Because of
+language complexity, current compilers execute slowly in comparison to a good Fortran
+compiler. However, the compilers are doing more checking, and pointing out errors to
+the programmer; this is co.t-effective. Engineering refinement of compilers will yield
+acceptable, even good, Ada compiler speed in the near term. Moreover, modern partialcompilation techniques today reduce the impact of raw compiler speeds.
+
+IV
+
+Due to Ada's complexity, the code generated by current Ada compilers Is
+not yet highly optimized.
+Again, engineering refinement will produce optimizing compilers in the near term.
+Whereas Ada application code can be quite slow if all dynamic checking is enabled, most
+checking can be turned off in the production version of application code. There is no
+technical obstacle to achieving optimized code for applications written in Ada.
+The DeLauer mandate to use Ada was premature; it could not be followed
+In 1983 because of slowv maturation of the language and Its compilers.
+Consequently it became toothless. The compilers have been developed to a point that
+the mandate can be implemented now; it should be.
+Switching to Ada necessitates an up-front investment In order to reap longer
+term benefits.
+One cost is education. Teaching Ada also implies teaching the new software engineering
+practices and disciplines. This must be done anyway. Forcing this learning is a major
+moiefor adopting Ada quickly and extensively.
+Computer time costs will be somewhat higher because of the slower compiling. These
+
+04
+
+costs
+
+are transient and will go down as Ada programming environments are widely
+
+installed, as the software tools mature, and as hardware cost/performance continues to
+drop.
+
+II
+
+Although Incurring the up-front costs Is wise for DoD, Individual program
+managers and contractors have no Incentive to do so.
+
+The costs of training, compiler and tool acquisition, and running the current immature
+
+compilers are present and readily measured, whereas the benefit is future and more difficult
+
+17
+
+%to measure. Adoption v,.ust therefore be mandated by high management.
+Ada Is being iuccessfully used today in military programs, such as AFATDS.
+At least sixty-four validated compilers exist, with more in the wing. Moreover, Ada
+is not just a DoD captivo language. Civilian commitment to Ada is emerging. It i
+noteworthy that the majority of compilers for Ada are built with private, not DoD, funds.
+One cannot predict, however, that Ada will become the standard language for civilian data
+proceasing, as Cobol did. Too many different forces are at work.
+Fourth-Generation Lanr .agea
+Fourth-ganeration languages are application-specific program generators;
+because they are not general purpose, they are not in competiton with Ada.
+The term fourth-generation is a misnomer. It has been used to characterize a wide
+variety of languages which are not descendants of the third-generation, general-purpose
+languages. The term encompasses application-specific languages such as database languages and electronic spread sheets, program generators, non-procedural languages, and
+even artificial intelligence languages such as Prolog. Each language is designed to be
+applied to problems in a limited domain. Therefore the fourth-generation languages do
+not compete with Ada.
+If an application is well-matched to a fourth-generation language, the cost of
+realizing the application can be a hundredfold less expensive than programming
+it in any general purpose language, Including Ada.
+Spreadsheets are routinely used to accomplish tasks in minutes that -A.uld require
+hours of work in a general purpose laWrguage. Similarly, an exploratory artificial intelligence
+(AI) task may be programmed in an Al language in days versus months in aiy general
+purpose language.
+A weapons system development is not one task in a single problem domain;
+the Task Force is skeptical that any fourtb-generation language is well-suited
+to such applications.
+Note that some of the high-risk tasks in a weapons system may be advantageously
+prototyped in a fourth-generation language to experiment with algorithms or software
+structure before actual development commences. Similarly, some single-domain missioncritical applications, such as some intelligence data processing, may be cost-effectively
+implemented in a fourth-generation language such as a database provides.
+p
+
+Some efforts to develop large software systems entirely in a fourth-generation language,
+such as the New Jersey Motor Vehicle Registration System, have been unsuccessful.
+
+18
+
+%DoD Management of Ada
+Only top DoD management can sustain a policy and program for incurring
+the costs and risk of early DoD use of Ada.
+Contractors incurring the up-front costs must have assurance that invatment in Ada
+tooling will pay off. Programs must plan for long-range cost and quality improvements.
+The Ada Joint Program Office (AJPO) is the DoD's focal point for policy
+and coordination of Ada standardization, validation, and language control; it
+has done a commendable job in achieving its technical objectives.
+The AJPO has maintained a stab!e language definition. It has defined a comprehensive
+validation suite of ltuiliage conformity tests. Note that language conformity does not
+ensur- that, a compiler is robust, acceptably efficient at compile time, or capable of
+generating correct or efficient code for real applications. Concentrated focus on language
+conformity has slowed compiler maturity along these other dimensions. The AJPO has
+also performed a communication function with its Ada Information Clearinghouse.
+Definition of the Ada language and development of compilers has been
+successful; the next step is to implement DoD applications in Ada.
+This step is mainly acquisition management and is discussed elsewhere. AJPO can
+best assist by providing truthful, complete, and candid information about compiler and
+application activity.
+The next technical step is to develop Ada support tools beyond compilers
+and to integrate them with one another and with the underlying operating
+system.
+The unclear boundary between the AJPO and the STARS programs' charters has led
+to some confusion of who should develop what support software technology.
+Ada support tools
+Ada ham been overpromised.
+The Ada language embodies much current software technology. But to build application code that is portable and reusable requires disciplined use of the new engineering
+practices and tools as well. Such support tools are not yet integrated with the compilers.
+Support tools are needed for such activities as:
+0 software documentation writing and formating;
+
+* version and configuration control of both software and documentation;
+* maintaining development history in a way that links requirements, design specification, code documentation, source code, compiled code, problem reports, code
+
+19
+
+%changes, tests, and test run results;
+debugging; and
+• project schedule and effort management.
+As a consequence, non-technical managers of programs are expecting results
+that no high-level language can by Itself deliver.
+Environments that integrate such tools are not yet available for Ada. They ae likewise
+available only piecemeal or not at all for Jovial, C, CMS, Fortran, etc.
+Acquiring these environments Is the next step.
+The Dob is supporting efforts to develop such environments. Environment design is
+more difficult than language definitio.'. Efficient environments depend integrally upon the
+host operating system, yet one wants tool portability and language independence. We
+expect that market forces will produce a variety of environments around Ada if the DoD
+maintains firm commitment to the language.
+Recommendations
+Recommendation 5: Commit DoD management to a serious and determined
+push to Ada.
+Management waffling is more likely to cause a failure in Ada than are technical or
+acceptance problems.
+Specifically, the DoD should
+* Finalize and issue software language policy which reaffirms and details the policy set
+forth in the DeLauer and Hicks memoranda, and the Weinerger speech.
+* The DoD should establish Ada as the common, machine-independent, missioncritical computer system programming language for DoD-wide use. The mandate
+should not be limited to embedded computers in weapon systems.
+* Each DoD component should develop and implement a plan for cutting over to
+full Ada usage. These plans should provide for support software, education, and
+training of military, technical, and management personnel.
+Stiffen practices for granting exceptions from Ada policy so that exceptions are difficult
+now and become increasingly difficult with time.
+* Mandate that where implementation exceptions are granted, software should nevertheless be designed using Ada as the design language.
+Recommendation 6: Move the Ada Joint Program Office Into the same
+organizationas STARS and the SEI.
+
+I20
+
+The major objective for Ada has become one of implementation -
+
+using the Ada
+
+%language for DoD systems - now that the AJPO has technical control of the language.
+Common management of these three programs will strengthen each and permit easy
+coordination of common goals and objectives.
+Recommendation 7.: Keep the AJPO as the technical staff support agent
+for the DoD's executive agent.
+Specifically, it should:
+* Continue firm control of the Ada language definition, permitting only minimal, if any,
+change to the now-stable language for the next two years.
+* Continue Ada compiler validation. In enlarging the validation suite, give priority to
+adding tests that are representative of real applications.
+• Encourage the definition of Ada working vocabularies. Promulgate them.
+* Change the AJPO communication function to reduce the overselling Cf Ada and to
+gather and report accurate, credible information on Ada tools and usage. It should:
+* provide information on the existence and performance of Ada
+environments.
+
+)mpilers and
+
+* documient experiences of the application of Ada including both success stories and
+lessons learned.
+a disseminate significant Ada information via newsletters, on-line data bases, books,
+articles, workshops, conference presentations, and videotapes.
+a continue to act as a clearing house recording availability of existing and reusable
+Ada packages, or even entire tools, and objectively reporting on the experience
+with thaG software.
+* Continue the effort to establish a performance test suite as a companion to the language
+conformity test suite.
+"*Locate software measurement techniques and tools. Publicize them and make these
+tools and techniques available to project managers using Ada.
+"*Initiate significant measuring and recording of lifecycle costs for several major Ada
+application programs.
+" Continue to encourage the development of programmer support environments built on
+Ada, but be slow to standaidize environments. Let a winner emerge first. In particular,
+ALS, ALS/N, AlE and CAIS should not be standardized until and unless experience
+with prototypes shows implementations to be effective and efficicnt.
+Recommendation 8: DoD policy should continue to forbid subsetting of the
+Ada language.
+There must be only one definition of the language. Further, all compilers should
+
+21
+....
+...
+
+%correctly process the entire language; the validation process should continue. Without
+this, much of the benefits of standardization will be lost. However, organizations and
+educators should be encouraged to establish and publish useful working vocabularies to
+simplify the task of learning and using Ada.
+Specific working vocabularies may change as the technology matures. We see three
+categories - acceptable vocabularies, vocabularies to be used with certain constraints,
+and vocabularies that might not be used until the compilers and runtime environments
+mature. Tasking exemplifies the second category. The use of tasking has to depend upon
+the performance capability of the specific compilers. In the third category, today the Use
+s tement might be limited because an inordinate amount of recompile time is needed.
+Recommendation 9: The DoD should Increase Investment in Ada practices
+education and training,for both technical and management people.
+Each DoD component's implementation plan should include provisions for extensive,
+in-depth Ada education and training. Do not underestimate the education and training
+required for managers, analysts, and administrators, in addition to that for software
+engineers.
+Recommendation 10: Allow fourth-generation languages to be used where
+the full life-cycle cost-effectiveness of using the language measures more than
+tenfold over using a general-purposelanguage.
+Marginal increases should not dictate using such languages, especially for long-lived,
+production software. The estimated cost of a program element built in a fourth generation
+language must include full life-cycle cost, including development, integration of the
+program element with others built in Ada, as well as the increased maintenance costs
+of support software written in multiple languages.
+
+22
+
+111, C
+
+%5. Strategic Defense Initiative Software
+Findings
+The Strategic Defense Initiative (SDI) has a monumental software problem
+that must be solved to attain the goals of the initiative.
+It is critical quite out of proportion to its cost, lb:ause hardware has high replication
+costs and software does not. Initial contractor proposals therefore largely ignored it.
+The software problem has already received considerable public attention
+and notoriety.
+No program to address the software problem is evident.
+Recommendations
+Recommendation 11: Focus a critical mass of software research effort on
+the software needs that are unique to the SDI objectives.
+The SDI should use what STARS, the SET, DARPA and industry produces. Much of
+the software problem faced by the SDI is due to the magnitude of the required software
+and the complexity of controlling the interactions of so many components with very rapid
+communication and response. This is not a unique requirement. The SDI should determine
+what portion of their software problem is unique and concentrate its attention on solving
+the SDI-unique problem, not the general software technology problems.
+Recommendation 12: Use evolutionary acquisition, including simulation
+and prototyping, as discussed elsewhere in this report, to reduce risk.
+
+23
+
+%6. DoD and the Civilian Software Market
+Findings
+The civilian market for software Is today substantially larger than the size of
+the DoD market, although the DoD continues to be the largest single customer
+for computer software [Jorstad, 1984; Boehm, 1986].
+This new phenomenon requires a radical update in DoD thinking, policies,
+and procedures.
+We find that in policy drafting and debate, the mass civilian market is generally
+ignored.
+One important implication is that DoD cannot, as it did with Cobol, create a de facto
+standard and impose it on the civilian market. This is not to say that the civilian market
+will not adopt tools and methods from DoD where they are perceived as advances. We
+merely observe that it will not adopt them Just because DoD has.
+A second implication is that DoD, although it will necessarily lead in some aspects of
+the technology such as interfaces to sensors and effectors, cannot expect to lead in most
+aspects of software technology development.
+A corollary is that wherever DoD's software methodology diverges from what the
+civilian market is evolving by competitive selection, it will have to support its own
+idiosyncratic methodology all by itself, without the resource commitment of the larger
+economy.
+Computer Security and Commercial-Off-The-Shelf-Software. Computer security
+requirements are frequently cited as a reason why commercial off-the-shelf software cainot
+be used. The National Computer Security Center in NSA has published criteria for
+assessing the effectiveness of security controls in ADP systems (DoD CSC-STD-001-83).
+The Center is also working on guidelines for matching the appropriate level of security
+controls to a problem. With support from the National Computer Security Center,
+industry is now developing operating systems, trusted computer programs, guards, and
+other software and hardware products with security controls built in to the hardware and
+software and is seeking certification for these products. This approach will provide more
+standard and cheaper ways of dealing with computer security than the current practices
+of custom-tailoring systems. It will also facilitate integration of computer security controls
+,with communications security systems through the use of low-cost encryption devices and
+standard interfaces for network control.
+Enlisting Industry and Universities. Our Terms of Reference explicitly charged us
+with suggesting how DoD can enlist the efforts of universities and industry in its software
+technology advance. Our response must be that this charge itself assumes 'he bygone
+situation. It is now the case that DoD, in mapping its software thrust, must in part assess
+which way the technical thrust of the larger community is going, and diverge only when
+24
+
+04V
+
+%absolutely necessary.
+On those aspects where DoD is truly innovating technically, it can enlist the larger
+community by the very excellence of the innovations - the competitive marketplace is
+responsive to innovation.
+Recommendations
+Pecommendation 13: The Undersecretary of Defense (Acquisition) should
+adopt a four-category classification as the basis for acquisition policy
+We see vast differences in the software systems that DoD buys and builds. We
+recommend that these differences should be explicitly recognized by an official classification
+into four major classes according to uniqueness and novelty. Acquisition guidance, pr l"cies,
+and procedures should be framed separately for each class. The classes are:
+Standard:
+
+Off-the-shelf, commercially available
+
+Extended:
+
+Extensions of current systems, both DoD and commercial
+
+Embedded:
+
+Functionally unique and embedded in larger systems
+
+Advanced:
+
+Advanced and exploratory systems.
+
+Each Program Manager would classify his system, its subsystems, major components,
+major increments, and phases into one of these classes, with the burden of proof being to
+show why the element should be in a higher class instead of a lower one.
+Table 5.1 provides attributes of the four categories. Table 5.2 illustrates the categories
+by classifying some current acquisitions.
+It may also be wise to establish categories by size (lines of source code) for uniformity
+in description. A possibility might be:
+Modest:
+
+Under 2000 LOSC
+
+Small:
+
+2000-10,000 LOSC
+
+Medium:
+
+10-100 KLOSC
+
+Large:
+
+Over
+
+100
+
+KLOSC
+
+Then a planned undertaking could be characterized for policy or procedure purposes
+as, for example, a "Medium Extended-Class software project."
+
+%Recommendation 14: The Undersecretary of Defense (Acquisition) should
+develop acquisition policy, procedures, and guidance for each category.
+Recommendation 15: The Undersecretary of Defense (Acquisition) ard the
+Assistant Secretary of Defense (Comptroller) should direct Program Man.agers
+to assume that system software requirements can be met with off-tk e-shelf
+subsystems and components until it is proved that they are unique.
+The cheapest way to get software is to buy it in the commercial marketplace rather
+than to build it.
+The fastest way to get software is to buy it in the commercial marketplace rather than
+to o uild it.
+The surest way to get robust, maintained, supported software is to buy it in the
+commercial marketplace rather than to build it.
+Even though commercial software is often delinquent in these latter respects, competitive pressures get the delinquencies fixed. Custom-built software has historically been
+notoriously bad in these respects, without the same pressures to fix it.
+Hence the DoD-wide assumption should be that a commercial product will be usable if
+the function is similar to that required - perhaps with modifications or extensions, perhaps
+with extra documentation, perhaps with different support and maintena,.nce arrangements.
+The first investigation when requirements begin to be formulated should be into the market,
+to ,-Le what is available already. Even if the best off-the-shelf product is not ultimately
+used, adopting it for pilot use will help radically in setting specificrLtions for the custom
+product.
+Recommendation 16: All the methodological efforts. especially STARS,
+auld look to see how commercially available software -ools can be selected
+I standardized for DoD needs.
+Although end-user systems, especially embedded ones, will often need to be specialized,
+and : 'rhaps custom-built, it will rarely be justified for DoD to custom-build the tools with
+which its software is built. The assumption should be that marketplace tools will be used.
+
+rM
+
+01
+28
+
+%7. DoD In a Sellers' Market for Software
+Findings
+Because of the explosion of the commercial software market, DoD now Is
+In a sellers' market for software-building.
+Just as the DoD need for software is growing exponentially, and its software-skilled personnel grow more slowly, the same is true of the commercial software n-arket. Programmers
+are in short supply, programming managers even scarcer, and software system designers
+very scarce. Hence the companies that have these skills, and have them organized into
+functioning, equipped teams, have many choices as to how best to market their services.
+DoD is perceived as a poor customer, and the stable of DiD custom software
+vendors stays small even though the requirement grows radically.
+Poor Return. Building custom software for DoD has a poor profit margin. In calculating
+proper profit levels for cost-plus-incentive contracts, DoD tends to use the same marginm
+for software development as for hardware development, although the latter is customarily
+followed by a production cycle at acceptable total profit levels. Ten percent profit on sales
+is considered high in DoD, whereas it is grossly unacceptable in computer industry pricing
+on software.
+Weak Incentives for Productivity.
+Even on fixed-price software contracts, there
+are only weak incentives to manage for higher productivity or to invest company money
+in capital tooling that will save labor cost. High productivity and high quality are not
+rewarded by DoD except at the time of contractor selection. If "excessive" profits result
+from high productivity on firm-fixed-price contracts, the profits are readjusted after audit.
+The standard for "excess" is the same as that for hardware development, despite the
+absence of the production cycle.
+Heavy Regulation. DoD Directive 5000.29, "Management of Computer Resources in
+Major Defense Systems", DoD STD 2167, "Defense System Software", and the proposed
+new Federal Acquisition Regulation FAR 27.4, "Data Rights", and the proposed DoD FAR
+Supplement 27.4 have as their purpose to ensure fair, consistent, and open competition,
+and to get the most capability for each dollar spent. In practice, however, they inhibit the
+use of standard commercial practices in software acquisition and maintenance. They also
+encourage the building of new software rather than purchase of off-the-shelf items.
+Unreasonable Rights-In-Data Requirements.
+DoD FAR Supplement 27.4, as
+proposed for public comment by 10 January 1986, set forth demands for DoD ownership
+of rights to programs, documentation, tools, and methods that were
+"*formulated only in terms of hardware, entirely ignoring the different circumstances
+of software,
+"*completely at variance with commercial practice for software,
+29
+
+%""probably
+
+illegal under U.S. Copyright law, and
+
+"*destructive of most vendor incentive to hivest in better tools and methods.
+We were convinced that the misfit between the proposed supplement and software is
+entirely unintentional, and so the Task Force made timely presentations to the Undersecretary of Defense (Acquisition) and to the Assistant Secretary for Acquisition and Logistics
+during the comment period. If the proposed supplement were to be adopted, however,
+it would be another powerful disincentive for vendors to bid on DoD custom software
+development.
+Constant, Small, Stable of Vendors. Given the regulatory and financial structure
+of DoD contracting outlined above, a vendor can participate in substantial DoD software
+contracting only if it:
+* has staying power to average over crests and troughs in contracting business,
+* has a management superstructure to cope with the regulatory overhead, including
+a Program Control Management System, and specialized accounting to meet DoD
+STD 7000.2,
+,S.
+
+* has an infrastructure of technical specialists to deal with configuration management
+per regulation, documentation per regulation, acceptance testing, etc.
+
+2
+
+%therefore has a critical mass of skilled people sc. -hat it can carry several contracts
+a' once, both to smooth crests and troughs and to pay for the administrative and
+technical superstructure necessary to cope w'h the regulatory overhead.
+As a result, we estimate there to be only about two dozen houses that are regularly
+available to participate in the development of substantial mission-critical software systems,
+and this number grows slowly. On the contrary, several vendors are seriously considering
+leaving the DoD business entirely, and refusing to bid in the future.
+The net result of this small stable of vendors in a time of exponential growth of work
+is sure to be higher bids and longer schedules. It is in DoD's interests, and the nation's
+interests, for DoD to make itself an attractive customer. We believe the net costs to the
+nation of weapon-system software will be lower if it does. Present practices are penny-wise
+and pound-foolish in many petty ways.
+Recommendations
+Recommendation 17: DoD should devise increased productivity incentives
+for custom-built software contracts, and make such incentivized contracts the
+standard practice.
+A new contracting form, part-way between fixed-price and cost..plus-fee, should be
+devised. For instance, on a cost-type contract, a pioductivity figure is usually bid.
+Competition in vendor selection keeps the figure from being unreasonably low. So
+reimbursement might be structured to split any savings due to increased productivity
+
+30
+01
+
+%evenly between the buyer and the seller.
+Another new contracting form that we recommend DoD consider would be to guarantee
+a quantity buy of some software product and to request bids solely on a per-copy price. Here
+the vendor would bear all the non-recurring costs and recover gains on capital investment
+and productivity enhancement. Ada compilers and softwa re development and maintenance
+environments are examples that could be purchased or licensed this way.
+Recommendation 18: DoD should devise increased profit incentives on
+software quality.
+One such incentive could be a sliding profit margin based on the quality of the delivered
+complete software product. This requires quality metrics, recommended below.
+Another kind of incentive could be introduced by requesting contractors to bid a percopy-per-year fixed license fee including maintenance. In this way, high quality resulting in
+low maintenance would provide financial rewards to the contractor and operational rewards
+to the users.
+Recommendation 19: DoD should develop metrics and measuring techniques for software quality and completeness, and Incorporate these routinely
+in contracts.
+There are today no metrics for source-code quality, object-code quality, documentation
+quality, etc. Part of the STARS methodological effort should be addressed to such metrics,
+for Ada programs in particular.
+Meanwhile, there are techniques for judging the over-all quality of complex performances outside the computer field. There is wide agreement as to what quality is, and
+skilled practitiol.,ers make similar judgements when presented with products to judge. Even
+today software quality can be judged by panels of trained judges, just as such panels judge
+Olympic diving, skating, and acrobatic performances. DoD should immediately begin
+testing such panel methods for consistency and reliability, and, if they work, begin using
+such judgements for quality incentives.
+DoD buys software for operational systems that will be used ior a decade or more.
+The software must be maintainable and changeable. DoD is willing to pay the price for
+complete software products, but all too often it accepts less because of schedule slippages
+and operational needs.
+Complete software products should be mandated in contracts to include:
+* specifications thae describe the actual software structure as built, as opposed to
+that originally specified,
+• documentation showing the structure and organization of the software,
+* source code that is properly structured, well modularized, and well ccman-ented,
+especially in procedure headers and variable declarations,
+
+31
+
+%ccross-reference documentation that traces articles in the specifications to the
+corresponding source code, and vice-versa.
+Recommendation 20: DoD should develop metrics to measure Implementation progress.
+Such metrics would help ensure that costs and schedules are being met and that
+complete products will be delivered. They might include, for example, program size, software complexity metrics, personnel experience, testing progress, and incremental-release
+content. Development of such has in the past been part of the STARS plan; it should
+continue to be. Meanwhile, panel-judging techniques as discussed above can be applied to
+progress as well as to quality.
+Recommendation 21: DoD should examine and revise regulations to approach modern commercial practice insofar as practicable and appropriate.
+Recommendation 22: DoD should follow the concepts of the proposed FAR
+2T.4 for data rights for militariy software, rather than those of the proposed
+DoD Supplement 27.4, or it should adopt a new "Rights In Software' Clause
+as recommended by Samuelson, Deasy, and Martin in Appendix A6.
+The legal problem is highly technical. Two good solutions, the arguments for proposed
+FAR 27.4, the concerns about t•he 'clarity fad applicability of the proposed DoD Supplement
+27.4, and the arguments for a new clause L all skillfully set forth in the SEI Technical
+Report incorporated herein ,ts Appendix 6A.
+To those technical arguments we would add an economic one: the proposed DoD
+Supplement 27.4 is, ;ntentionally or otherwise, grabby in spirit and effect. No fair-minded
+person would considt!r it to propose equitable treatment among vendors, or between DoD
+and vendors. Its lack of clarity and clumsiness of drafting will occasion litigation. The net
+effect will be to further shrink the vendor pool, at gre%t cost to DoD and the taxpayer.
+
+32
+
+%8. A New Life-Cycle Model for Custom DoD Software
+Findings
+
+I
+
+The most common present method of formulating specifications - issuing
+a Request for Proposal, accepting bids, and then letting a contract for software
+delivery - is not in keeping with good modern practice and accounts for much
+of the mismatch between user needs and delivered function, cost, and schedule.
+As discussed above under Current Trends, we now understand the importance of
+iterative de ,elopment of requirements, the testing of requirements against real users' needs
+by rapid prototyping, and the construction of systems by incremental development, with
+early incremental releases subjected to operational use.
+
+The Task Force finds that Directive 5000.29 and STD 2167, as interpreted,
+have made it difficult to apply these modern methods.
+Although some parts ef the recent Draft DOD-STD-2167A appear to encourage modem
+methods, the draft as a whole continues to reinforce exactly the document-driven, specifythen-build approach that we believe causes so many of DoD's software problems.
+
+Recommendations
+Recommendation 23: The Uv~dersecretary of Defense (Acquisition) should
+update DoD Directive 5000.29, "Management of Computer Resources In Major
+Defense Systems", so that it mandates the Iterative setting of specifications,
+the rapid prototyping of specified systpems, and Incremental development.
+We propose that the iterative development, of specifications can be reconciled with
+the needs of fair and open competition by letting two level-of-efforts contracts for the
+specifying and prototyping of major software systeLms. After prototyping is complete and
+specifications formulated, a software production contract can be put out for bidding in the
+usual process.
+An alternative for the specification process is to let a separate contract to a government
+contractor for specification, with the specifying contractor excluded from bidding on the
+build.
+The iterative development of specifications is a small part of the total cost of a major
+software system, usually less than 10%, but it has profound effectE on the procurement
+cost, life-cycle cost, schedule, and function of the product.
+We believe the procurement cycle should be modified so that the requirements remain
+unfrozen and subject to alteration until the cost and performance effects of their provisions
+'can be known from early product design. This means final requirements would not be
+frozen until perhaps one-third of the way through the procurement period, a substantial
+departure from present practice.
+
+Recommendation 24: DoD STD 2167 should be ,'urther revised to remove
+Pi3
+
+33
+
+%any remaining dependence upon the assumptions of the Owaterfall* model and
+to Institutionalise rapid prototyping and Jucremental development.
+Recommendation 25: Directive 5000.29 and STD 2168 should be revised
+or superseded by policy to mandate risk management techniques In software
+acquisition, as recommended In the 1983 USAF/SAB Study.
+The Air Force Scientific Advisory Board in 1983 identified software risk factors and
+recommended risk management techniques [Munson, 1983). While parts of the recommendations are Air-Force-specific, the ideas ae applicable to all Services. An example of how
+týse risk management techniques have been incorporated into program management is
+ij ,ided in Table 7.1 below. The risk-management approach provides an effective way
+foz a project to determine when, where, and how much to use prototyping and similar
+risk-reduction techniques.
+Table 7.1
+Software Risk Management Plan
+1. Identify the project's top 10 risk items.
+2. Present a plan for resolving each risk item.
+3. Update list of top risk items, plan, and results monthly.
+4. Highlight risk-item status in monthly project reviews.
+5. Initiate appropriate corrective actions.
+Recommendation 26: Each Service should provide its software Product
+Development Division with the ability to do rapid prototyping In conjunction
+with users.
+The DoD software system acquisition agents are the service produc. development
+divisions. Each of these divisions needs facilities and equipments to mock-up, simulate, and
+build critical prototypes of the new systems being acquired. Some of the system interfaces
+can be tested prior to delivery to the users. Such facilities can also serve as a place for
+the developer and user to meet and refine requirements and procedures. The placement
+of such facilities at the product development division level will allow their use by multiple
+Program Managers who all report to the same local commander. The product development
+divisions are organized along mission categories, and programs in each division will tend
+to need equipment and software with similar power and capabilities. The facilities could
+also be used for Ada training.
+Recommendation 27: Each Service should provide its software Using Commands with facilities to do comprehensive operational testing and life-cycle
+evaluation of extensions and changes.
+The user commands are responsible for defining the original requirements. However,
+many of the systems that are being developed are doing jobs that have never been done
+
+34
+
+%before. These types of systems tend to be technology-driven and must be placed in the
+hands of the user as early as possible to develop new operational procedures. In the
+early phases of system acquisition, a facility at the user command is needed for testing,
+evaluation, training, and procedure development. Throughout the life of the system, the
+user commands need the facility for testing and evaluation of changes and upgrades to
+systems.
+Recommendation 28: The Undersecretary of Defense (Acquisition) and the
+
+Assistant Secretary of Defense (Comptroller) should by directive spell out the
+role of Using Commands in the evolutionary and incremental development of
+
+software systems.
+The relationships between Developing Commands and Using Commands for the
+different kinds of systems should be spelled out in policy statements. The role and
+responsibilities of the user commands can vary with the system acquisition procedures
+and the kind of system being acquired. In conventional acquisitions such as weapons,
+platforms, or sensor systems, a system is developed, tested, and turned over to the user.
+For command and intelligence systems, much of the development and testing can take
+place at the user command. The experience of the users with the first capability built can
+be used (or required) as feedback to the second increment of the system. User involvement
+is obviously heavier when evolutionacy acquisition procedures are used.
+
+35
+
+%9. Module Reuse in DoD Custom Software
+*
+
+Findings
+*
+
+Software technology now enables the extensive reuse, even In missioncritical embedded systems, of software modules written for other systems.
+The typical module size is on the order of one to two pages of source code, 25-50
+source lines. Ada in particular allows modules to be used easily and safely, because the
+module interface is packaged and specified separately from the body, which the user does
+not ordinarily need to inspect or alter.
+Module reuse requires new forms of contractor incentives, both to make
+modules available for others to use, and to use them themselves instead of
+building anew. Making a module reusable requires a modest extra effort in design and
+development. There has to be incentive and compensation for this effort.
+Module reuse requires the establishment of clearinghouses or markets where
+modules can be exchanged.
+Module exchange requires the establishment of standards of description of
+function and of degree of testing.
+Recommendations
+Recommendation 29: The Undersecretaryof Defense (Acquisition) should
+develop economic incentives, to be Incorporated into standard contracts, to
+allow contractors to profit from offering modules for reuse, even though built
+with DoD funds.
+Recommendation 30: The Undersecretaryof Defense (Acquisition) should
+develop economic incentives, to be incorporated Into all cost-plus standard
+contrac~ts, to encourage contractors to buy modules and use them rather than
+building new ones.
+
+I;
+
+Acquisition contracts should be structured so that contractors will be motivated to
+build and sell reusable software, and to buy it. Reusable software will be successful when
+contractors decide it is in their competitive self-interest to reuse software rather than to
+
+develop it each time. The proper incentives with respect to data rights, warranties, licenses,
+liabilities, and maintenance must be included in the RFPs and the contracts.
+Recommendation 31: The Undersecretary of Defense (Ac quisition) and
+Assistant Secretary of Defense (Comptroller) should direct ProgramManagers
+to Identify In their programs those subsystems, components, and perhaps even
+modules, that may be expected to be acquiredrather than built; and to reward
+such acquisition In the RFP's.
+Recommendation 32: The Software Engineering Institute should establish
+a prototype module market, focussed originally on Ada modules and tools for
+36
+
+%Ada, with the objective of spinning it off when commercially viable.
+A scheme for how such a marketplace might work, including some possible financial
+and licensing arrangements, is proposed in Appendix A7.
+The White Sands Missile Range is operating today an Ada Software Repository,
+apparently using volunteer labor and spare computer capacity. We believe that a more
+regular and reliable service must be based upon licensing and license fees, and our proposal
+includes that. Rudimentary validation of compilability by the marketer may also be
+necessary.
+Recommendation 33: The Software Engineering Institute, in consultation
+with the Ada Joint Program Office, should establish standards of description
+lor Ada modules to be offered through the Software Module Market.
+
+37
+U'
+
+-
+
+%10. Software-Skilled People
+DoD's demand for software capability grows exponentially. It does so at a greater rate
+than the combined growth in the size and productivity of the pool of software personnel.
+Previous DoD studies have identified personnel issues as critical elements of DoD's
+software problems. These studies have made excellent recommendations on personnel
+issues, but the recommendations have not been acted upon.
+The Task Force recommends a new approach to the software personnel problem.
+Findings
+Previous Studies Have Made Good Recommendations
+A number of previous studies of the DoD software problem have identified the scarcity
+of in-house DoD software personnel as a critical problem. They have developed similar
+sets of recommended actions for dealing with the problem, e.g.:
+9 Determine DoD's needs for the various software-related skills,
+* Create and maintain a skills inventory for DoD personnel,
+* Create and implement more attractive career paths for DoD software personnel,
+* Establish educational programs to support these career paths.
+9 Analyze the factors influencing the development and retention of DoD personnel
+with the appropriate mix of software-related skills,
+Previous Recommendations Have Not Been Acted Upon
+If these actions were vigorously pursued, they would go a long way toward solving the
+problem.
+However, for various reasons, DoD and the Services have not acted on these previous
+recommendations. It is therefore unlikely that any effective action would result from yet
+another restatement of these recommendations by this Task Force.
+Wesize
+believe
+the pool
+years.of DoD software personnel has remained about the
+same
+for many
+The national pool of software personnel Is growing rapidly.
+The number of Bachelor's and Master's Degrees in Computer Science, Mathematics,
+and Statistics are shown in Table 9.1. Historically, the supply of computer science
+graduates has been augmented primarily from graduates in Mathematics. These sources
+of new personnel meet requirements estimated at 54,000 new graduates per year in 1983
+[Hamblen, 1984] to sustain a pool of computer specialists whoee size was estimated at
+299,000 in 1082 [Vetter, 1985] and whose annual growth rate is estimated at about 5%
+
+[NSF, 1984].
+38
+
+%It appears that DoD is not competing effectively with the private sector in
+attracting and retaining software personnel.
+Table 9.1
+Degrees In Math/Statistics and Computer Science, 1970-82
+Bachelor's Degrees
+Year
+
+Math/Statistics
+
+1970
+1971
+1972
+1973
+1974
+1975
+1976
+1977
+1978
+1979
+1980
+1981
+1982
+
+27,442
+24,801
+23,713
+23,067
+21,635
+18,181
+15,984
+14,196
+12,569
+12,115
+11,473
+11,078
+11,599
+
+Master's Degrees
+
+Computer Science
+1,544
+1,624
+3,402
+4,305
+4,757
+5,039
+5,664
+6,407
+7,224
+8,769
+11,213
+15,121
+20,267
+
+Math/Statistics
+5,636
+5,121
+5,198
+5,028
+4,834
+4,327
+3,857
+3,695
+3,373
+3,578
+2,868
+2,567
+2,727
+
+Computer Science
+1,459
+1,588
+1,977
+2,113
+2,276
+2,299
+2,603
+2,798
+3,038
+3,055
+3,647
+4,218
+4,935
+
+Source: Table 12 of [Vetter, 19851
+DoD needs software talent primarily to support the acquisition process
+We agree with previous studies that the software personnel shortage hurts DoD most
+in the area of software acquisition management.
+MITRE and TRW experience have found software acquisition has been most effective
+when DoD had an acquisition management cadre whose size is roughly 10% (5-15%) of the
+size of the developer's staff; a cadre with a thorough understanding of software technology
+and acquisition management.
+The people in such a cadre are not just watchers. They add considerable value to
+the software product by developing specifications, operational concept documents, and life
+cycle plans; managing competitive concept definition, preparing precise RFP packages,
+performing thorough source selections, including pre-award audits and independent cost
+estimates; exercising prototypes for realistic user feedback; improving specifications, plans
+and manuals; monitoring the effective performance of quality assurance, configuration
+• management; and subcontracting and financial management, representing user interests
+on change control boards.
+DoD does not have adequate career paths for software professionals
+
+39
+
+%Some Services have no career paths; some Services alternate computer assignments with
+totally unrelated non-computer assignments, thereby diffusing the officer's experience. In
+many cases, software expertise is encoded as a subspecialty inflection rather than in a
+primary specialty code.
+Software engineering methods and techniques are advancing dramatically. It is critical
+for software professionals to master these advanced methods and techniques and to keep
+learning new techniques as they are developed. This is as important for acquisition people
+as it is for production people. (Building architects have to know the technologies better
+than most contractor people.) In-house software skills do not match those of top contractor
+p 'IS.
+Current deployment of the software talent pool is ineffective
+Currently, many software-qualified personnel are assigned to jobs that could effectively be assigned to contractors. Many DoD software acquisitions are either. in-house
+development efforts staffed entirely with DoD personnel or contracted acquisitions with
+DoD staffing levels far below the needed 5-15%.
+Recommendations
+'VI
+
+4
+
+Recommendation 34: Do not believe DoD can solve its skilled personnel
+shortage; plan how best to live with it, and how to ameliorate it.
+The software personnel shortage will not disappear by direct DoD action. All DoD
+plans should be based on the assumption that an acute skill shortage will persist.
+Organization structures should be tuned, assignment policies should be adjusted, and
+educational programs should be revised to produce the military and civilian cadre needed
+to acquire and maintain highly complex systems.
+Further, DoD should facilitate supplementing the software acquisition management
+process with contractor support where the supply of in-house personnel is insufficient.
+
+Recommendation 35: Ulse DoD people for acquisition instead of construction.
+*
+
+Instead of hoping that enough personnel can be hired and retained to satisfy the
+needs of the current strategy for using software personnel, change that strategy to train
+and assign available personnel to the highly-leveraged tasks, namely software acquisition
+management. DoD should sharply reduce in-house software construction, extension, and
+maintenance, limiting such to critical functions at operational bases, adaptation of existing
+
+Recomendtion36:Establish mechanisms for tracking personnel skills
+and rojctig prsonelneeds.
+No meaningful studies have been found that catalog seasoned personnel, and no studies
+havebee
+fond hat nclde othuniformed personnel and government civilians.
+EachSericeneeds to have, and all DoD needs access to, a database that covers its
+40
+........ IIJII4ý
+.......
+
+%officers, its senior and technically skilled enlisted people, and its technically skilled civilian
+employees. This should show not only career history and assignments, but technical skills,
+experiences, and trainings by quite fine subject codes.
+From such a database each Service should not only draw for particular assignments,
+but also project biennially the trends by skill, by seniority, by median age within skill, and
+by years of particular skill experience. Such trends can then be assessed against projected
+needs.
+Recommendation 37: Structure some officer careers to build a cadre
+of technical managers with deep technical mastery and broad operational
+overview.
+Where possible, operational assignments should be chosen to give intense systemusing experience in real operations, development/acquisition assignments should be L..n
+related software systems; and education assignments should focus on new technical and
+management approaches.
+Recommendation 38: Enhance education for software personnel.
+DoD should implement the education and training necessary for its software acquisition
+management personnel to master both software technology and acquisition management.
+
+41
+
+%11. Appendices
+
+Al. The Task Force
+
+A2. Terms of Reference
+
+A3. Meetings and Briefings
+
+A4. Documents Studied
+
+AS. Software
+
+-
+
+Why Is It Hard?
+
+A6. Proposal for a New "Rights in Software' Clause
+
+A7. Proposal for t Module Market
+
+42
+
+-- -- - -
+
+%Appeu,, ix Al
+DEFENSE SCIENCE BOARD SOFTWARE TASK FORCE
+Members and Key Persons
+Dr. Donald Hicks, USD(R\&E), Sponsor 202-695-6639
+Dr. James P. Wade Jr., Deputy USD(R\&E), Acting ASD(A\&L), Sponsor
+Dr. Victor Basili, Member
+Chairman, Department of Compute: Science
+University of Maryland
+College Park, Maryland 20742
+301-454-2002
+Dr. Barry Boehm, Member
+TRW Defense Systems Group
+One Space Park, R2-2086
+Redondo Beach, CA 90278
+213-535-2184
+Ms. Elaine Bond, Member
+Senior Vice President
+Chase Manhattan
+One New York Plaza, 21st Floor
+New York, NY 10081
+212-676-2982
+Dr. Frederick P. Brooks, Jr., Task Force Chairman
+Kenan Professor of Computer Science
+University of North Carolina at Chapel Hill
+New West Hall 035A
+Chapel Hill, NC 27514
+919-962-2148
+Mr. Neil Eastman, Member
+IBM Federal Systems Division
+18100 Frederick Pike
+Building 929, Room 1C12
+Gaithersburg, MD 20879
+301-240-2170
+MGen. Don L. Evans, Member
+USAF (ret)
+President
+Tartan Laboratories
+461 Melwood Avenue
+Pittsburgh, PA 15213
+412-621-2210
+
+43
+
+%Dr. Anita K. "ones, Member
+Tartan Laboratories
+461 Melwood Avenue
+Pittsburgh, PA 15213
+412-621-2210
+Dr. Mary Shaw, Member
+Software Engineering Institute
+Carnegie-Mellong University
+Pittsburgh, PA 15213
+412-578-7731
+Mr. Charles Zraket, Member
+President
+The MITRE Corporation
+Burlington Road
+Bedford, MA 01730
+617-271-2356
+Dr. Edward Lieblein, Government Representative, OSD
+202-694-0208
+LTC Bill Freestone, Government Representative, Army
+202-694-7298
+Mr. Marshall Potter, Government Representative, Navy
+202-697-9346
+LTC Dave Hamond, Government Representative, Air Force
+202-697-3040
+Major Susan Swift, USAF, Executive Secretary
+202-695-7181
+CDR Chris Current, DSB Secretariat Representative
+202-695-4157
+CDR Mike Kaczmarek, DSB Secretariat Representative
+202-695-4157
+Mr. Robert L. Patrick, Contractor Support
+Willow Springs Road
+Star Route 1, Box 269
+Rosamond, CA 93560
+805-256-4444
+Mr. John K. Summers, Contractor Support
+The MITRE Corporation W90
+7525 Colshlre Drive
+McLean, VA 22102
+703-883-6146
+
+44
+
+%RESEARCH ANO
+*
+
+ENGINEERING
+
+CDSB)
+2NOV W
+
+MEMORANDUM FOR CHAIRMAN, DEFENSE SCIENCE S!C)RD
+SUBJECT:
+
+I
+
+Defense Science Board Task Force on Software
+
+You are requested to form a Task Force on Software.
+Software costs are projected to increase substantially in the
+next decade, and the cost of software development is becoming an
+increasing fraction of total development costs of many types of
+weapons systems. In addition, the testing of software to prove
+performance is becoming increasingly difficult and-time
+consuming, leading to delays in aystem deployment.' The need for
+software productivity improvement is well recognized.
+
+The task Force should address this broad problem and
+
+identify and assess the following:
+A.
+Assess and unify the conclusions and recommendations
+of the various recent studies of military software problems.
+B.
+Examine and discuss the theoretical and practical
+reasons that make software costs high including the design and
+analysis of tests.
+C.
+The probable effectiveness of the proposed DoD STARS
+program at addressing military software problems, and the
+relative priority of the components of the STARS program
+(suggest alternative to STARS if necessary)
+D. Ways of enlisting industry, Service laboratories, and
+university efforts in-programs aimed at software productivity.
+E.
+
+The probable effectiveness of the STARS program and
+
+U.S
+inerntioalcompetitiveness in software production.
+P.
+Hw touselimited R\&D funds to make the biggest
+impoveentin
+
+hedevelopment of military software
+
+capabiities
+
+%2
+G.
+
+Implementation concepts for an incremental,
+
+evolutionary approach in case an all-out assault on the software
+problem cannot be funded.
+Based on the above assessments, the Task Force should make
+specific recommendations for significant improvements in the way
+the DoD manages and develops software.
+I would appreciate a
+report in approximately.,ýx months.
+
+Dr. James P. Wade, Jr.., Assistant Secretary of Defense
+(D\&s), is sponsoring this study. Dr. Frederick P. Brooks has
+agreed to serve as Chairman.
+Major Susan Swift, USAF, will
+serve as Executive Secretary.
+Commander Chris Current, USN,
+will be the DSB Secretariat representative.
+It is not
+anticipated that your. inquiry will go into any "particular
+matters" within the meaning of Section 208 of Title 19,
+U.S. Code.
+
+,
+
+Enclosure
+Proposed Membership
+
+46
+
+4
+
+%I
+
+Appenadix AS
+~
+
+Condensaed Briefings anad Mimnutes
+
+-
+
+The complete mnutee are on file Inthe DSB Office. The meetings arn abstracted below.
+
+Date
+
+Place
+
+Subject
+
+arlefo,
+
+Orgaiasationt
+
+11 March '856
+
+Pentagon
+
+Confilct of Interest
+Army Study
+Al' Study
+STARS Program
+
+David Ream
+LTC SistI
+John Munson
+Joseph Bats
+
+DoD Counsel
+
+22 April '.65
+
+Pentagon
+
+Planning of Study
+
+28429 May '8s
+
+ýMTRE, McLean
+
+Navy Software Perspective
+Tactical Flag Corn. Ctr.
+Dicuaslon re Task Fares
+
+USA
+OSDSTARS
+
+COMO Harry Quest
+
+USN
+
+CMDR DeMaree
+
+USN TFCC
+
+Dr. James P. Wade, Jr.
+
+OUSDR\&E
+
+Assessment of STARS Conf.
+SEX/STARS Relationship
+1982 DoD Joint SW Study
+Al' Software Perspective
+
+BG Alm\&Saliabury
+Joseph Bats
+Dr. Edward Lieblela
+Dr. Barry Boehm
+Dr. Mary Shaw
+Larry Druide
+BG Dennis Brown
+
+USA Sys Command
+STARS
+OSD
+
+WIS Program
+
+John Glilligan
+
+Executive Session
+
+Gene Frank
+Don ONeil
+Don Latham
+Dr. James Wade
+
+Deputy SPO Director
+GTE
+IBM
+ASD(C31)
+Acting USDR\&E
+
+Report Discussion
+
+Dr. Danny Cohen
+
+ISI
+
+Stategic Computing Initiative
+Strategic Defense Initiative
+Compet. In Contracting Act
+STARS
+
+Dr. Steve Squires
+Ma4. David Audley
+Wayne Wittig
+Dr. Jack Kramer
+
+DARPA
+SDI
+OASD(A\&L)
+OSD-STARS
+
+Pentagon
+
+DFARS 27.4
+SW Test \& Eval. Project
+
+M1. Pamela Samnuelson
+Dr. Rich De~io
+
+SEX
+Georgia Tech
+
+22 January '86
+
+Pentagon
+
+Report Discussion
+
+Dr. Hicks, Task Force
+
+USDR\&E
+
+4-5 March '86
+
+MITRE, McLean
+
+Discussion of DSB Briefing
+
+15 April '86
+
+MITRE, Bedford
+
+Report Discuosson
+
+27 May '86
+
+SEX
+
+Report Discussion
+
+Army Software Perspective
+STARS Program
+
+24 June '85
+
+Pentagon
+
+8 July -85
+
+NUTRE, McLean
+
+22-23 October '85 MITRE, McLean
+
+26 Novemb,,.
+
+'85
+
+47
+
+SEX
+Rational Technology
+USA.F
+
+%Appendix A4 -
+
+Documents Studied and References
+
+Bailey, Elizabeth, et at
+
+An Assessment of the STARS Program, SeptemberOctober 1985 (IDA Memorandum Report M-137)
+
+Barbacci, M.R. et \&I
+
+"Tho Software Engineering Institute: Bridging Practice
+and Potential,* IEEE Software, November, 1985
+
+Boehm, Barry W.
+
+"Understanding and Controlling Software Costs,*
+Informetion Procwtisn 86, H.J. Kugler, ed., Amsterdam:
+Elsevier Science Publishers B.V. (North Holland)
+
+Brocks, Frederick P.
+
+"No Silver Bullet,* Information Prcssc•. 86,
+H.J. Kugler, ed., Amsterdam: Elsevier Science Publishers B.V.
+(North Holland). Reprinted in Computer, April, 1987
+
+DeMillo, Richard A., et at
+
+Software Engineering Environments for Mission-Critical
+Applications - STARS Alternative Programmatic
+Approaches
+(IDA Paper P-1780) August 1984
+
+DoD
+
+DoD Directive 5000.29 Management of Computer Resources in
+Mijor Defense Systems, 26 April 1976
+Draft DoD Directive 5000.29, 15 January 1986
+DoD-STD-2167 Defense System Software Development, 4 June 1985
+Draft DoD-STD-2167A Defense System Software Development,
+1 April 1987
+DoD Directive 3405.1 Computer Programming Language Policy,
+2 April 1987
+DoD Directive 3405.2 Use of Ada in Weapon Systems 30 March 1987
+Strategy for a DoD Software Initiative, 1 October 1982
+Software Technology for Adaptable Reliable Systems (STARS)
+Program Strategy, 1 April 1983
+STARS Implementation Approach, 15 March 1983
+48 CFR Parts 214, 215, 227, and 252 Revised Defense Federal
+Acquisition Regulation Supplement "Technical Datae
+10 September 1985
+
+Druffel, Larry E., et al
+
+Report of the DoD Joint Service Task Force on Software
+
+48
+
+%Problems, 30 July 1982
+Frewin, Gillian, et \&I
+
+"Quality Measurement and Modelling - State of the Art
+Report,* REQUEST Consortium, Esprit Project ESP/800 Strasbourg,
+8 July 1985
+
+Hamblen, John W.
+
+Computer Manpower - Supply and Demand by States.
+Quad Data Corp., Tallah~ssee, 1984
+
+Jones, Victor E., et al
+
+Final Report of the Software Acquisition and Development
+Working Group, July 1980
+
+Jorstad, Norman D., et al
+
+Report of the Rights in Data Technical Working Group
+(RDTWG) 23 January 1984 (IDA Record Document D-52)
+
+Lieblein, Edward
+
+"The Department of Defense Software Initiative - A Status
+Report," Communications of the ACM,; 29, 8, August, 1986
+
+Munson, John B., et al
+
+Report of the USAF Scientific Advisory Board Ad Hoc
+Committee on the High Cost and Risk of Mission-Critical
+Software December 1983
+
+NSF
+
+"Projected Response of the Science, Engineering, and
+Technical Labor Market to Defense and Nondefence Needs:
+1982-87." NSF Report NSF84-304. 1984
+
+Parnas, David L.
+
+"Designing Software for Ease of Extension and
+Contraction, IEEE Trane on SE, 5, 2, March 1979, 128-138
+
+Redwine, Samuel T., et al
+
+DoD Related Software Technology Requirements Practices,
+and Prospects for the Future
+(IDA Paper P-1788) June 1984
+
+Samuelson, Pamela
+
+Toward a Reform of the Defense Department Software
+Acquisition Policy (Working Paper)
+
+Selin, Ivan, et at
+
+Interim Report on Air Force Base Level Automation
+Environment, National Research Council, National Academy
+Press, June 1985
+
+Taft, William H., IV
+
+Memorandum to the Joint Logistics Commanders,
+12 August 1985
+
+Vetter, Betty M.
+
+The Technological Marketplace: Supply and Demand
+for Scientists and Engineers. Scientific Manpower Commission,
+Washington, 1985
+
+Vick, Charles R., et at
+
+"Methods for Improving Software Quality and Life Cycle
+Cost," AF Studies Board, National Academy Press, 1986
+
+49
+
+%Weinberger, Casper W.
+
+"Remarks Delivered at the Ada Expo 1986"
+
+Yaru, Nicholas, et at
+
+Army Science Boari Study on Acquiring Army Software, 1983
+
+Zracket, Charles A., et a1
+
+'lnitiatives to Improve the Development of USAF CsI
+Software,* MITRE, March 1984
+
+I
+
+50
+
+%Appendix AS
+
+-
+
+Why Is Building Software Hard?
+
+There are no radical breakthroughs now in view; moreover the very nature of software
+makes it unlikely that there will be any - no inventions that will do for software
+productivity, reliability, ald simplicity what electronics, traiistors, large-scale integration
+did for computer hardware. We cannot expect ever to see two-fold gains every two years.
+To see why this is so, and to determine what actions we must follow instead of hoping
+tor breakthroughs, let us examine the difficulties of the software development process.
+We divide them into essence, the difficulties inherent in the nature of the software, and
+non-inherent probleima, those difficulties which today attend its production but which are
+not inherent.
+The non-inherent problems I discuss in the next section. First let us consider the
+essence.
+The esserce of a software entity is a construct of interlocking concepts: data sets,
+relationships aunong data items, algorithms, and invocations of functions. This essence is
+abstract, in that the conceptual construct is the same under many different representatiuus.
+It is nonetheless highly precise and richly detailed.
+I believe the hard part of building software to be the specification, design, a.d testing
+of this conceptual construct itself, net the labor of representing it and testing the fidelity
+of the representation. We still make syntax errors, to be s':r.,e; but they are fuzz compared
+to the conceptual errors in most systems.
+If this is true, building software will always be hard. There is inherently no magic.
+Let us consider the inherent properties of this irreducible espence of modern software
+systems: complexity, conformity, changeability, and invisibility.
+Complexity
+Software entities are mcre complex for their size than perhaps any other human
+construct, because no two parts are alike (at least above the statement level). If they
+are, we make the two similar parts into one, a subroutine, open or closed.
+
+In this
+
+respect software systems differ profoundly from computers, buildings, or automobiles,
+
+where repeated elements abound.
+Digital computers are themselves more complex than most things people build; they
+have very large numbers of states. This makes conceiving, describing, and testing them
+* This appendix is an extract from "No Silver Bullet", an invited paper presented in
+Dublin by F. P. Brooks at the 1986 Congress of the International Federation of information
+Processing. The full paper is in the Congress Proceedings.
+51
+
+%hard. Software systems have orders of magnitude more states than computers do.
+Likewise, a scaling-up of a software entity is not merely a repetition of the same
+elements in larger size, it is necessarily an increase in the number of different elements.
+In most cases, the elements interact with each other in some non-linear fashion, and the
+complexity of the whole increases much more than linearly.
+Many of the classical problems of developing software products derive from thia
+essential complexity and its non-linear increases with size. From the complexity comes
+the difficulty of communication among team members, which leads to product flaws, cost
+overruns, schedule delays. From the complexity comes the difficulty of enumerating much
+less visualizing, all the possible states of the program, and from that comes the unreliability.
+Computer programs do not break or wear out. The bugs one finds are either design flaws,
+implementation errors, or are the consequences of changed environments and interface.
+From the complexity of the functions comes the difficulty of invoking those functions,
+which makes programs hard to use. From complexity of structure comes the difculty of
+Extending programs to new functions without creating side effects. From complexity of
+structure come the unvisualized states that constitute security trapdoors.
+Not only technical problems, but management problems as well come from the
+complexity. It makes overview hard, thus impeding conceptual integrity. It, makes it hard
+to find and control all the loose ends. It creates the tremendous learning and ,inderstanding
+burden that makes personnel turnover a disaster.
+Conformity
+Complexity alone is nothing unique to the software discipline. Phyaics deals with
+terribly complex objects even at the "fundamental" particle level. The physicist labors
+on, however, in a firm faith %hatthere are uuifying principles to be found, whether in
+quarks or in unified field theorie.. Einstein repeatedly argued that there must eventually
+be simplified explanations of nature, bet.,.-iae God is not capricious or arbitrary.
+No such faith comforts the software engineer. Much of the complexity he must master
+is arbitrary complexity, forced without rhyme or reason by the many human institutions
+and systems to which his interfaces must conform. These differ from interface to interface,
+and from time to time, not because of necessity but only because they were designed by
+different people, rather than by God.
+In many cases the software must conform because it has most recently come to the
+scene. In others iv must conform because it is perceived as the most conformable. But
+in all cases, much complexity cnmes from conformation to other interfaces; this cannot be
+simplified out by any redesign of the software alone.
+
+52
+
+%Changeability
+The software entity is constantly subject to pressures for change. Of course, so
+are buildings, cars, computers. But manufactured things are infrequently changed after
+manufacture; they are superseded by later models, or essential changes are incorporated
+in later-aerial-number copies of the same basic design. Call-backs of automobiles are really
+quite infrequent; field changes of computers somewhat leas so. Both are much less frequent
+than modifications to fielded softwaze.
+Partly this is because the software in a system embodies its function, and the function
+is the part which most feels the pressures of change. Partly it is because software can be
+changed more easily - it is pure thought-stuff, infinitely malleable. Buildings do in fact
+get changed, but the high costs of change, understood by all, serve to dampen the whims
+of the changers.
+All successful software gets changed. Two processes are at work. As a software product
+is found to be useful, people try it in new cases at the edge of, or beyond, the original
+domain. The pressures for extended function come chiefly from users who like the basic
+function amd invent new uses for it.
+Succezsful software also survives beyond the normal life of the machine vehicle for
+which it is first written. If not new computer3, then at least new disks, new displays, new
+printers come along; and the software must be conformed to its new vehicles of opportunity.
+In ehort, the software product is embedded in a cultural matrix of applications, users,
+laws, and muchinc vehic!es. These all chonge continually, and their changes inexorably
+force ch-.nge -upon the software product.
+Invisibility
+Software is invisible and unvisualizable. Geometric abstractions are powerful tools.
+The floor plan of a building helps both architect and client evaluate spaces, traffic flows,
+views. Contradirtcon* 'become obvious, omissions can be caught. Scale drawings of
+mechanical paits and stick-5gure moaeis of molecules, although abstractions, serve the
+same purpose. A geometric reality is captured in a geftmetric abstraction.
+The reality of software is not inherently embedded in space. Hence it has no ready
+geom'trkc reuresentation in tLe way that la.d has maps, silicon chips have diagrams, computers have cortriectivity schematics. As soon Ra we attempt to diagram software structure,
+we find it to constitute not one, bat severan, general directed graphs, superimposed one
+upon another The several grapi's may represent the flow of control, the flow of data,
+patterna of dependency, time sequence, name-spaLe relatioiships. These are usually not
+even planar, much lea hierarchical. Indend, one of the ways of establishing conceptual
+co.,trol over such structure is to enforce link cutting until one or more of the graphs
+becomes hierarchical [Parnas, 1979].
+In spite of progress in restricting and simplifying the structures of software, they remain
+inherently urvisualizable, thus depriving the mind of some of its moct powerful conceptual
+
+%tools. This lack not only impedes the process of design within one mind, it severely hinders
+communication among minds.
+Past Breakthroughs Solved Accidental Difficulties
+If we examine the three steps in software technology that have been most fruitful in
+the past, we discover that each attacked a different major difficulty in building software,
+but they have been the non-inherent, not the essential, difficulties. We can also see the
+natural limits of each such approach.
+Highi-Level Languages
+Surely the most powerful stroke for software productivity, reliability, and simplicity has
+been the progressive use of high-level languages for programming. Most observers credit
+that development with at least a factor of five in productivity, and with concomitant gains
+in reliability, simplicity, and comprehenfibility.
+What does a high-level language accomplish? It frees a program from much of its
+incidental complexity. An abstract program consists of conceptual constructs: operations,
+data-types, sequences, and cornmmunication. The concrete machine program is concerned
+with bits, registers, conditions, branches, channels, disks, and such. To the extent that
+the high-level language embodies the constructs one wa~nts in the abstract program and
+avoids all lower ones, it eliminates a whole level of complexity that was never inherent in
+the program at all.
+The most a high-level language can do is to furnish all the constructs the programmer imagines in the ab'stract program. To be sure, the level of our sophistication in
+thinking about data structures, data types, and operations is steadily rising, but at an
+ever-decreasing rate. And language development approaches closer and closer to the
+sophistication of users.
+Moreover, at some point the elaboration of a high-level language becomes a burden
+that increases, not reduces, the intellectual task of the user who rarely uses thc esoteric
+constructs.
+
+I
+
+Time-Sharing
+
+Most observers credit time-sharing with a major improvement in. the. productivity of
+
+programmers and in the quality of their product, although not so large as that brought by
+high-level languages.
+
+Time-sharing attacks a quite different difficulty. Time-sharing preserves immediacy,
+and hence enables one to maintain an overview of complexity. The slow turnaround of
+batch programming means that one inevitably forgets the details, if not the very thrust,
+of what he was thinking when he stopped programming and called for compilation and
+
+54
+
+%execution. This interruption of consciousness is costly in time, for one must refresh. The
+most serious effect may well be the decay of grasp of all that is going on in a complex
+system.
+Slow turn-around, like machine-language complexities, is an unnecessary rather than an
+essential difficulty of the software process. The limits of the contribution of time-sharing
+derive directly. The principal effect is to shorten system response time. As it goes to
+zero, at some point it passes the human threshold of noticeability, about 100 milliseconds.
+Beyond that no benefits are to be expected.
+Unified Programming Environments
+Unix and Interlisp, the first integrated programming environments to come into
+widespread use, are perceived to have improved productivity by integral factors. Why?
+They attack the incidental difficulties of using programs together, by providing integrated libraries, unified file formats, and pipes and filters. As a result, conceptual
+structures that in principle could always call, feed, and use one another can indeed easily
+do so in practice.
+
+WM
+3W
+
+This breakthrough in turn stimulated the development of whole toolbenches, since each
+new tool could be applied to any programs using the standard formats. How much more
+gain can be expected from the exploding researches into better programming environments?
+One's inst.inctive reaction is that the big-payoff problems were the first attacked, and have
+been solved: hierarchical file systems, uniform file formats so as to have uniform program
+interfaces, and generalized tools. Language-specific smart editors are developments not
+yet widely used in practice, but the most they promise is freedom from syntactic errors
+and simple semantic errors.
+Perhaps the biggest gain yet to be realized in the programming environment is the use
+of integrated database systems to keep track of the myriads of details that must be recalled
+accurately by the individual programmer and kept current in a group of collaborators on
+a single system.
+"M
+N2
+
+~Surely
+this work is worthwhile, and surely it will bear some fruit in both productivity
+and reliability. But by its very nature, the return from now on must be marginal.
+Conclusion
+All of the technological attacks of the software process are fundame ntally limited by
+the productivity equation:
+
+time of task
+
+=
+
+3(frequency)j x (time)i
+
+If, as I believe, the conceptual components of the task are now taking most of the time,
+*
+
+-- - - - - - -- - - - - - - -- - - - - --
+
+55
+
+%then no amount of activity on the task components that are merely the expression of the
+concepts can give large productivity gains.
+We are left with the inherent task - getting the complex concept. right, and changing
+them correctly as the world keeps changing about them. This is a human activity, and a
+ltabor-intensive one.
+
+56
+
+%Technical Report
+8E1-6-TR-2
+September 1986
+
+Proposal for a New "Rights In Software" Clause
+for Software Acquisitions by the Department of
+Defense
+
+Pamela Samuelson
+
+Appt wed for public release.
+Distrbtlon unlimited.
+
+Software Engineering Institute
+Carnegie Mellon University
+Pittsburgh, Pennsylvania 15213
+
+%Table of Contents
+
+1I Background1
+2. Issues3
+
+2.1 Should DoD Adopt a "Standard Rights In Software Clause"
+and Take Software Out of the Technical Data Rights Clause?
+2.1.1 Resomns that Support a Separate "Rights InSoftwre"Polkcy
+2.1.2 Reasons not to Adopt a Separate Software Acquisition Clause
+2.1.3 Conclusion
+2.2 What might a Standard Rights In Software Clause Look Uke?
+2.2.1 The M,4del Standard Rights In Software Clause
+2.2.2 Commeltry to the Model Standard Rights In Software Clause
+2.3 It DoD Does Not Adopt a Separate Rights In Software Clause,
+How Should It Revise the Standard Data Rights Clause to Improve
+its Software Acqi~sltion Practices?
+2.3.1 Definitions
+2.3.2 Policy as to Publicly Funded Software
+2.3.3 Policy as to Privately Funded Software
+3. Conclusion
+
+58
+
+I V
+
+Ir-
+
+rlu
+
+i'
+
+~
+
+.
+
+~.~~
+
+k "C~~
+VIV. V WN LU~\.N1LV
+
+bU%1 V
+
+.I
+
+LP%<
+
+X.X
+
+3
+3
+5
+7
+7
+7
+10
+13
+13
+15
+17
+21
+
+%Proposal for a New "Rights In Software"
+Clause for Software Acquisitions by the
+Department of Defense
+Abstract
+This report recommends three distinct regulatory strategies for addressing difficulties the
+Department of Defense (DoD) has been experiencing with respect to legal Issues related
+to software acquisitions. First, the report reiterates the Software Licansing Project's earlier recommendation that the DoD adopt tne proposed Federal Acquisition Regulation
+(FAR) data rights provisions instead of the proposed revisions to the DOD supplement to
+the FAR (DOD FAR SUPP).
+Secondly, in the event that the Defense Department chooses to adopt a data rights
+procurement policy different from that found in the data rights provisions of the proposed
+FAR, this report recommends that the DOD adopt a separate "Rights in Software' clause
+for software acquisitions, rather than continuing the present practice of handling software
+procurements under the "Rights in Technical Data" clause. Reasons in support of a
+separate software acquisition policy, as well as a beginning model "Rights in Software"
+clause are offered.
+Finally, in the event that the DoD elects to retsin the procurement format presently found
+in the DOD FAR SUPP provisions governing software and technical data acquisitions,
+this report offers several concrete recommendations for changes to those regulations
+*which
+should result in a procurement policy which more effectively meets the mission
+needs of the Defense Department.
+
+1. Background
+The Softwaro Licensing Project (SLP) of the Software Engineering Institute (SEI) has written two
+previous reports on the Department of Defense's (DOD) software acquisition policy. The first of these
+reports was 'Toward a Reform of the Defense Department Software Acquisition Policy,, CMU/SEI-86TRI [2] (hereinafter referred to the "First Report'). It surveyed a range of problems that DOD personnel had identified as software licensing problems currently being experienced by DoD. One chapter
+of the First Report was devoted to an analysis of the data rights regulations that govern acquisitions
+of software by DoD. The First Report concluded that a substantia: revision of DOD's standard data
+rights clause would be desirable.
+The second SLP report was "Comments on the Prcpused Federal and Defense Acquisition
+Regulations," SEI-86-*,TM2 [1] (hereinafter referred to as the 'Second Report'). It recommended that
+the Department of Defense adopt the proposed Federal Acquisition Regulation (FAR) data rights
+provisions instead of its proposed revisions to its supplement to the FAR data rights regulations. The
+Second Report made this recommendation for four reasons: (1) The proposed FAR data rights
+regulations present a more concise and comprehensible regulatory scheme than either the current or
+
+59
+
+%proposed DoD regulations. (2) The proposed FAR data rights policy is also more compatible with
+standard software commercial practices and provdes more incentives for industry to make its best
+technology available to the government than does the DOD policy. (3) At the same time, the proposed FAR data rights pol;cy would give to the government a number of rights that DoD would seem
+to need to fulfill its mission (including rights which the current and proposed DoD regulations fail to
+claim for DoD). (4) Both statutory and policy reasons support having a uniform set of federal data
+rights regulations rather than having two policies, one for DoD and one for all other federal agencies.
+This report is the third SLP Report to concern itself with the DoD procurement regulations affecting
+software. While we continue to stand on our recommendation that DoD adopt the FAR data rights
+provisions, we understand that for various reasons, the Department of Defense may find it undesirat,'e to adopt the proposed FAR data rights policy and may decide to continue with its separate data
+rights policy.
+In the event that DoD chooses to continue its separate approach to software acquisitions, we would
+have the Department of Defense consider three further recommendations which are set forth in this
+report. First, we recommend that the DoD create a separate "standard rights in software clause', that
+is, to break software out of the standard technical data rights clause. Some part of the reason why
+DoD has experienced so much difficulty in its software acquisition policy is, we believe, due to the
+quasi-technical-data-rights orientation o! its present policy, an orientation which is inappropriate for
+software acquisitions.
+Second, we offer a draft standard "rights in software" clause fo., DoD's consideration. This clause
+provides for separate treatment of software acquisitions, d-stinct from that accorded technical data
+under the standard data rights clause. This "rights in software" clause presents several unique features which distinguish it from the standard data rights clause. These include: the inclusion of
+software documentation wifhin the definition of the term "software," the establishment of government
+purpose rights as the standard "ceiling" of rights that the government obtains in publicly funded software, and the provisicon that software will retain its restricted rights status even when slight modifications are made at the request of the government.
+Third, in tVa event that DoD chooses not to adopt our first two recommendations, and decides to
+retain the basic structure and content of the existing standard data rights clause, there are still a
+number of specific changes to that clause, as it affects software, that we believe would be in the
+government's best interest to adopt. There are 22 specific recommendations for changes to the text
+of the DoD standard data rights clause discussed within, all of which would, in our view, improve
+DoD's software acquisition process.
+
+2
+
+60
+
+%2. Issues
+2.1. Should DoD Adopt a "Standard Rights In Software Clause" and
+Take Software Out of the Technical Data Rights Clause?
+For well over a decade, DoD has acquired rights In software by means of the same standard clause
+as that used to acquire rights in technical data (DoD FAR SUPP sec. 52.227-7013, also known as the
+standard data rights clause, referred to hereinafter as "SDRCO). We understand that the Department
+Is currently considering adopting a separate clause for its acquisitions of rights in software, that Is,
+breaking software out of the technical data rights provisions of the SDRC. Although we believe that
+the Department can have a substantially improved software acquisition policy without such radical
+surgery to the SDRC (after all, we have recommended adoption of the FAR data rights policy which
+retains a unified technical data and software policy), we believe that, on the whole, tie Department
+would be well served by making the change to a separate rights in software policy for the reasons
+discussed below.
+
+2.1.1. Reasons that Support a Separate "Rights In Software" Policy
+2.1.1.1 The current DoD policy already partially dlfferenthites software from technical data.
+Although DoD has long had a policy of acquiring rights in software under the same SDRC that is used
+in acquisitions of rights in technical data, software has for some time been partially differentiated from
+technical data within the body of the SDRC. The most obvious difference is in the rights the government takes as a matter of course in privately developed software, as compared with privately developed technical data. Software's "restricted rights" are very restrictive (e.g., to particular computers)
+as compared with technical data's "limited rightsV which permits use or copying throughout the govemnment. This reflects that the Department has already recognized that software and technical data
+a\&I different. The SDRC also recogrizes that the rights that the government needs in software, and
+the limitations that are reasonable for industry to impose on the government's rights in software are
+different from those that pertain to technical data.
+The question we have beer, raising is whether software is differentiated enough in the SDRC and
+differentfated in the right ways. For various reasons discussed in our First Report, we believe that
+DoD has not yet adequately differentialted between tecnnical data and software. This is why, we
+beliove, derivative works rights which are critically important as to software, have been omitted from
+the technical data oriented SDRC, which defines unlimited rights without reference to a right to make
+derivative works. A separate software clause would facilitate appropriate differentiation between
+software and technical data.
+2.1.1.2 Economic reasons why software documentation should be treated differently from
+technical data.
+The function and purpose of software Is different from that of technical data. Software performs
+tasks; technical data merely conveys information. Because of this, the economics underlying the
+development and marketing of software and technical data are significantly different. Software gener
+
+3
+
+61
+
+...
+
+%ally involves significant research and development costs which can only be reouped through the
+marketing of the product, software Itself, whereas tevhnical data Isgenerally produced as an ancillary
+step Inthe process leading to production of the actual Item to be marketed.
+The critical point here Isthat the capital cost of design and development (including the cost of software tools andlor CAD/CAM programs which aided Inthe development effort) are recouped as part of
+the sale of the system, niot through sales of technical data that might have been generated Indeveloping the system. DoD's policy with respect to hardware systems takes this into account by treating
+hardware systems in a manner different than It treats technical documentation. DoD's present policy
+with respect to software, however, Is heavily technical data oriented, and does not allow software
+design costs to be recovered Inthe same manner.
+Thus, the economics of software development Indicate a need for breaking software (anid the documentation which is an Integral part of Its development and evolution) out from the quasi-technical data
+treatment it has thus far received. With regard to development costs and capitalization, software is in
+many ways more like a hardware component than It is like the technical documentation which supports the hardware. The DoD procurement policy needs to be structured so as to take account of
+these technical and economic similarities between software and hardware, as well as the dissimilarities between software and technical data.
+This policy should also recognize that unlike hardware, software is an evolutionary product - that Is,it
+is in a state of constant development as maintenance and enhancement work is continually done to
+improve upon and/or alter the functioning of the software. As an evolutionary product, the documentation supporting the software is in fact a critical part of the software product Itself. For this reason,
+the software documentation should be treated in the same manner as the executable version of the
+program. A property structured software acquisition clause can accomplish this.
+2.1 .1.3 Outside of the DoD regulations, different Intellectual property rights may attach to
+software than to technical data.
+
+Pei
+
+Software is a unique intellectual property in that it can be protected under the copyright law, trade
+secret law, and patent law. The unique nature of software allows itto be copyrighted without revealing all of its "secrets" which means that trade secret and copyright protection can coexist inthe same
+subject matter. It is rare for a firm to copyright technical data that the firm wanted to claim as a trade
+secret, because the Copyright Office generally makes any deposited work available for public Inspec.tion and copyright law treats such things as manufacturling instructions or engineering designs as
+"Ideas" which are in the public domain. Firms tend to keep manufacturing Instructions and other
+technical data solely as trade secrets. A separate clause to govern software acquisitions could take
+into account differences inintellectual property protection affecting software and technical data.
+2.1.1.4 The educational value of a separate software clause.
+A new clause to govern software acquisitions could accomplish a break with the past, and engender a
+move away from the quasi-data rights orientation which has pervaded software acquisitions. A new
+clause could pave the way to a now *mind set" for those who work in the area of software and data
+rights acquisitions. Such a clause would provide a point of departure for Te-educating procurement
+4
+
+62
+
+%personnel regarding the nature of software. In this way, It could create a fresh way of viewing
+software acquisitions, one more in line with the economic and technological realities of the software
+industry.
+2.1.1.5 Improving relations with Industry.
+It is unfortunate that relations between the software industry and the Department of Defense are at
+present somewhat strained over software data rights issues. Many industry representatives seem to
+feel that DoD software procurement policy is confiscatory. The adoption of a separate clause to
+govern software acquisitions, which would break such acquisitions out from the policies with which
+industry has been unhappy, could go far to improve government-industry relations. At the very least,
+the perception that DoD is making some effort to alleviate the areas of conflict with industry could be
+valuable in this regard.
+
+2.1.2. Reasons not to Adopt a Separate Software Acquisition Clause
+2.1.2.1 The overlap between software and technical data.
+A separate software clause is not necessary to significantly improve the DoD's software acquisition
+policy. Even we conclude that the FAR data rights policy, which retains a unified approach, would be
+an excellent policy for DoD. This is one reason not to break software out of the technical data clause.
+There are others as well.
+There is, for instance, some artifice in the distinction between software and technical data. Technical
+data car be incorporated into a computer data base, for example, which would seem to transform it
+"into software. in fact, virtually anything that can be written on paper can be transformed Into a
+machine readable form. The DoD would need to sort out the computerized technical data problem
+which its present regulat*.ons also fail to do but apart from this, software and technical data are
+sufficiently distinct that a separate policy is appropriate, as DoD's present SDRC a:ready demonstrates.
+2.1.2.2 Would DOD seem to be "caving In" to Industry if It adopted a separate software
+clause?
+Since software resembles technical data and hin, long been treated within the technical data policy,
+and since the software industry has been lobbying for a special software policy, one problem that
+DoD may see with a separ- a software clause is that it may appear to some that the DoD would be
+too generous to industry, especially if the Deportment allows industry to retain greater rights in software than in technical data. DoD's response to such charges should, however, be that the d;ffererntial
+treatment of software would actually save the government money in that the government would not
+be forced by the regulations into purchasing the more expensive "govemment-wide rights" to software
+documentation in those instances where a site license is adequate to the needs of the government
+and that better software at lower development costs will be made available to the government if it
+provides better incentives to the software industry. Such responses should serve to silence the
+critics.
+2.1.2.3 The iseed to retrain DoD's contracting personnel as to any new software clause.
+
+oil"
+
+63
+
+%A separate rights clause to govern software acquisitions has the potential to further complicate the
+DoD acquisition process. Those who have long experience with the SDRC have become used to
+muddling through the present system. They would have to be retrained about rights in software, and
+this is no small job.
+The DoD needs, like private Industry, to be Involved In the evolution of a conceptualization of software
+and software acquisition which Is consistent with the technological, economic and legal realities of
+software development. A separate treatment for software, along with the retraining which would need
+to be undertaken in conjunction with such a change, could go a long way toward developing a new
+and more dynamic conceptual framework for dealing with software.
+2.1.2.4 The desirability of an overhaul of the DoD procurement policy as to Intellectual
+property.
+The DoD would benefit greatly from a more substantial overhaul of the procurement regulations to
+make them more compatible with traditional and newly developing intellectual property law. A more
+integrated, more unified intellectual property policy could bring together DoD's policies as to
+copyright, patent, semi-conductor chip design, trade secret and trademark law. Advances in new
+technologies are bringing together and blurring the the lines between these traditional forms of intellectual property protection. As the new technologies continue to advance, the need to integrate
+policies in these areas will become more acute. Additionally, government attorneys working In the
+software/data rights area must of necessity have some grounding in the traditional forms of intellectual property law. Given this, it seems wise for DoD to draw upon the knowledge and expertise
+already possessed by its lawyers involved in this area by making its policies consistent with the
+already existing body of intellectual property law.
+A separate clause for software acquisitions will contribute to a fractionated rather than a unified
+system of intellectual property regulations. The time and energy expended in adopting a separate
+software acquisition clause would probably be at the expense of efforts which might othewise have
+been invested in developing a broader. more integrated Intellectual property policy for the department, a policy which needs generally to be more integrated with copyright and trade secret law.
+
+2.1.3. Conclusion
+On the balance, we believe that the advantages presented by a separate software acquisition clause
+outweigh the potential disadvantages. We would recommend, therefore, that the DoD adopt a software acquisition clause as part of its procurement regulations. A suggested model clause Is included
+in this report. It should be noted that the clause, while offering a fresh approach to software acquisition, only touches briefly on software maintenance and enhancement. In recognition of the critical
+importance of these issues, the next phase of this project's research will focus specifically on these
+issues. A more in-depth treatment of maintenance and enhancement will be forthcoming with the
+project's next report.
+
+6
+
+64
+
+%2.2. What Might a Standard Rights In Software Clause Look Like?
+2.2.1. The Model Standard Rights in Software Clause
+(a) Definitions
+As used in ,his clause, the following terms have the following meanings:
+
+government purpose
+the fulfillment of a legitimate federal government function, Including uses or disclosures for competitive reprocurements and maintenance and enhancement purposes; the term includes disclosure to and use by other contractors and any
+state, local or foreign government where such disclosure or use will fulfill a
+legitimate federal government purpose; the term does not Include a general distribution of the software to defense contractors or other more limited distributions of
+the software that may have a significant negative etiect on the commercial market for such software. Nor does it include a disclosure that permits the recipient
+to disseminate the software without restriction or to develop software for nongovernmental
+sales in competition with the owner of intellectual property rights in
+it.
+government purpose license
+a license to the federal government that grants the government rights to use,
+duplicate, disclose, distribute, prepare derivative works, and publicly display software for government purposes, and to authorize others to exercice such rights
+when doing so will fulfill a legitimate federal governmental function. When software provided to the government by one contractor is distributed or disclosed by
+the government to a subsequent contractor for a government purpose, the subsequent contractor shall be bound by the terms of the govemment purpose license.
+restricted rights license
+a license to the federal government that at a minimum grants the government
+rights
+(1) to use software in the computer for which the software was acquired;
+(2) to use software in a backup computer ifthe computer for which it was
+acquired becomes inoperable;
+(3) to make copies of the software necessary for backup and reverse
+engineering purposes;
+(4) to adapt and modify the software; and
+(5) to authorize support contractors to exercise the rights described In (1)
+through (4), subject to the same restrictions as bind the government.
+restricted rights software
+software that has been developed at private expense, including software as to
+which only slight modifications are made to adapt it for the government needs
+with public funds. The term "developed" means fixed In a tangible medium of
+expression. The term "at private expense" means entirely funded by the contractor and without any government reimbursement, direct or undirect other than
+through IR\&D co=t allocations.
+software
+computer programs, computer data bases, and documentation pertaining thereto
+Including but not limited to such programs in any machine readable printed or
+interpreted form, system reference manuals and user manuals.
+
+7
+65
+CM
+
+wu~
+
+n
+
+h
+
+4
+
+~~
+
+A
+
+~J
+
+1LN
+
+A
+
+r
+
+~iU
+
+~
+
+*
+
+~
+
+J
+
+M~N
+
+.
+
+%(b) Rights of the Govemment
+(1) Public Domain Software: Thero shall be no restrictions
+on the government's right to use, duplicate, disclose, distribute, display or make derivatives of software that is in the public domain.
+(2) Government Purpose Liconses: The government shall hav4e a government purpose license in all software deliverable under this contract that was developed at public expense. The
+government may also negotiate to obtain a government purpose license in software that was developed at private expense.
+(3) Restdicted Rights License: The government shall have a resticted rights license in all
+restricted rights software deliverable under this rontract. Written permission of the owner of such
+software will be required before the government may make or authorize other uses or disclosureas of
+this software.
+(4) Neautiating for Additiona' RiarL: The gova.mment may negotio-te to obtain more rights
+in restricted tights sotiware than the five stanidard rights that are narried in the definit;on of the
+restricted rights license. Additiona;;y, the government and contractor may nnfliate to define the
+uses the government may make of software within the scope of Wie government p, (pose license.
+(5) inco.]oration of Other Sofiware: When a contractor incoiporates into software to be
+delivered to the government modules or subroutines in which the contractor does not own all intllectua! property rights, th'j contractor shall obtain for Ihe government at least a restricted rights license in such incorporated modules or subroutines.
+(6) iohts from Sut-contractors: The govemment shall have the same minim•in rights in
+software developed by subcontractors as in software deve!oped by primo contractors.
+(7) Cha.enaing Restrictive Leaends
+legends.
+tive
+
+The government may challenge inappropriate restric-
+
+(c) Rights of ContVantors and Subcontactore
+(1) Ownership: Unless the special works clause has i)een invoked, whoever develops software deliverable under this contract shal! be considered the owner of all intellectual property rights in
+it, subject to a restricted rights or government purpose 1,cen3e to the govemment as provided in
+Section (b).
+(2) Restrictive Markings: The contractor or subcontractor who owns intellectual property
+rights in software may attach appropriate restrictive markings to the software in accordance with this
+clause.
+(3) Direct Delivery to the Government: Subcontractors under this contract may deliver
+restricted rights software directly to the government rather than to the prime cotrActor unless the
+software is needed by the prime contractor for installation in the system that the contractor is required
+to deliver to the govemrme.t.
+
+S8
+66
+
+%(4) _No Leverage: Neither the prime contractor nor any Intermediate subcontractor shall use
+its power to award subcontracts as a means of acquiring greater rights In software from its subcontractors than is needed to perform 1he government contract.
+(5) Flowdown to Subcontractor Whenever any software is to be obtained from a subcontractor under this contract, the contractor shall use this same clause in the subcontract, without alteration.
+No other clause shall be used that will enlarge or diminish either the government's or the contractor's
+rights in the subcontractor's software which is to be delivered to the government.
+
+(d) Restrictive Legends
+(1) No Marking If In Public Domain: Software that is in the public domain shall be delivered
+with no restrictive markings.
+(2) Government Purpose Rights Legend: Software in which the government has government purpose rights is to be delivered to the government with the following restrictive legend:
+Government Purpose Rights
+Property of: (contractor or subcontractor's name)
+Standard Restricted Rights Legend: Restricted rights software in which the government has only the
+standard five minimum rights are to be delivered to the government with the following restrictive
+legend:
+Restricted Rights
+Property of: (contractor or subcontractor's name)
+(4) Other Restricted Rights Legend: When the government and the contractor (or
+subcontractor) have negotia!ed an arrangement whereby the government will get more than the standard five inir.murn rights in restricted rights software, the software shall be delivered with the following re;trictive !egend:
+Expanded Restricted Rights
+Property of: (contractor or subcontractor's Name)
+Contract No:
+(5) Coovriaht Notices: Unless the special works clause has been Invoked, the owner of
+intellectual property rights in software may attach appropriate copyright notices to software delivered
+under this contract.
+
+2.2.2. Commentary to the Model Standard Rights In Software Clause
+There are a number of respects in which this standard rights in software clause differs from the
+"- C, among them:
+* that software is defined to Include documentation;
+e that governmental purpose rights are the standard "ceiling" of rights that the government
+has in publicly funded software;
+
+I
+67
+
+9
+
+%"*that there is no differentiation in the level of the govemnment's rights dependent on
+whether or not the contractor copyrights the software;
+"*that the government will have a right to prepare, or authorize prepar~thon of, derivative
+software from software developed at public expense;
+"*that software will niot lose its restricted rights status If only slight modifications are made
+to it at the request of the government;
+"*that use by support contractors (subject to restrictions binding the government) Is Included Inthe set of restricted rights;
+"*that *developed* is defined in a manner more consistent with copyright than patent standards;
+"*that no explicit reference Is made as to the contractor's right to claim a copyright because
+we regard this as implicit Inthe clause's recognition of the developer's night to Intellectual
+property rights in the software.
+Before discussing some of these features, it may be helpful to describe the circumstances In which
+we would envision this clause being used.
+2.2.2.1 The quasi-mandatory nature of the standard clause.
+The SDRC is required to be inserted In all Defense Department software acquisition contracts. The
+present SDRC contemplates two situations in which the government's rights in the software may be
+different than those that the SDRC itself prescribes:
+1. When the government uses the special works clause in a software development contract, and
+2. When the contractor and the government negotiate an agreement giving the government more than the four standard minimum rights in privately developed software.
+
+I
+Ar
+
+The SDRC will govern all rights In software matters unless one of these circumstances is present.
+Our proposed standard software clause would operate in much the same fashion. That Is,itwould be
+a mandatory clause for insertion into all DoD software acquisition contracts unless one of a set of
+authorized alternate rights acquisition clauses was used in the contract. We would recommend retention of the two already authorized alternatives, and would recommend serious consideration of two
+other authorized alternatives, one permitting the government to negotiate for less than government
+purpose rights when there is substantial private funding of the software's development in addition to
+some public funding, and another for acquiring less than the standard set of minimum rights In software tools and CAD/CAM programs.
+
+2.2.2.2 A
+"mixed funding" alternative to equitably distribute rights based on public and
+
+private funding.
+As one alternative to the standards "rights In software" clause, the DoD should consider adopting a
+clause which would equitably allocate rights in software In mixed funding situations. The DoD Authorization Act of 1985 seems to contemplate adoption of a data rights policy that differentiates be*tween wholly government funded and partly government funded projects. DoD's present regulations
+*have not responded to this Congressional directive. The DoD would, of course, need to address
+issues regarding what forms of contribution to a project constitute private funding (resources or cash).
+what degree of private funding would be necessary to trigger the mixed funding alternative, how much
+flexibility to allow contracting personnel in structuring mixed funding arrangements, and the like.
+
+%2.2.2.3 An alternative clause to obtain less than the standard minimum rights In software
+tools and CAD/CAM programs.
+Additionally, the DoD might consider adopting another alternative allocation of rights clause, one
+which would allow the DoD to obtain less than minimum rights in certain items such as software tools
+and computer aided design/computer aided manufacturing (CAD/CAM programs). Since software
+tools and CAD/CAM programs are such valuable resources of private firms, contractors are loath to
+provide these tools to the government under the standard rights arrangements. It would seem that
+DoD would be wise to provide in its regulations the flexibility to negotiate for some access to these
+items, on the theory that partial access will in some instances be better than none at all. It is in DoD's
+interest to assure contractors that they can provide their best technology to the DoD without tear of
+loss of these rights in their software.
+2.2.2.4 Why government purpose rights Is the standard celling of rights under the clause
+Instead of unlimited rights.
+As our First Report has indicated, it seems that under the standard data rights clause the government
+now obtains government purpose rights rather than unlimited rights in publicly funded software in
+which the contractor claims a copyright. It is not clear why the government has chosen to provide this
+incentive to contractors to copyright software. After studying this matter, we have concluded that
+there should not be a difference in the extent of the government's rights depending on whether the
+software is copyrighted by the contractor. Because it appears that the government is already willing
+to accept government purpose rights for copyrighted software developed at public expense, we believe it is reasonable for the government to use the same policy as to all publicly funded software.
+Indeed, we fail to see why the government would ever need more than government purpose rights in
+publicly funded software.
+2.2.2.5 The definition of the term "developed" should be grounded In principles of copyright
+law.
+The approach DoD has taken toward defining "developed* within the meaning of "developed at
+private expense" has been a patent-oriented definition of the term. Indeed, the government's patent
+lawyers seem to have diligently and aggressively attempted to use a patent standard toward software
+development so as to establish for the government as broad a set of rights as possible in software.
+As discussed in the First Report, one result of claiming this broad set of rights for the government has
+been to create significant disincentives for contractors to deliver their best technology to the government.
+The model clause takes a more copyright-like approach to defining "developed." Because software Is
+copyrightable, and copyright law allows intellectual property rights to attach whenever a work is fixed
+in a tangible medium of expression, it seems appropriate for the government regulations applicable to
+software to be more consistent with this body of intellectual property law (which Is,after all, the most
+Important body of federal intellectual law affecting software). (Although software may sometimes be
+patentable, software patents are much rarer than software copyrights.) A copyright approach to a
+definition of "developed" would also be more consistent with the nature of the software development
+
+69
+
+04%
+
+1
+
+%process. Unlike hardware, software Is almost continually In the process of development. Copyright
+law which Is attentive to this evolutionary nature of software, Is more appropriate than a patentoriented standard.
+We recognize that because software Is a hybrid, lying somewhere between traditional copyright and
+patent subjeel matters, it Is difficult to find the appropriate location on the continuum as to when
+software is "developed" or not developed. The proposed DoD regulatory standard would seem to call
+for software to have gone through extensive testing before it can be deemed developed. We consider this to be one extreme of the continuum. The "fixed In a tangible medium" standard which we
+have chosen to include in the model clause may represent the other extreme.
+In shoosing this standard, we were deferring to the copyright law since that is the nearest bf., of
+intellectual property law applicable to software. We offer this definition as a point of discussion, and
+understand that DoD may prefer a mo:e operational definition. As a viable alternative to the definition
+we have presented, the DoD might consider a compromise between the copyright approach to the
+definition of *developed" and an operational definition which does not require the developer to go to
+an extensive degree of testing before software can be deemed developed. It is important that such a
+definition recognize that software Is in a state of continual development and Improvement which
+makes impractical any definition which focuses on finished products. This conflict points out the
+predicament encountered by government and industry alike In dealing with this strange hybrid subject
+matter. To the extent software is like hardware, it would seem an appropriate subject matter to hold
+to the higher, more operationally oriented standard of development under the patent law, and to the
+extent it is like technical data and is subject to continual modification, it seems more appropriate to
+the more flexible standard for development found in the copyright law. This is a dilemma, but DoD
+has already tried unsuccessfully to adopt a patent standard for defining "developed" and found the
+software industry to be so hostile to it that another approach must be found.
+..2.2.6 Respects In which the model standard rights In software clause Is more advantageous
+to the DoD than the SDRC.
+In addition to the benefits the DoD would realize as a result of eliminating disincentives which cause
+some developers to withhold their best technology from the DoD, there are several respects in which
+the model standard rights in software clause gives to the DoD broader rights than those which it
+would acquire under the present treatment of software acquisitions under the SDRC. These Include:
+* the right to reverse engineer as a minimum right in software acquisitions;
+* the right to license support contractors as a minimum right in software acquisitions;
+° the right to make derivative works as an explicit part of the government purpose rights
+package;
+e a very broad definition of government purpose rights which includes such rights as use or
+disclosure for competitive reprocurements, as well as disclosure to and use by state,
+local and foreign governments.
+
+12
+7
+
+%2.3. If DoD Does Not Adopt a Separate Rights In Software Clause,
+how Should it Revise the Standard Data Rights Clause to
+Improve its Software Acquisition Practices?
+Sections 1 and 2 ol this report detail the reasons why a separate software clause may be in the
+DoD's best interests and then sets forth a model software rights clause for the Department's consideration. In the event the Department of Defense has not been convinced of the desirability of
+taking this approach, there is still much that can be done to improve the existing SDRC as it affects
+software. The following 22 recommendations are distillations of many of the points made in the First
+Report of the SLP. (Page and chapter numbers in parentheses below refer to the First Report.)
+
+2.3.1. Definitions
+2.3.1.1 Don't overdefine software terms.
+Six software-related definitions are included in the SDRC. Only three seem to be significant in the
+body of the standard data rights cdause -- software, software documentation, and commercial software. Only these three need to be defined. Also, the SDRC speaks constantly of "computer
+software" when it is only necessary to say "software", because 'computer" is already included In the
+software definition.
+
+4
+
+2.3.1.2 If thp distinction between commercial and other-than-commercial software Is to be
+retained, provide a more precise definition of what Is meant by commercial computer
+software.
+The SDRC provides for two different sets of restricted rights applicable to privately developed software, one for "commercial" software and one for other software (or commercial software whose
+owner opts to have it treated as other-than-commercial software). (Different restrictive legends are
+supposed to be attached to software, based on what kind of software is to be delivered.) Unfortunately, the existing definition of "commercial computer software" is so vague as to be a poor guide
+as to what software will qualify for commercial restricted rights treatment (see pp. 23-4).
+2.3.1.3 If two sets of restricted rights for privately developed software are retained, the definitional section of the clause should Include and define both sets of restricted rights.
+As noted above, there are two categories of privately developed software which are presently subject
+to different sets of restricted rights. The definitional section of the SDRC sets forth only one definition
+of restricted rights, which a later section of the SDRC seems to make applicable only to other-thancommercial software. The other set of restricted rights, those applicable to commercial software (and
+its documentation), are not set forth until subsection (b)(3)(ii). In order to achieve consistency, these
+"commercial restricted rights" should also be set forth in the definitional section of the clause. (p. 26.)
+2.3.1.4 Define what Is meant by "government purpose," perhaps clarifying Its meaning by
+providing some examples.
+
+
+%DoD policy allows a contractor to copyright any software developed under a government contract
+(unless it is a "special work'). Subsection (c) of the SDRC provides that the contractor must grant to
+the government a copyright license "for government purposes" as to any work in which he has taken
+a copyright. However, there is no definition of *government purpose,' either in that subsection or In
+the definitional section. This omission creates uncertainty as to the extent of the government's rights
+in publicly furnded copyrighted software (see pp. 6, 24-5, and Chapter 7).
+2.3.1.5 Expand the definition of unlimited rights to Include the right to prepare derivative
+works.
+The present SDRC definition of unlimited rights fails to make explicit whether the government will
+have the right to prepare derivative works when it has unlimited rights In software. Such a right is
+particularly important as to software because maintenance, enhancement, reuse, translation, rehostIng and retargeting are all dependent on having such a right (see pp. 19, 54, 72). The fact that that
+the proposed Fedetal Acquisition Regulations (FAR 52.227-14(a)) would give other governmental
+agencies a derivative works right in unlimited rights software •;,.uid weaken DoD's argument that the
+derivative works right is Implicitly Included in its unlimited rk[hts policy. In light of the Importance of
+this right to DoD, it would seem prudent for DoD to take the precaution of including the derivative
+works right within its unlimited rights.
+
+2.3.2. Policy as to Publicly Funded Software
+2.3.2.1 Clarify that unlImited rights is a kind of license, not an ownership right.
+The project's research revealed that DOD personnel had at least four different interpretations of the
+meaning of unlimited rights vis a vis ownership rights.. Intellectual property law would likely treat
+"•unlimited rights" as a broad license, not as an ownership interest. In order to avoid future misunderstandings and possible litigation, this concept needs to be clarified (see pp. 24-25, Chapter 7).
+2.3.2.2 Clarify DoD's intent as to the effect a contractor's claim of copyright In publicly
+funded software will have on the government's rights In publicly funded software.
+There is an ambiguity in the present SDRC concerning the extent of the government's rights in
+copyrighted software d3weloped at public expense. One part of the SDRC seems to give DoD unlimited rights in it because it was developed at public expense and another part gives the government
+only govemmert purpose rights if the contractor decides to retain a copyright in the software. DoD
+should clarify its Intent on this matter.
+2.3.2.3 If DoD decides to retain the apparent policy of allowing a contractor's copyright to cut
+back the government's unlimited rights license to a government purpose license, It should
+require the contractor to give DoD early notice of his Intent to claim copyright.
+A further disadvantage of the present SDRC as regards contractor copyrights in publicly funded
+software is that it appears that the government will typically not know the extent of its rights - whether
+unlimited rights or government purpose rights - until the software is delivered to the government, that
+is, until It sees whether the software was delivered with or without a copyright notice attached. The
+government may want to require notice of an Intent to claim copyright at the time the contract is
+entered Into so that it can plan accordingly.
+14
+
+7'r.
+
+%2.3.2.4 Revise the special works clause so that DoD will be able to take broader rights in
+software when It needs them.
+The DoD's special works clause (DFARS 52.227-7020) purports to claim a direct copyright for the
+government under the "work for hire" doctrine. This clashes with Section 105 of the Copyright Act (17
+U.S.C. Sec. 105) which prohibits the government from taking direct ownership rights in copyrighted
+works. Use of the current special works clause would seem to have two effects: (1) to preclude the
+contractor from claiming a cop))TIht in the software and (2) to put the software into the public domain,
+since neither the government nor the contractor can own it.
+Since copyright law does permit the government to own copyrights by assignment, a copyright strategy similar to that adopted by NASA and proposed for the FAR should be considered by DoD. (p. 21,
+Chapter 5.)
+2.3..5 DoD should either give up Its claim of unlimited rights In non-deliverable software or
+make a deferred ordering clause standard.
+The SDRC seems to give the government unlimited rights in several categories of software, although
+their delivery may not be required by the contract (SDRC (b)(i).) Without the inclusion of a deferred
+ordering clause, it appears that the government would not have the right to require delivery of any of
+this non-deliverable software. The existence of this unenforceable inchoate right only serves to
+frustrate both the government and industry.
+We recommend that DoD examine whether it needs to claim unlimited rights in these nondeliverables. If it is decided that such a right is needed, a deferred ordering clause should be made a
+standard part of the contract (see pp. 19-20).
+2.3.2.6 In "mixed funding" situations, (I.e., where both public and privaie funds are used to
+develop the software DoD should provide an option for the government tc take less than unlimited
+rights.)
+This would provide needed incentives to software firms to invest some of their own capital in software
+development which could result in a higher quality product and in lower initial acquisition costs. it
+would also conform with the apparent congressional intent reflected in Section 2320 of the Department of Defense Authorization Act of 4985, (Public Law 98-525, 10 U.S.C. Sec. 2301, 2320.)
+One possibility would be to give the government unlimited rights in software developed with
+predominantly public funds (whether or not the software is copyrighted) and to take only "government
+purpose rights" when funding is predominantly but not exclusively private (see pp. 38-39).
+2.2.2.7 Surrender the potential unlimited rights claim to software documentation that might
+be In a manual or that might be construed as Instrt -1onal material for Installation, operation,
+maintenance or training purposes.
+Under the SDRC, the DoD acquires unlimited rights in manuals or instructional materials prepared or
+required to be delivered under a government contract for Installation, operation, maintenance or train-
+
+73
+
+%ing purposes, even though such manuals may have been developed at private expense and are not
+in the public domain.
+Although privately developed other-than-commercial-software may receive restricted rights treatment,
+manuals or instructional materials for such software, even though they contain proprietary Information, would seem to be governed by the unlimited rights provision. This creates a significant disincentive to do business with DoD and could lead to firms providing the government with no more than the
+barest minimum of documentation needed to meet contract requirements (see pp. 23-24).
+2.3.2.8 Examine the need for "unlimited rights" as opposed to "rights fer government
+pUrp•oses".
+In .Accordance with the regulatory policy that DoD shall acquire only such rights to use, duplicate and
+disclose software developed at private expense as are necessary to meet government needs, consideration should be given to restructuring the unlimited rights policy to afford the government unlimited rights only where they are truly needed (see pp. 38-43).
+
+2.3.3. Policy as to Privately Funded Software
+2.3.3.1 Add to the minimum restricted rights the government obtains In privately developed
+software the right to make a copy for reverse engineering purposes If necessary to make
+modifications.
+
+':
+
+The restricted rights provisions of the SDRC seems to limit the government's right to copy software to
+archival or back-up purposes. Although the minimum rights do include the right to modify the software, if insufficient documentation has been obtained or it is not possible to have the original contractor modify the software, the government may attempt to reverse engineer it. It is not clear under the
+regulations or the copyright law whether the modification right includes the right to make a copy for
+reverse engineering purposes. In light of the potential risks, it would be prudent for DoD to dearly
+state that it has this right. (p. 55.)
+2.3.3.2 Develop a standard policy for acquiring privately developed software for local area
+networks.
+Since local areas networks which share software are becoming more commonplace within DoD, the
+regulations should provide guidance about acquiring software intended for use in such networks. (p.
+27-28.)
+2.3.3.3 Clearly establish the status of restricted rights software which the government has
+modified.
+When the government modifies privately developed software in which it has restricted rights, the
+effect of that modification appears to vary, depending on whether the software is subject to commercial or other-than-commercial restricted rights. The SDRC provides that as to commercial software,
+"unmodified portions shall remain subject to these restrictions." However, modifications to other than
+commercial software are governed by another subsection of the clause, which provides that "those
+
+16
+
+74
+
+%portions of the derivative software incorporating restricted rfghts software are subject to tie sanw
+restricted rights." This apparentIy inconsistent treatment of modifications to restricted rights software
+Is extremely confusing and needs to be clarified. (p.66-5.)
+The ambiguity of the DoD regulations about ownership rights and restrictions as to software modifications may mean that ifthe original software Is protected by copyright law, ItIs copyright law that will fill
+In the gaps. Since modifications are derivative works, a host of copyright issues could arise which
+could substantially inhibit the government's use of the software to its maximum potential. (Chapter 4.)
+2.3.3.4 Consider eliminating the two different sets of restricted rights for commercial and
+other-than-commercial software developed at private expense.
+As noted above, the SDRC provides for two different sets of restricted rights for commercial and
+other-than-commercial software. There appears to be no clear rationale for this differential treatment
+and for the correstonding differential treatment of documentation. Moreover, neither the regulation
+nor policy provision provide any clear guidance as to when a piece of software qualifies for ormmercial or other-than-commercial treatment.
+The resulting confusion and amoiguity can be avoided by establishing a "floor of minimum rights
+which the government must have and then allowing arrangements between the "floor" of minimum
+rights and the "ceiling" of unlimited rights to be negotiated as the government's needs require
+(.,ee pp. 26-27).
+2.3.3.5 If DoD chooses to retain the distinction between commercial and other-thancommercial software, eliminate the potential unlimited rights claim In privately developed
+other-than-commercial software as to which no separate license agreement has bsen
+negotiated.
+
+4'
+
+When other-than-commercial software is being procured, the SDRC stipulates that a separate license
+agreement containing the applicable restrictions is to be negotiated and made a part of the government contract, (so long as the government obtains, at a minimum, the four minimum restricted rights
+set forth in the clause). When a firm provides privately developed software to DoD but has not
+negotiated a separate licensing agreement, an issue arises as to whether the government would get
+unlimited rights in the software or only the four minimum restricted rights. The existence of such a
+0potential "booby trap" in the regulations could be enough to dissuade the smaller, "high tech" companies from doing business with DoD with the result that the latest innovative software could be unavailable (see pp. 21-23). The SDRC should be revised to make clear that the govemment will have only
+the four standard minimum rights in privately developed other-than-commercial software when no
+separate licensing agreement is negotiated.
+2.3.3.6 Treat privately developed software documentation as subject to the same restrictions
+as the machine readable code.
+The SDRC treats commercial computer software and its documentation In a manner consistent with
+industry practice by providing that both machine readable code and documentation will be governed
+by the same set of restricted rights.
+17
+75
+
+A*A4AI
+
+F
+
+%Of
+
+In contrast, documentation for other-than-commercial software is not aubject to the same set of
+restricted rights as the machine readable code but is instead acquired by the government with 1lmited
+rights. This gives the government the right to use, disclose and duplicate the documentation throughout the government. Subjecting other than commercial documentation to the broader limited rights
+policy not only causes confusion but deters many software firms from selling rights in their most
+valuable technology to DoD. (p. 26-27.)
+2.3.3.7 Allow contractors to retain the privately developed status for software when only
+minor modifications are made to tailor It for government use.
+Under the DoD policy, if a company has developed a piece of software wholly at private expense, and
+thin under a government procurement contract, makes some minor modilfications to tailor it for intended government use, the company would forfeit restricted rights status for the delivered software if
+DoD funds subsidized the modification. This policy deviates from standard commercial practice, and
+is viewed by many software firms as inequitable.
+Consideration should be given to adopting the proposed FAR's more flexible approach which allows
+contractors to retain the privately developed status for their software when only minor modifications
+are made for the government (see pp. 25-26).
+2.3.3.8 Consideration should be given to restructuring the software procurement process so
+as to allow the government the flexibility to take less than the current minimum restricted
+rights In software and less than limited rights In documentation In certain situstions.
+In some situations iftmay be in the government's best interests to have the flexibility to acquire fewer
+rights in privately developed software than the current SDRC permits in exchange for certain concessions from the contractor. -This built-in flexibility could allow the DoD to satisfy a more pressing need
+such as:
+a) the need to get a warranty on the software which may not be possible unless the government
+agrees te permit the developer to perform all the maintenance work (Chapter 11);
+b) the need to create an escrow arrangement to obtain access to privately developed source code
+that the software firm would otherwise not provide at reasonable cost to the government (see pp.
+52-53); and
+c) the need to get acce ss to software tools and/or CAD/CAM programs (see pp..50-51, Chapter 10).
+2.3.3.9 Rename the pioposed "license rights" provision of the proposed SDRC, If a "fixed
+expiration" option Is to e preserved.
+The "license rights" co.-cept as originally conceived by the OSD Study Group was to enable the
+government to require its contractors to license competitors to use their proprietary data in competitive re-procurement (or maintenance) situations. However, the "license rights" option proposed by
+the DoD FAR Supplement appears to focus on obtaining expirations for restrictive legends. "License
+rights' is a misnomer for this set of rights, particularly in view of the fact that the SBIR provisions
+
+18
+
+76
+
+%refleci a very different "license rights" policy. Give the new policy a better name, perhaps "fixed
+expiration rights," so that people won't get confused. Ixis questionable whether this new option will
+be acceptable to industry which can always elect limited or restricted rights protection for its valuable
+technologies (see pp. 32-35).
+
+3. Conclusion
+it is important to observe that the problems which DoD is experiencing with its software acquisition
+policy are not unique to the government. The problems are being experienced industry-wide, and are
+due in large part to the unique nature of software and to the lag between the ability to conceptualize
+software as a product and the dbvelopment of the end product. The DoD, as the major single
+consumer of software, is in a unique and enviable po•;tion to address the difficulties being encoun•ared within the software industry, and to place itself on the leading edge of tie efhort to bring acquisition and licensing practices in line with the technical and economic realities of software development.
+By taking this leadership role, the DoD could do much to help maintain tho U.S. lead in software
+technology in the world.
+
+References
+[11
+
+Par la Samuelson.
+Coj ,ments on the ProposedDefense and FederalAcqv isition Regulations.
+Technical Repori SEI-86-TM-2, Softw3re Engineering Institute, Pittsburgh, PA 15213, 1986.
+
+[2]
+
+Pamela Samuielson.
+Toward a Re,orin of the Defense DepartmentSoftware Acquisition Policy.
+Technical Report CMU/SEI-86-TR-1, Software Engineering Institute, Pitts.burgh, PA 15213,
+
+" .1986.
+
+19
+77
+
+%Appendix A7 - A Proposal for an Ada Software Module Market
+An Ada Software Module Market enterprise could perhaps operate and become viable
+on the following basis:
+1. The ASOMM would be established for the purpose of supporting Ada through disseminating Ada modules. It would also accept Ada support tools written in other
+languages.
+2. The ASOMM would set standards for module catalog description that specify precisely
+the portability properties (e.g., "compiles and operates in Unix 4.2 bsd environments,
+including these which we have tested: SUN, VAX11"). It might also set standards
+for other description attributes - accuracy, speed, function. It would set standards
+for the form of source code and documentation and of test cases and test drivers.
+3. The owners of modules would set the prices for their ,iferings, but ASOMM would
+have a uniform set of terms and conditions, so that prospective users would have
+minimum paperwork.
+4. ASOMM would handle all marketing, distribution, and licensing, charging a substantial (but perhaps sliding) commission on revenues.
+5. ASOMM would not itself undertake module development, enhancement, documentation, repair, support, validation, certification, or warranty. It would be a mail-order
+software dealer.
+6. All modules would include full copyrighted source, except perhaps for security submodules, which might be object-only.
+7. The standard terms and conditions would include at least four kinds of licenses, at
+different prices:
+* One copy, limited-period trial use, price refundable except for rental fee.
+9 Per machine/copy, unlimited use
+• Site linceses, at least for personal computers and workstations
+* Per incorporation as a component in a larger product, with free sub-licensing
+rights. This would enable an incorporator to do a one-time transaction and not
+undertake a long-run paperwork burden.
+8. The standard terms and conditions would include different levels of support for
+licensed users (but not sub-licensees):
+* Fully supported by the owner, perhaps for an annual fee.
+9 Supported by the owner on a fixed-fee-per-fix basis.
+* Support negotiable with the owner.
+* Unsupported. Caveat emptor.
+9. ASOMM would maintain lists of licensed users for recall and update purposes.
+10. For a modest surcharge, a user could get, along with the module, a list of the other
+licensed user, willing to be listed.
+
+78
+
+'*
+
+MWl*
+
+%
+\end{document}
