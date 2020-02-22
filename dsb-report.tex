@@ -6,6 +6,8 @@
 \usepackage{multicol}
 \usepackage{chngcntr}
 \usepackage{url}
+\usepackage{pdflscape}
+\usepackage{setspace}
 \usepackage[shortlabels]{enumitem}
 
 \setmainfont[Numbers=OldStyle,Scale=0.9]{TeX Gyre Termes}
@@ -1188,6 +1190,182 @@ Each Program Manager would classify his system, its subsystems, major
 components, major increments, and phases into one of these classes, with the
 burden of proof being to show why the element should be in a higher class
 instead of a lower one.
+
+% The landscape environment creates a new page, so this needs to be placed
+% approximately where LaTeX would otherwise insert a page break.
+
+\begin{landscape}
+
+% Table 5.1 -- category attributes
+
+\begin{center}
+\begin{multicols*}{4}
+\raggedcolumns % Avoid trying to equalize the columns, we don't care
+\raggedright
+
+    \textbf{STANDARD}
+    \begin{itemize}
+        \item Commercial Hardware
+        \item Commercially Available Operating System
+        \item Commercially Available Application System
+        \item Fully Reusable
+        \begin{itemize}
+            \item Specification
+            \item Documentation
+            \item Code
+        \end{itemize}
+    \end{itemize}
+
+    \columnbreak
+
+    \textbf{EXTENDED}
+    \begin{itemize}
+        \item Commercial Hardware
+        \item Commercially Available Operating System
+        \item Commercially Available Software and Custom Extensions
+        \item Reusable:
+        \begin{itemize}
+            \item Specifications
+            \item Algorithms
+            \item Source Code
+            \item Object Code
+        \end{itemize}
+        \item Some use of a Prototyping Facility
+    \end{itemize}
+
+    \columnbreak
+
+    \textbf{EMBEDDED}
+    \begin{itemize}
+        \item Commercial and Special-Purpose Hardware
+        \item Commercial and Special-Purpose Operating System
+        \item Special-Purpose Application Software
+        \item Reusable:
+        \begin{itemize}
+            \item Specifications
+            \item Designs
+            \item Algorithms
+            \item Code
+        \end{itemize}
+        \item Use of a Prototyping Facility
+        \item Risk Management Discipline
+        \item Heavy User Involvement in Evolutionary Acquisition
+    \end{itemize}
+
+    \columnbreak
+
+    \textbf{ADVANCED}
+
+    \begin{itemize}
+        \item State-of-the-Art and Uniquely Designed Hardware
+        \item[] ~
+        \item[] ~
+        \item Uniquely Designed Software
+        \item Some Reuse:
+        \begin{itemize}
+            \item Specifications
+            \item Algorithms
+        \item[] ~
+        \item[] ~
+        \end{itemize}
+        \item Use of a Prototyping Facility
+        \item Risk Management Disciplines are Critical
+        \item Heavy User Involvement in Evolutionary Acquisition
+    \end{itemize}
+
+\end{multicols*}
+\end{center}
+
+\newpage
+
+% Table 5.2 -- category examples in DoD acquisition
+
+\begin{center}
+\begin{multicols*}{4}
+\setstretch{1.4} % Space out the entries a bit
+\raggedcolumns % Avoid trying to equalize the columns, we don't care
+\raggedright
+
+    \textbf{STANDARD}
+
+    Defense Data Network Initial Phases
+
+    WWMCCS Information System Block A
+
+    \columnbreak
+
+    \textbf{EXTENDED}
+
+    Defense Data Network Initial Phases
+
+    WWMCCS Information System Block A
+
+    Airborne Warning and Control System (AWACS)
+
+    Army WIS (AWIS)
+
+    AF WIS (AFWIS)
+
+    Army Operations Center Upgrade
+
+    Joint Automatic Message Processing System
+
+    AFLC Local Area Network
+
+    Intelligence Data Handling System (IDHS)
+
+    Pentagon Local Area Network
+
+    Community Intelligence Network System (COINS)
+
+    DoD Intelligence Information Systems (DODIIS) Local Area Network
+
+    \columnbreak
+
+    \textbf{EMBEDDED}
+
+    MILSTAR
+
+    JTIDS
+
+    AWACS
+
+    High Frequency Anti-Jam Program
+
+    ARC-182-ECCM Radio
+
+    Global Position System
+
+    Communications System Control Environment (CSCE)
+
+    Integrated Automated Intelligence Processing System
+
+    Joint Tactical Fusion
+
+    Command Center Processing and Display System
+
+    SACDIN
+
+    SEEK IGLOO Radar
+
+    PAVE PAWS Radar
+
+    Advanced Combat Direction System-Navy
+
+    AEGIS Defense System
+
+    \columnbreak
+
+    \textbf{ADVANCED}
+
+    Strategic Defense Initiative
+
+    Strategic Computing Intiative Program
+
+\end{multicols*}
+\end{center}
+
+\end{landscape}
 
 Table 5.1 provides attributes of the four categories. Table 5.2 illustrates the
 categories by classifying some current acquisitions.
