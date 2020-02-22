@@ -5,7 +5,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{multicol}
 \usepackage[shortlabels]{enumitem}
-\setmainfont[Numbers=OldStyle,Scale=0.9]{Linux Libertine O}
+\setmainfont[Numbers=OldStyle,Scale=0.9]{TeX Gyre Termes}
 
 \begin{document}
 
@@ -185,7 +185,7 @@ now more than ten times larger than the DoD market. This requires a radical upda
 much DoD thinking. Some implications:
 
 \begin{enumerate}
-\item DoD can nf longer create de facto standards and enforce them on the civilian market,
+\item DoD can no longer create de facto standards and enforce them on the civilian market,
 as it was able to do with COBOL.
 
 \item DoD must not diverge too far from whatever the civilian market is doing in programming methodology, else it will have to support its own methodology by itself, with little
@@ -1307,225 +1307,285 @@ specialized, and perhaps custom-built, it will rarely be justified for DoD to
 custom-build the tools with which its software is built. The assumption should
 be that marketplace tools will be used.
 
-%%% STOP HERE
+\section{DoD In a Sellers' Market for Software}
 
-%7. DoD In a Sellers' Market for Software
-Findings
-Because of the explosion of the commercial software market, DoD now Is
-In a sellers' market for software-building.
-Just as the DoD need for software is growing exponentially, and its software-skilled personnel grow more slowly, the same is true of the commercial software n-arket. Programmers
-are in short supply, programming managers even scarcer, and software system designers
-very scarce. Hence the companies that have these skills, and have them organized into
-functioning, equipped teams, have many choices as to how best to market their services.
-DoD is perceived as a poor customer, and the stable of DiD custom software
-vendors stays small even though the requirement grows radically.
-Poor Return. Building custom software for DoD has a poor profit margin. In calculating
-proper profit levels for cost-plus-incentive contracts, DoD tends to use the same marginm
-for software development as for hardware development, although the latter is customarily
-followed by a production cycle at acceptable total profit levels. Ten percent profit on sales
-is considered high in DoD, whereas it is grossly unacceptable in computer industry pricing
-on software.
-Weak Incentives for Productivity.
-Even on fixed-price software contracts, there
-are only weak incentives to manage for higher productivity or to invest company money
-in capital tooling that will save labor cost. High productivity and high quality are not
-rewarded by DoD except at the time of contractor selection. If "excessive" profits result
-from high productivity on firm-fixed-price contracts, the profits are readjusted after audit.
-The standard for "excess" is the same as that for hardware development, despite the
+\subsection*{Findings}
+
+\subsubsection*{Because of the explosion of the commercial software market, DoD
+now Is In a sellers' market for software-building.}
+
+Just as the DoD need for software is growing exponentially, and its
+software-skilled personnel grow more slowly, the same is true of the commercial
+software market. Programmers are in short supply, programming managers even
+scarcer, and software system designers very scarce. Hence the companies that
+have these skills, and have them organized into functioning, equipped teams,
+have many choices as to how best to market their services.
+
+\subsubsection*{DoD is perceived as a poor customer, and the stable of DiD custom software
+vendors stays small even though the requirement grows radically.}
+
+\paragraph{Poor Return.} Building custom software for DoD has a poor profit
+margin. In calculating proper profit levels for cost-plus-incentive contracts,
+DoD tends to use the same margin for software development as for hardware
+development, although the latter is customarily followed by a production cycle
+at acceptable total profit levels. Ten percent profit on sales is considered
+high in DoD, whereas it is grossly unacceptable in computer industry pricing on
+software.
+
+\paragraph{Weak Incentives for Productivity.}  Even on fixed-price software
+contracts, there are only weak incentives to manage for higher productivity or
+to invest company money in capital tooling that will save labor cost. High
+productivity and high quality are not rewarded by DoD except at the time of
+contractor selection. If "excessive" profits result from high productivity on
+firm-fixed-price contracts, the profits are readjusted after audit. The
+standard for "excess" is the same as that for hardware development, despite the
 absence of the production cycle.
-Heavy Regulation. DoD Directive 5000.29, "Management of Computer Resources in
-Major Defense Systems", DoD STD 2167, "Defense System Software", and the proposed
-new Federal Acquisition Regulation FAR 27.4, "Data Rights", and the proposed DoD FAR
-Supplement 27.4 have as their purpose to ensure fair, consistent, and open competition,
-and to get the most capability for each dollar spent. In practice, however, they inhibit the
-use of standard commercial practices in software acquisition and maintenance. They also
-encourage the building of new software rather than purchase of off-the-shelf items.
-Unreasonable Rights-In-Data Requirements.
-DoD FAR Supplement 27.4, as
-proposed for public comment by 10 January 1986, set forth demands for DoD ownership
-of rights to programs, documentation, tools, and methods that were
-"*formulated only in terms of hardware, entirely ignoring the different circumstances
-of software,
-"*completely at variance with commercial practice for software,
-29
 
-%""probably
+\paragraph{Heavy Regulation.} DoD Directive 5000.29, "Management of Computer
+Resources in Major Defense Systems", DoD STD 2167, "Defense System Software",
+and the proposed new Federal Acquisition Regulation FAR 27.4, "Data Rights",
+and the proposed DoD FAR Supplement 27.4 have as their purpose to ensure fair,
+consistent, and open competition, and to get the most capability for each
+dollar spent. In practice, however, they inhibit the use of standard commercial
+practices in software acquisition and maintenance. They also encourage the
+building of new software rather than purchase of off-the-shelf items.
 
-illegal under U.S. Copyright law, and
+\paragraph{Unreasonable Rights-In-Data Requirements.}  DoD FAR Supplement 27.4,
+as proposed for public comment by 10 January 1986, set forth demands for DoD
+ownership of rights to programs, documentation, tools, and methods that were
 
-"*destructive of most vendor incentive to hivest in better tools and methods.
-We were convinced that the misfit between the proposed supplement and software is
-entirely unintentional, and so the Task Force made timely presentations to the Undersecretary of Defense (Acquisition) and to the Assistant Secretary for Acquisition and Logistics
-during the comment period. If the proposed supplement were to be adopted, however,
-it would be another powerful disincentive for vendors to bid on DoD custom software
-development.
-Constant, Small, Stable of Vendors. Given the regulatory and financial structure
-of DoD contracting outlined above, a vendor can participate in substantial DoD software
-contracting only if it:
-* has staying power to average over crests and troughs in contracting business,
-* has a management superstructure to cope with the regulatory overhead, including
-a Program Control Management System, and specialized accounting to meet DoD
-STD 7000.2,
-,S.
+\begin{itemize}
+    \item formulated only in terms of hardware, entirely ignoring the different circumstances of software,
+    \item completely at variance with commercial practice for software,
+    \item probably illegal under U.S. Copyright law, and
+    \item destructive of most vendor incentive to hivest in better tools and methods.
+\end{itemize}
 
-* has an infrastructure of technical specialists to deal with configuration management
-per regulation, documentation per regulation, acceptance testing, etc.
+We were convinced that the misfit between the proposed supplement and software
+is entirely unintentional, and so the Task Force made timely presentations to
+the Undersecretary of Defense (Acquisition) and to the Assistant Secretary for
+Acquisition and Logistics during the comment period. If the proposed supplement
+were to be adopted, however, it would be another powerful disincentive for
+vendors to bid on DoD custom software development.
 
-2
+\paragraph{Constant, Small, Stable of Vendors.} Given the regulatory and
+financial structure of DoD contracting outlined above, a vendor can participate
+in substantial DoD software contracting only if it:
 
-%therefore has a critical mass of skilled people sc. -hat it can carry several contracts
-a' once, both to smooth crests and troughs and to pay for the administrative and
-technical superstructure necessary to cope w'h the regulatory overhead.
-As a result, we estimate there to be only about two dozen houses that are regularly
-available to participate in the development of substantial mission-critical software systems,
-and this number grows slowly. On the contrary, several vendors are seriously considering
-leaving the DoD business entirely, and refusing to bid in the future.
-The net result of this small stable of vendors in a time of exponential growth of work
-is sure to be higher bids and longer schedules. It is in DoD's interests, and the nation's
-interests, for DoD to make itself an attractive customer. We believe the net costs to the
-nation of weapon-system software will be lower if it does. Present practices are penny-wise
-and pound-foolish in many petty ways.
-Recommendations
-Recommendation 17: DoD should devise increased productivity incentives
+\begin{itemize}
+    \item has staying power to average over crests and troughs in contracting
+        business,
+    \item has a management superstructure to cope with the regulatory overhead,
+        including a Program Control Management System, and specialized
+        accounting to meet DoD STD 7000.2,
+    \item has an infrastructure of technical specialists to deal with
+        configuration management per regulation, documentation per regulation,
+        acceptance testing, etc.
+    \item therefore has a critical mass of skilled people so that it can carry
+        several contracts at once, both to smooth crests and troughs and to pay
+        for the administrative and technical superstructure necessary to cope
+        with the regulatory overhead.
+\end{itemize}
+
+As a result, we estimate there to be only about two dozen houses that are
+regularly available to participate in the development of substantial
+mission-critical software systems, and this number grows slowly. On the
+contrary, several vendors are seriously considering leaving the DoD business
+entirely, and refusing to bid in the future.
+
+The net result of this small stable of vendors in a time of exponential growth
+of work is sure to be higher bids and longer schedules. It is in DoD's
+interests, and the nation's interests, for DoD to make itself an attractive
+customer. We believe the net costs to the nation of weapon-system software will
+be lower if it does. Present practices are penny-wise and pound-foolish in many
+petty ways.
+
+\subsection*{Recommendations}
+
+\subsubsection*{\textit{Recommendation 17: DoD should devise increased productivity incentives
 for custom-built software contracts, and make such incentivized contracts the
-standard practice.
-A new contracting form, part-way between fixed-price and cost..plus-fee, should be
-devised. For instance, on a cost-type contract, a pioductivity figure is usually bid.
-Competition in vendor selection keeps the figure from being unreasonably low. So
-reimbursement might be structured to split any savings due to increased productivity
+standard practice.}}
 
-30
-01
+A new contracting form, part-way between fixed-price and cost-plus-fee, should
+be devised. For instance, on a cost-type contract, a productivity figure is
+usually bid.  Competition in vendor selection keeps the figure from being
+unreasonably low. So reimbursement might be structured to split any savings due
+to increased productivity evenly between the buyer and the seller.
 
-%evenly between the buyer and the seller.
-Another new contracting form that we recommend DoD consider would be to guarantee
-a quantity buy of some software product and to request bids solely on a per-copy price. Here
-the vendor would bear all the non-recurring costs and recover gains on capital investment
-and productivity enhancement. Ada compilers and softwa re development and maintenance
-environments are examples that could be purchased or licensed this way.
-Recommendation 18: DoD should devise increased profit incentives on
-software quality.
-One such incentive could be a sliding profit margin based on the quality of the delivered
-complete software product. This requires quality metrics, recommended below.
-Another kind of incentive could be introduced by requesting contractors to bid a percopy-per-year fixed license fee including maintenance. In this way, high quality resulting in
-low maintenance would provide financial rewards to the contractor and operational rewards
-to the users.
-Recommendation 19: DoD should develop metrics and measuring techniques for software quality and completeness, and Incorporate these routinely
-in contracts.
-There are today no metrics for source-code quality, object-code quality, documentation
-quality, etc. Part of the STARS methodological effort should be addressed to such metrics,
-for Ada programs in particular.
-Meanwhile, there are techniques for judging the over-all quality of complex performances outside the computer field. There is wide agreement as to what quality is, and
-skilled practitiol.,ers make similar judgements when presented with products to judge. Even
-today software quality can be judged by panels of trained judges, just as such panels judge
-Olympic diving, skating, and acrobatic performances. DoD should immediately begin
-testing such panel methods for consistency and reliability, and, if they work, begin using
-such judgements for quality incentives.
-DoD buys software for operational systems that will be used ior a decade or more.
-The software must be maintainable and changeable. DoD is willing to pay the price for
-complete software products, but all too often it accepts less because of schedule slippages
-and operational needs.
+Another new contracting form that we recommend DoD consider would be to
+guarantee a quantity buy of some software product and to request bids solely on
+a per-copy price. Here the vendor would bear all the non-recurring costs and
+recover gains on capital investment and productivity enhancement. Ada compilers
+and software development and maintenance environments are examples that could
+be purchased or licensed this way.
+
+\subsubsection*{\textit{Recommendation 18: DoD should devise increased profit incentives on
+software quality.}}
+
+One such incentive could be a sliding profit margin based on the quality of the
+delivered complete software product. This requires quality metrics, recommended
+below.
+
+Another kind of incentive could be introduced by requesting contractors to bid
+a per-copy-per-year fixed license fee including maintenance. In this way, high
+quality resulting in low maintenance would provide financial rewards to the
+contractor and operational rewards to the users.
+
+\subsubsection*{\textit{Recommendation 19: DoD should develop metrics and
+measuring techniques for software quality and completeness, and Incorporate
+these routinely in contracts.}}
+
+There are today no metrics for source-code quality, object-code quality,
+documentation quality, etc. Part of the STARS methodological effort should be
+addressed to such metrics, for Ada programs in particular.
+
+Meanwhile, there are techniques for judging the over-all quality of complex
+performances outside the computer field. There is wide agreement as to what
+quality is, and skilled practitioners make similar judgements when presented
+with products to judge. Even today software quality can be judged by panels of
+trained judges, just as such panels judge Olympic diving, skating, and
+acrobatic performances. DoD should immediately begin testing such panel methods
+for consistency and reliability, and, if they work, begin using such judgements
+for quality incentives.
+
+DoD buys software for operational systems that will be used for a decade or
+more. The software must be maintainable and changeable. DoD is willing to pay
+the price for complete software products, but all too often it accepts less
+because of schedule slippages and operational needs.
+
 Complete software products should be mandated in contracts to include:
-* specifications thae describe the actual software structure as built, as opposed to
-that originally specified,
-• documentation showing the structure and organization of the software,
-* source code that is properly structured, well modularized, and well ccman-ented,
-especially in procedure headers and variable declarations,
 
-31
+\begin{itemize}
+    \item specifications the describe the actual software structure as built,
+        as opposed to that originally specified,
+    \item documentation showing the structure and organization of the software,
+    \item source code that is properly structured, well modularized, and well
+        commented, especially in procedure headers and variable declarations,
+    \item cross-reference documentation that traces articles in the
+        specifications to the corresponding source code, and vice-versa.
+\end{itemize}
 
-%ccross-reference documentation that traces articles in the specifications to the
-corresponding source code, and vice-versa.
-Recommendation 20: DoD should develop metrics to measure Implementation progress.
+\subsubsection*{\textit{Recommendation 20: DoD should develop metrics to
+measure Implementation progress.}}
+
 Such metrics would help ensure that costs and schedules are being met and that
-complete products will be delivered. They might include, for example, program size, software complexity metrics, personnel experience, testing progress, and incremental-release
-content. Development of such has in the past been part of the STARS plan; it should
-continue to be. Meanwhile, panel-judging techniques as discussed above can be applied to
-progress as well as to quality.
-Recommendation 21: DoD should examine and revise regulations to approach modern commercial practice insofar as practicable and appropriate.
-Recommendation 22: DoD should follow the concepts of the proposed FAR
-2T.4 for data rights for militariy software, rather than those of the proposed
-DoD Supplement 27.4, or it should adopt a new "Rights In Software' Clause
-as recommended by Samuelson, Deasy, and Martin in Appendix A6.
-The legal problem is highly technical. Two good solutions, the arguments for proposed
-FAR 27.4, the concerns about t•he 'clarity fad applicability of the proposed DoD Supplement
-27.4, and the arguments for a new clause L all skillfully set forth in the SEI Technical
-Report incorporated herein ,ts Appendix 6A.
+complete products will be delivered. They might include, for example, program
+size, software complexity metrics, personnel experience, testing progress, and
+incremental-release content. Development of such has in the past been part of
+the STARS plan; it should continue to be. Meanwhile, panel-judging techniques
+as discussed above can be applied to progress as well as to quality.
+
+\subsubsection*{\textit{Recommendation 21: DoD should examine and revise
+regulations to approach modern commercial practice insofar as practicable and
+appropriate.}}
+
+\subsubsection*{\textit{Recommendation 22: DoD should follow the concepts of
+the proposed FAR 27.4 for data rights for military software, rather than those
+of the proposed DoD Supplement 27.4, or it should adopt a new “Rights In
+Software” Clause as recommended by Samuelson, Deasy, and Martin in Appendix
+A6.}}
+
+The legal problem is highly technical. Two good solutions, the arguments for
+proposed FAR 27.4, the concerns about the clarity and applicability of the
+proposed DoD Supplement 27.4, and the arguments for a new clause are all
+skillfully set forth in the SEI Technical Report incorporated herein as
+Appendix 6A.
+
 To those technical arguments we would add an economic one: the proposed DoD
-Supplement 27.4 is, ;ntentionally or otherwise, grabby in spirit and effect. No fair-minded
-person would considt!r it to propose equitable treatment among vendors, or between DoD
-and vendors. Its lack of clarity and clumsiness of drafting will occasion litigation. The net
-effect will be to further shrink the vendor pool, at gre%t cost to DoD and the taxpayer.
+Supplement 27.4 is, intentionally or otherwise, grabby in spirit and effect. No
+fair-minded person would consider it to propose equitable treatment among
+vendors, or between DoD and vendors. Its lack of clarity and clumsiness of
+drafting will occasion litigation. The net effect will be to further shrink the
+vendor pool, at great cost to DoD and the taxpayer.
 
-32
+\section{A New Life-Cycle Model for Custom DoD Software}
 
-%8. A New Life-Cycle Model for Custom DoD Software
-Findings
+\subsection*{Findings}
 
-I
+\subsubsection*{The most common present method of formulating specifications —
+issuing a Request for Proposal, accepting bids, and then letting a contract for
+software delivery — is not in keeping with good modern practice and accounts
+for much of the mismatch between user needs and delivered function, cost, and
+schedule.}
 
-The most common present method of formulating specifications - issuing
-a Request for Proposal, accepting bids, and then letting a contract for software
-delivery - is not in keeping with good modern practice and accounts for much
-of the mismatch between user needs and delivered function, cost, and schedule.
 As discussed above under Current Trends, we now understand the importance of
-iterative de ,elopment of requirements, the testing of requirements against real users' needs
-by rapid prototyping, and the construction of systems by incremental development, with
-early incremental releases subjected to operational use.
+iterative development of requirements, the testing of requirements against real
+users’ needs by rapid prototyping, and the construction of systems by
+incremental development, with early incremental releases subjected to
+operational use.
 
-The Task Force finds that Directive 5000.29 and STD 2167, as interpreted,
-have made it difficult to apply these modern methods.
-Although some parts ef the recent Draft DOD-STD-2167A appear to encourage modem
-methods, the draft as a whole continues to reinforce exactly the document-driven, specifythen-build approach that we believe causes so many of DoD's software problems.
+\subsubsection*{The Task Force finds that Directive 5000.29 and STD 2167, as
+interpreted, have made it difficult to apply these modern methods.}
 
-Recommendations
-Recommendation 23: The Uv~dersecretary of Defense (Acquisition) should
-update DoD Directive 5000.29, "Management of Computer Resources In Major
-Defense Systems", so that it mandates the Iterative setting of specifications,
-the rapid prototyping of specified systpems, and Incremental development.
-We propose that the iterative development, of specifications can be reconciled with
-the needs of fair and open competition by letting two level-of-efforts contracts for the
-specifying and prototyping of major software systeLms. After prototyping is complete and
-specifications formulated, a software production contract can be put out for bidding in the
-usual process.
+Although some parts ef the recent Draft DOD-STD-2167A appear to encourage
+modern methods, the draft as a whole continues to reinforce exactly the
+document-driven, specify-then-build approach that we believe causes so many of
+DoD’s software problems.
+
+\subsection*{Recommendations}
+
+\subsubsection*{\textit{Recommendation 23: The Undersecretary of Defense
+(Acquisition) should update DoD Directive 5000.29, "Management of Computer
+Resources In Major Defense Systems", so that it mandates the Iterative setting
+of specifications, the rapid prototyping of specified systpems, and Incremental
+development.}}
+
+We propose that the iterative development, of specifications can be reconciled
+with the needs of fair and open competition by letting two level-of-efforts
+contracts for the specifying and prototyping of major software systeLms. After
+prototyping is complete and specifications formulated, a software production
+contract can be put out for bidding in the usual process.
+
 An alternative for the specification process is to let a separate contract to a government
 contractor for specification, with the specifying contractor excluded from bidding on the
 build.
-The iterative development of specifications is a small part of the total cost of a major
-software system, usually less than 10%, but it has profound effectE on the procurement
-cost, life-cycle cost, schedule, and function of the product.
-We believe the procurement cycle should be modified so that the requirements remain
-unfrozen and subject to alteration until the cost and performance effects of their provisions
-'can be known from early product design. This means final requirements would not be
-frozen until perhaps one-third of the way through the procurement period, a substantial
-departure from present practice.
 
-Recommendation 24: DoD STD 2167 should be ,'urther revised to remove
-Pi3
+The iterative development of specifications is a small part of the total cost
+of a major software system, usually less than 10\%, but it has profound effects
+on the procurement cost, life-cycle cost, schedule, and function of the
+product.
 
-33
+We believe the procurement cycle should be modified so that the requirements
+remain unfrozen and subject to alteration until the cost and performance
+effects of their provisions can be known from early product design. This means
+final requirements would not be frozen until perhaps one-third of the way
+through the procurement period, a substantial departure from present practice.
 
-%any remaining dependence upon the assumptions of the Owaterfall* model and
-to Institutionalise rapid prototyping and Jucremental development.
-Recommendation 25: Directive 5000.29 and STD 2168 should be revised
+\subsubsection*{\textit{Recommendation 24: DoD STD 2167 should be further revised to remove
+any remaining dependence upon the assumptions of the “waterfall” model and
+to institutionalise rapid prototyping and incremental development.}}
+
+\subsubsection*{\textit{Recommendation 25: Directive 5000.29 and STD 2168 should be revised
 or superseded by policy to mandate risk management techniques In software
-acquisition, as recommended In the 1983 USAF/SAB Study.
-The Air Force Scientific Advisory Board in 1983 identified software risk factors and
-recommended risk management techniques [Munson, 1983). While parts of the recommendations are Air-Force-specific, the ideas ae applicable to all Services. An example of how
-týse risk management techniques have been incorporated into program management is
-ij ,ided in Table 7.1 below. The risk-management approach provides an effective way
-foz a project to determine when, where, and how much to use prototyping and similar
-risk-reduction techniques.
-Table 7.1
-Software Risk Management Plan
-1. Identify the project's top 10 risk items.
-2. Present a plan for resolving each risk item.
-3. Update list of top risk items, plan, and results monthly.
-4. Highlight risk-item status in monthly project reviews.
-5. Initiate appropriate corrective actions.
+acquisition, as recommended In the 1983 USAF/SAB Study.}}
+
+The Air Force Scientific Advisory Board in 1983 identified software risk
+factors and recommended risk management techniques [Munson, 1983]. While parts
+of the recommendations are Air-Force-specific, the ideas ae applicable to all
+Services. An example of how these risk management techniques have been
+incorporated into program management is included in table
+\ref{table:risk-mgmt-plan} below. The risk-management approach provides an
+effective way for a project to determine when, where, and how much to use
+prototyping and similar risk-reduction techniques.
+
+\begin{table}[hb]
+    \caption{Software Risk Management Plan}
+    \label{table:risk-mgmt-plan}
+\begin{enumerate}
+    \item Identify the project's top 10 risk items.
+    \item Present a plan for resolving each risk item.
+    \item Update list of top risk items, plan, and results monthly.
+    \item Highlight risk-item status in monthly project reviews.
+    \item Initiate appropriate corrective actions.
+\end{enumerate}
+\end{table}
+
+%%% STOP HERE
+
 Recommendation 26: Each Service should provide its software Product
 Development Division with the ability to do rapid prototyping In conjunction
 with users.
+
 The DoD software system acquisition agents are the service produc. development
 divisions. Each of these divisions needs facilities and equipments to mock-up, simulate, and
 build critical prototypes of the new systems being acquired. Some of the system interfaces
@@ -1536,19 +1596,19 @@ Program Managers who all report to the same local commander. The product develop
 divisions are organized along mission categories, and programs in each division will tend
 to need equipment and software with similar power and capabilities. The facilities could
 also be used for Ada training.
+
 Recommendation 27: Each Service should provide its software Using Commands with facilities to do comprehensive operational testing and life-cycle
 evaluation of extensions and changes.
+
 The user commands are responsible for defining the original requirements. However,
 many of the systems that are being developed are doing jobs that have never been done
-
-34
-
-%before. These types of systems tend to be technology-driven and must be placed in the
+before. These types of systems tend to be technology-driven and must be placed in the
 hands of the user as early as possible to develop new operational procedures. In the
 early phases of system acquisition, a facility at the user command is needed for testing,
 evaluation, training, and procedure development. Throughout the life of the system, the
 user commands need the facility for testing and evaluation of changes and upgrades to
 systems.
+
 Recommendation 28: The Undersecretary of Defense (Acquisition) and the
 
 Assistant Secretary of Defense (Comptroller) should by directive spell out the
