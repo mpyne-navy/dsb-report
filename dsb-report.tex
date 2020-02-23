@@ -1,6 +1,6 @@
-\documentclass[12pt]{article}
+\documentclass[12pt,final]{article}
 \usepackage{fontspec}
-\usepackage[draft]{microtype}
+\usepackage[final]{microtype}
 \usepackage{xltxtra}
 \usepackage[margin=1in]{geometry}
 \usepackage{multicol}
@@ -10,7 +10,7 @@
 \usepackage{setspace}
 \usepackage[shortlabels]{enumitem}
 
-\setmainfont[Numbers=OldStyle,Scale=0.9]{TeX Gyre Termes}
+\setmainfont[Ligatures=Common,Mapping=tex-text,Scale=0.9]{TeX Gyre Termes}
 
 % Emulate table numbering per section. Unfortunately we can't let latex
 % auto-number the table despite this because the table numbers in the original
@@ -508,7 +508,7 @@ much as writing another module to do the same function. Reuse is also much
 quicker, and it yields better tested, more reliable code.
 
 The Ada programming language is designed to make such modularization natural,
-and to provide very powerful facilities- for linking modules. Integrated
+and to provide very powerful facilities for linking modules. Integrated
 programming environments, such as Unix, provide the same kind of facility at
 another level, that of the shell-script linking whole programs together.
 
