@@ -10,7 +10,7 @@
 \usepackage{setspace}
 \usepackage[shortlabels]{enumitem}
 
-\setmainfont[Ligatures=Common,Mapping=tex-text,Scale=0.9]{TeX Gyre Termes}
+\setmainfont[Ligatures=Common]{Crimson Text}
 
 % Emulate table numbering per section. Unfortunately we can't let latex
 % auto-number the table despite this because the table numbers in the original
@@ -54,7 +54,7 @@ promises ten-fold improvement in software productivity, reliability, and
 timeliness. There are several technical developments under way which together
 can be expected to yield one order of magnitude, but not two. Few fields have
 so large a gap between best current practice and average current practice; we
-concur with the priorities that DoD has given tc upgrading average practice by
+concur with the priorities that DoD has given to upgrading average practice by
 more vigorous technology transfer.
 
 Current DoD initiatives in software technology and methodology include the Ada
@@ -1191,6 +1191,27 @@ components, major increments, and phases into one of these classes, with the
 burden of proof being to show why the element should be in a higher class
 instead of a lower one.
 
+Table 5.1 provides attributes of the four categories. Table 5.2 illustrates the
+categories by classifying some current acquisitions.
+
+It may also be wise to establish categories by size (lines of source code) for
+uniformity in description. A possibility might be:
+
+\begin{center}
+    \begin{tabular}{ l l }
+Modest: & Under 2000 LOSC\\
+
+Small: & 2000-10,000 LOSC\\
+
+Medium: & 10-100 KLOSC\\
+
+Large: & Over 100 KLOSC\\
+    \end{tabular}
+\end{center}
+
+Then a planned undertaking could be characterized for policy or procedure purposes
+as, for example, a “Medium Extended-Class software project.”
+
 % The landscape environment creates a new page, so this needs to be placed
 % approximately where LaTeX would otherwise insert a page break.
 
@@ -1366,32 +1387,6 @@ instead of a lower one.
 \end{center}
 
 \end{landscape}
-
-Table 5.1 provides attributes of the four categories. Table 5.2 illustrates the
-categories by classifying some current acquisitions.
-
-It may also be wise to establish categories by size (lines of source code) for
-uniformity in description. A possibility might be:
-
-\begin{center}
-    \begin{tabular}{ l l }
-Modest: & Under 2000 LOSC\\
-
-Small: & 2000-10,000 LOSC\\
-
-Medium: & 10-100 KLOSC\\
-
-Large: & Over 100 KLOSC\\
-    \end{tabular}
-\end{center}
-
-Then a planned undertaking could be characterized for policy or procedure purposes
-as, for example, a “Medium Extended-Class software project.”
-
-% NOTE: Page 26, 27 of the original PDF contain landscape formatted tables
-% which appear to be Table 5.1 and 5.2 as mentioned in the text above. I don't
-% see where they appear in the auto-scraped PDF text quite yet but this is
-% where they would go, in theory.
 
 \subsubsection*{\textit{Recommendation 14: The Undersecretary of Defense
 (Acquisition) should develop acquisition policy, procedures, and guidance for
@@ -2021,6 +2016,7 @@ DoD should implement the education and training necessary for its software
 acquisition management personnel to master both software technology and
 acquisition management.
 
+\newpage
 \section{Appendices}
 
 \subsection*{A1. The Task Force}
