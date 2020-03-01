@@ -1,5 +1,5 @@
-*NOTE: This is a converted version of the original report. See note
-below.* [^1]
+*NOTE: This is a converted version of the original report. See [note
+below](#mpyne-note-1).*
 
 Executive Summary
 =================
@@ -36,7 +36,7 @@ development of the technology, some modest shift of focus in the
 technology efforts under way, but major re-examination and change of
 attitudes, policies, and practices concerning software acquisition.
 
-STARS {#stars .unnumbered}
+STARS
 -----
 
 The DoD program for Software Technology for Adaptable, Reliable Systems,
@@ -51,7 +51,7 @@ Program Office, and Software Engineering Tnstitute (whose contracting
 office is already in ESD). Deputies from the other Services should be
 appointed.
 
-Ada {#ada .unnumbered}
+Ada
 ---
 
 It is very important for DoD to have a standard programming language;
@@ -82,7 +82,7 @@ language definition and language validation procedures. We recommend
 that it be moved from OSD to a unified software joint program office in
 the USAF Electronic Systems Command (Recs. \#6,7).
 
-Acquisition {#acquisition .unnumbered}
+Acquisition
 -----------
 
 #### Mileu.
@@ -160,7 +160,7 @@ modules from one system in another. We recommend a variety of policy
 changes, each designed to encourage reuse, and indeed, the establishment
 of a public market in reusable software parts (Recs. \#29-33).
 
-Personnel {#personnel .unnumbered}
+Personnel
 ---------
 
 It appears that the number of software-qualified military officers has
@@ -198,7 +198,7 @@ Introduction
 The Charge to the Task Force
 ----------------------------
 
-### Abbreviated Terms of Reference, (Appendix A2 contains the full text) {#abbreviated-terms-of-reference-appendix-a2-contains-the-full-text .unnumbered}
+### Abbreviated Terms of Reference, (Appendix A2 contains the full text)
 
 A.  Assess and unify various recent studies.
 
@@ -221,7 +221,7 @@ G.  Recommend how to implement an incremental and evolutionary approach
 H.  Assess the wisdom of the Ada plan, especially in view of
     “Fourth-Generation” languages.
 
-### What the Task Force Did Not Address {#what-the-task-force-did-not-address .unnumbered}
+### What the Task Force Did Not Address
 
 #### Problem Seriousness Sizing.
 
@@ -394,7 +394,7 @@ computer hardware technology. In our Terms of Reference we are charged
 with examining the underlying nature of the software process so as to
 explain high costs and slow development.
 
-### Hardware Technology Is So Fast. {#hardware-technology-is-so-fast. .unnumbered}
+### Hardware Technology Is So Fast.
 
 The remarkable fact is not the slow rate of development of computer
 software technology, but the fast rate of hardware technology, a fact
@@ -405,7 +405,7 @@ or performance! No other technology has come even close to that rate of
 development. It reflects the shift of computer hardware from an assembly
 technology to a process technology.
 
-### Software Is Labor-Intensive. {#software-is-labor-intensive. .unnumbered}
+### Software Is Labor-Intensive.
 
 Software development is and always will be a labor-intensive technology.
 The work and the time is all in development, not production. Development
@@ -414,7 +414,7 @@ conceptual structures, and although our machines can do the dog-work and
 can help us keep track of our edifices, concept development is the
 quintessentially human activity.
 
-### The Essence Is Designing Intricate Conceptual Structures Rigorously. {#the-essence-is-designing-intricate-conceptual-structures-rigorously. .unnumbered}
+### The Essence Is Designing Intricate Conceptual Structures Rigorously.
 
 In Appendix A5, we analyze the software task. We argue that its essence
 is the designing of intricate conceptual structures, rigorously and
@@ -430,7 +430,7 @@ We believe a significant fraction of software development effort today
 is expended on this essential labor, rather than on the task of
 expressing the designs.
 
-### The Removal of Expression Difficulties Has Brought Much of the Past Gain. {#the-removal-of-expression-difficulties-has-brought-much-of-the-past-gain. .unnumbered}
+### The Removal of Expression Difficulties Has Brought Much of the Past Gain.
 
 The essential labor itself has not always taken most of the effort. Much
 of the work was formerly spent on non-essential, incidental difficulties
@@ -450,7 +450,7 @@ among various software tools. Integrated programming environments such
 as Unix and Interlisp overcame this difficulty, again doubling (or
 better) productivity.
 
-### What’s In the Cards? {#whats-in-the-cards .unnumbered}
+### What’s In the Cards?
 
 There are stll non-essential expression difficulties, but they do not
 account for most of the development effort in modern software shops.
@@ -474,7 +474,7 @@ Five developments in the past decade have revolutionized the software
 scene. DoD software practices evolved in the 60s and 70s, and they
 neither take into account nor utilize these advances.
 
-### The Microcomputer Revolution and the Personal Computer {#the-microcomputer-revolution-and-the-personal-computer .unnumbered}
+### The Microcomputer Revolution and the Personal Computer
 
 The microcomputer, both as a component, and by its incorporation into
 personal computers, has totally changed the computer field and the
@@ -500,9 +500,9 @@ see the Services making personal computers readily available to
 individual units so that individuals can solve their own simple
 computing problems their own way. A personal computer and an electronic
 spread sheet make a powerful combination, sufficient for countless
-tasks.[^2]
+tasks.<sup>[\*](#footnote-1)</sup>
 
-### A Mass Market for Software {#a-mass-market-for-software .unnumbered}
+### A Mass Market for Software
 
 The personal computer revolution has explosively fueled the development
 of a mass market for third-party developed software. This is the most
@@ -516,7 +516,7 @@ these markets literally hundreds of packages are available, covering an
 immense spectrum of functions and costing from a few dollars to a few
 hundred thousand. The markets are fiercely competitive.
 
-### Technology for Software Modularization and Reuse {#technology-for-software-modularization-and-reuse .unnumbered}
+### Technology for Software Modularization and Reuse
 
 Techniques for designing software in little modules, for defining the
 module interfaces precisely, and for using common file formats have come
@@ -533,7 +533,7 @@ Integrated programming environments, such as Unix, provide the same kind
 of facility at another level, that of the shell-script linking whole
 programs together.
 
-### Rapid Prototyping and Iterative Development {#rapid-prototyping-and-iterative-development .unnumbered}
+### Rapid Prototyping and Iterative Development
 
 As people have recognized that the requirements, and especially the user
 interface, require iterative development, with interspersed testing by
@@ -550,7 +550,7 @@ Commercial packages enable one to prototype graphics interfaces, for
 example, so that user testing can be done quite early in the
 development.
 
-### Professional Humility and Evolutionary Development {#professional-humility-and-evolutionary-development .unnumbered}
+### Professional Humility and Evolutionary Development
 
 Experience with confidently specifying and painfully building mammoths
 has shown it to be simplest, safest, and even fastest to develop a
@@ -646,10 +646,10 @@ during the last several years. OSD management has recognized the
 problems, and some remedial steps are under way. It is too early to tell
 if these steps will work.
 
-Findings {#findings .unnumbered}
+Findings
 --------
 
-### STARS as originally formulated is a very good idea. {#stars-as-originally-formulated-is-a-very-good-idea. .unnumbered}
+### STARS as originally formulated is a very good idea.
 
 Members of the Task Force do not expect to see dramatic near-term
 research discoveries. However, many incremental improvements in software
@@ -658,7 +658,7 @@ made. These advances could improve our war-fighting capability if they
 were practiced in DoD programs now. STARS can accelerate their
 application.
 
-### OSD has not provided the vital leadership needed; until recently STARS has lacked a director with strong technical and management ability. {#osd-has-not-provided-the-vital-leadership-needed-until-recently-stars-has-lacked-a-director-with-strong-technical-and-management-ability. .unnumbered}
+### OSD has not provided the vital leadership needed; until recently STARS has lacked a director with strong technical and management ability.
 
 The program had no permanent program manager for over a year.
 Consequently, it lacked leadership, guidance, and vitality. There has
@@ -669,7 +669,7 @@ the software problems of the Services. Strong top-down leadership, both
 technical and administrative, is required. A new, permanent director has
 recently been appointed.
 
-### The program plan has been fuzzy. {#the-program-plan-has-been-fuzzy. .unnumbered}
+### The program plan has been fuzzy.
 
 The Task Force had difficulty in identifying specific goals or plans to
 achieve them. The program plan does not even recognize the existence of
@@ -702,7 +702,7 @@ To enumerate these is not to criticize the STARS program. It never
 really could address all the problem; it only claimed to do so as long
 as it was fuzzy and unfocussed.
 
-### Balance between program elements has been missing. {#balance-between-program-elements-has-been-missing. .unnumbered}
+### Balance between program elements has been missing.
 
 Devising a single software engineering environment dominates the
 attention of the program. In contrast, emphasis on multiple possible
@@ -712,14 +712,14 @@ scheduled very late in its lifetime. Early operational milestones would
 better speed transfer of the technology to the DoD and civilian
 practitioners.
 
-### The program is organized as uncoordinated activities; many are executed by part-time volunteers. {#the-program-is-organized-as-uncoordinated-activities-many-are-executed-by-part-time-volunteers. .unnumbered}
+### The program is organized as uncoordinated activities; many are executed by part-time volunteers.
 
 An independent committee explores each activity area; little
 communication relates the committee actions. For example, there is
 insufficient integration of the activities of the business practices
 area with each of the technical areas.
 
-### STARS needs better coordination with the Services, the Software Engineering Institute, AJPO, DARPA’s Strategic Computing Program and the Strategic Defense Initiative. {#stars-needs-better-coordination-with-the-services-the-software-engineering-institute-ajpo-darpas-strategic-computing-program-and-the-strategic-defense-initiative. .unnumbered}
+### STARS needs better coordination with the Services, the Software Engineering Institute, AJPO, DARPA’s Strategic Computing Program and the Strategic Defense Initiative.
 
 All these programs have interlocking interests and development programs.
 Links have not been carefully established for the input of Service needs
@@ -733,12 +733,13 @@ application of the best ideas from the laboratory to weapon systems
 development. If an effective STARS Program does not materialize,
 software risks will remain high.
 
-### Salvage of STARS may not be possible, but it should be attempted. Drastic action is required. {#salvage-of-stars-may-not-be-possible-but-it-should-be-attempted.-drastic-action-is-required. .unnumbered}
+### Salvage of STARS may not be possible, but it should be attempted. Drastic action is required.
 
-Recommendations {#rec:1 .unnumbered}
+Recommendations
 ---------------
 
-### *Recommendation 1: Move STARS and rebuild it.* {#recommendation-1-move-stars-and-rebuild-it. .unnumbered}
+<a id="recommendation-1"></a>
+### *Recommendation 1: Move STARS and rebuild it.*
 
 Create a Joint Program Office to oversee the STARS program, AJPO, and
 the Software Engineering Institute. This Office should be headed by a
@@ -756,25 +757,22 @@ and Target Acquisition Radar System. OSD retains oversight authority,
 and the Joint Program Office organization will ensure that benefits
 accrue across all the Services.
 
-\[rec:2\]
-
-### *Recommendation 2: Task the STARS Office, the Ada Joint Program Office, the Software Engineering Institute, the SDI software methodology program element, and the DARPA Strategic Computing Program to produce a one-time joint plan to demonstrate a coordinated DoD Software Technology Program.* {#recommendation-2-task-the-stars-office-the-ada-joint-program-office-the-software-engineering-institute-the-sdi-software-methodology-program-element-and-the-darpa-strategic-computing-program-to-produce-a-one-time-joint-plan-to-demonstrate-a-coordinated-dod-software-technology-program. .unnumbered}
+<a id="recommendation-2"></a>
+### *Recommendation 2: Task the STARS Office, the Ada Joint Program Office, the Software Engineering Institute, the SDI software methodology program element, and the DARPA Strategic Computing Program to produce a one-time joint plan to demonstrate a coordinated DoD Software Technology Program.*
 
 This plan must ensure ongoing technical exchange among the five
 programs.
 
-\[rec:3\]
-
-### *Recommendation 3: Task the new STARS Director to define a new set of program goals together with an implementation plan; emphasis should be on visible, early milestones that have demonstrable results.* {#recommendation-3-task-the-new-stars-director-to-define-a-new-set-of-program-goals-together-with-an-implementation-plan-emphasis-should-be-on-visible-early-milestones-that-have-demonstrable-results. .unnumbered}
+<a id="recommendation-3"></a>
+### *Recommendation 3: Task the new STARS Director to define a new set of program goals together with an implementation plan; emphasis should be on visible, early milestones that have demonstrable results.*
 
 This plan should emphasize widespread adoption of the best that exists
 today. It should provide incremental products. It should complement what
 the commercial sector is doing and focus on DoD-unique requiremrents. It
 should be realistic.
 
-\[rec:4\]
-
-### *Recommendation 4: Direct STARS to choose several real programs early in development and augment their funding to ensure the use of existing modern practices and tools.* {#recommendation-4-direct-stars-to-choose-several-real-programs-early-in-development-and-augment-their-funding-to-ensure-the-use-of-existing-modern-practices-and-tools. .unnumbered}
+<a id="recommendation-4"></a>
+### *Recommendation 4: Direct STARS to choose several real programs early in development and augment their funding to ensure the use of existing modern practices and tools.*
 
 ADA
 ===
@@ -796,12 +794,12 @@ as WIS, and the acting Director of the Ada Joint Projects Office. The
 Task Force also considered fourth-generation languages and their
 implication for the Ada effort.
 
-Findings {#findings-1 .unnumbered}
+Findings
 --------
 
-### *Improved Software Engineering Techniques* {#improved-software-engineering-techniques .unnumbered}
+### *Improved Software Engineering Techniques*
 
-### Software engineering methods and techniques have dramatically advanced over the last decade, yet these techniques are not generally practiced in DoD. {#software-engineering-methods-and-techniques-have-dramatically-advanced-over-the-last-decade-yet-these-techniques-are-not-generally-practiced-in-dod. .unnumbered}
+### Software engineering methods and techniques have dramatically advanced over the last decade, yet these techniques are not generally practiced in DoD.
 
 Ada is not merely a programming language; it is a vehicle for new
 software practices and methods for specification, program structuring,
@@ -810,9 +808,9 @@ the radical improvements in software engineering will not move rapidly
 into use. Standardization on a language is the best way to introduce the
 new practices rapidly.
 
-### *Ada, The Standard Language* {#ada-the-standard-language .unnumbered}
+### *Ada, The Standard Language*
 
-### It is a major technology step forward for the DoD to insist that all software be built in a high-level language. It is a major management step forward to standardize on a single high-level language. {#it-is-a-major-technology-step-forward-for-the-dod-to-insist-that-all-software-be-built-in-a-high-level-language.-it-is-a-major-management-step-forward-to-standardize-on-a-single-high-level-language. .unnumbered}
+### It is a major technology step forward for the DoD to insist that all software be built in a high-level language. It is a major management step forward to standardize on a single high-level language.
 
 It is not simple to do so; Fortran and Cobol will each survive in some
 military applications. The driving reasons to standardize new
@@ -824,7 +822,7 @@ be less buggy and cheaper.
 Even where exceptions to the use of Ada are granted, all software can
 and should be designed using Ada as a design language.
 
-### Ada was designed by the DoD to be that standard language; It is the best candidate for standardization available today; it promises to remain so for the foreseeable future. {#ada-was-designed-by-the-dod-to-be-that-standard-language-it-is-the-best-candidate-for-standardization-available-today-it-promises-to-remain-so-for-the-foreseeable-future. .unnumbered}
+### Ada was designed by the DoD to be that standard language; It is the best candidate for standardization available today; it promises to remain so for the foreseeable future.
 
 Ada’s constructs support modern software technology and discipline. Ada
 supports the evolution and maintenance of reusable software, portable
@@ -832,7 +830,7 @@ software, and real-time software. The language definition is precise
 enough. Other candidate languages have many more deficiencies than Ada
 with respect to the DoD’s needs.
 
-### Ada is admittedly complex. This complexity has contributed significantly to the slow maturation of the language and of its compilers and tools. {#ada-is-admittedly-complex.-this-complexity-has-contributed-significantly-to-the-slow-maturation-of-the-language-and-of-its-compilers-and-tools. .unnumbered}
+### Ada is admittedly complex. This complexity has contributed significantly to the slow maturation of the language and of its compilers and tools.
 
 Enough Ada compilers now exist to demonstrate they can be built. Because
 of language complexity, current compilers execute slowly in comparison
@@ -843,7 +841,7 @@ acceptable, even good, Ada compiler speed in the near term. Moreover,
 modern partial compilation techniques today reduce the impact of raw
 compiler speeds.
 
-### Due to Ada’s complexity, the code generated by current Ada compilers Is not yet highly optimized. {#due-to-adas-complexity-the-code-generated-by-current-ada-compilers-is-not-yet-highly-optimized. .unnumbered}
+### Due to Ada’s complexity, the code generated by current Ada compilers Is not yet highly optimized.
 
 Again, engineering refinement will produce optimizing compilers in the
 near term. Whereas Ada application code can be quite slow if all dynamic
@@ -851,12 +849,12 @@ checking is enabled, most checking can be turned off in the production
 version of application code. There is no technical obstacle to achieving
 optimized code for applications written in Ada.
 
-### The DeLauer mandate to use Ada was premature; it could not be followed In 1983 because of slow maturation of the language and its compilers. {#the-delauer-mandate-to-use-ada-was-premature-it-could-not-be-followed-in-1983-because-of-slow-maturation-of-the-language-and-its-compilers. .unnumbered}
+### The DeLauer mandate to use Ada was premature; it could not be followed In 1983 because of slow maturation of the language and its compilers.
 
 Consequently it became toothless. The compilers have been developed to a
 point that the mandate can be implemented now; it should be.
 
-### Switching to Ada necessitates an up-front investment In order to reap longer term benefits. {#switching-to-ada-necessitates-an-up-front-investment-in-order-to-reap-longer-term-benefits. .unnumbered}
+### Switching to Ada necessitates an up-front investment In order to reap longer term benefits.
 
 One cost is education. Teaching Ada also implies teaching the new
 software engineering practices and disciplines. This must be done
@@ -868,14 +866,14 @@ compiling. These costs are transient and will go down as Ada programming
 environments are widely installed, as the software tools mature, and as
 hardware cost/performance continues to drop.
 
-### Although incurring the up-front costs is wise for DoD, individual program managers and contractors have no incentive to do so. {#although-incurring-the-up-front-costs-is-wise-for-dod-individual-program-managers-and-contractors-have-no-incentive-to-do-so. .unnumbered}
+### Although incurring the up-front costs is wise for DoD, individual program managers and contractors have no incentive to do so.
 
 The costs of training, compiler and tool acquisition, and running the
 current immature compilers are present and readily measured, whereas the
 benefit is future and more difficult to measure. Adoption must therefore
 be mandated by high management.
 
-### Ada is being successfully used today in military programs, such as AFATDS. {#ada-is-being-successfully-used-today-in-military-programs-such-as-afatds. .unnumbered}
+### Ada is being successfully used today in military programs, such as AFATDS.
 
 At least sixty-four validated compilers exist, with more in the wing.
 Moreover, Ada is not just a DoD captive language. Civilian commitment to
@@ -884,9 +882,9 @@ are built with private, not DoD, funds. One cannot predict, however,
 that Ada will become the standard language for civilian data proceasing,
 as Cobol did. Too many different forces are at work.
 
-### *Fourth-Generation Languages* {#fourth-generation-languages .unnumbered}
+### *Fourth-Generation Languages*
 
-### Fourth-generation languages are application-specific program generators; because they are not general purpose, they are not in competiton with Ada. {#fourth-generation-languages-are-application-specific-program-generators-because-they-are-not-general-purpose-they-are-not-in-competiton-with-ada. .unnumbered}
+### Fourth-generation languages are application-specific program generators; because they are not general purpose, they are not in competiton with Ada.
 
 The term fourth-generation is a misnomer. It has been used to
 characterize a wide variety of languages which are not descendants of
@@ -897,14 +895,14 @@ artificial intelligence languages such as Prolog. Each language is
 designed to be applied to problems in a limited domain. Therefore the
 fourth-generation languages do not compete with Ada.
 
-### If an application is well-matched to a fourth-generation language, the cost of realizing the application can be a hundredfold less expensive than programming it in any general purpose language, Including Ada. {#if-an-application-is-well-matched-to-a-fourth-generation-language-the-cost-of-realizing-the-application-can-be-a-hundredfold-less-expensive-than-programming-it-in-any-general-purpose-language-including-ada. .unnumbered}
+### If an application is well-matched to a fourth-generation language, the cost of realizing the application can be a hundredfold less expensive than programming it in any general purpose language, Including Ada.
 
 Spreadsheets are routinely used to accomplish tasks in minutes that
 would require hours of work in a general purpose language. Similarly, an
 exploratory artificial intelligence (AI) task may be programmed in an AI
 language in days versus months in any general purpose language.
 
-### A weapons system development is not one task in a single problem domain; the Task Force is skeptical that any fourth-generation language is well-suited to such applications. {#a-weapons-system-development-is-not-one-task-in-a-single-problem-domain-the-task-force-is-skeptical-that-any-fourth-generation-language-is-well-suited-to-such-applications. .unnumbered}
+### A weapons system development is not one task in a single problem domain; the Task Force is skeptical that any fourth-generation language is well-suited to such applications.
 
 Note that some of the high-risk tasks in a weapons system may be
 advantageously prototyped in a fourth-generation language to experiment
@@ -917,15 +915,15 @@ Some efforts to develop large software systems entirely in a
 fourth-generation language, such as the New Jersey Motor Vehicle
 Registration System, have been unsuccessful.
 
-### *DoD Management of Ada* {#dod-management-of-ada .unnumbered}
+### *DoD Management of Ada*
 
-### Only top DoD management can sustain a policy and program for incurring the costs and risk of early DoD use of Ada. {#only-top-dod-management-can-sustain-a-policy-and-program-for-incurring-the-costs-and-risk-of-early-dod-use-of-ada. .unnumbered}
+### Only top DoD management can sustain a policy and program for incurring the costs and risk of early DoD use of Ada.
 
 Contractors incurring the up-front costs must have assurance that
 investment in Ada tooling will pay off. Programs must plan for
 long-range cost and quality improvements.
 
-### The Ada Joint Program Office (AJPO) is the DoD’s focal point for policy and coordination of Ada standardization, validation, and language control; it has done a commendable job in achieving its technical objectives. {#the-ada-joint-program-office-ajpo-is-the-dods-focal-point-for-policy-and-coordination-of-ada-standardization-validation-and-language-control-it-has-done-a-commendable-job-in-achieving-its-technical-objectives. .unnumbered}
+### The Ada Joint Program Office (AJPO) is the DoD’s focal point for policy and coordination of Ada standardization, validation, and language control; it has done a commendable job in achieving its technical objectives.
 
 The AJPO has maintained a stable language definition. It has defined a
 comprehensive validation suite of language conformity tests. Note that
@@ -936,21 +934,21 @@ conformity has slowed compiler maturity along these other dimensions.
 The AJPO has also performed a communication function with its Ada
 Information Clearinghouse.
 
-### Definition of the Ada language and development of compilers has been successful; the next step is to implement DoD applications in Ada. {#definition-of-the-ada-language-and-development-of-compilers-has-been-successful-the-next-step-is-to-implement-dod-applications-in-ada. .unnumbered}
+### Definition of the Ada language and development of compilers has been successful; the next step is to implement DoD applications in Ada.
 
 This step is mainly acquisition management and is discussed elsewhere.
 AJPO can best assist by providing truthful, complete, and candid
 information about compiler and application activity.
 
-### The next technical step is to develop Ada support tools beyond compilers and to integrate them with one another and with the underlying operating system. {#the-next-technical-step-is-to-develop-ada-support-tools-beyond-compilers-and-to-integrate-them-with-one-another-and-with-the-underlying-operating-system. .unnumbered}
+### The next technical step is to develop Ada support tools beyond compilers and to integrate them with one another and with the underlying operating system.
 
 The unclear boundary between the AJPO and the STARS programs’ charters
 has led to some confusion of who should develop what support software
 technology.
 
-### *Ada support tools* {#ada-support-tools .unnumbered}
+### *Ada support tools*
 
-### Ada has been overpromised. {#ada-has-been-overpromised. .unnumbered}
+### Ada has been overpromised.
 
 The Ada language embodies much current software technology. But to build
 application code that is portable and reusable requires disciplined use
@@ -971,13 +969,13 @@ such activities as:
 
 -   project schedule and effort management.
 
-### As a consequence, non-technical managers of programs are expecting results that no high-level language can by Itself deliver. {#as-a-consequence-non-technical-managers-of-programs-are-expecting-results-that-no-high-level-language-can-by-itself-deliver. .unnumbered}
+### As a consequence, non-technical managers of programs are expecting results that no high-level language can by Itself deliver.
 
 Environments that integrate such tools are not yet available for Ada.
 They are likewise available only piecemeal or not at all for Jovial, C,
 CMS, Fortran, etc.
 
-### Acquiring these environments is the next step. {#acquiring-these-environments-is-the-next-step. .unnumbered}
+### Acquiring these environments is the next step.
 
 The DoD is supporting efforts to develop such environments. Environment
 design is more difficult than language definition. Efficient
@@ -986,10 +984,11 @@ wants tool portability and language independence. We expect that market
 forces will produce a variety of environments around Ada if the DoD
 maintains firm commitment to the language.
 
-Recommendations {#rec:5 .unnumbered}
+Recommendations
 ---------------
 
-### *Recommendation 5: Commit DoD management to a serious and determined push to Ada.* {#recommendation-5-commit-dod-management-to-a-serious-and-determined-push-to-ada. .unnumbered}
+<a id="recommendation-5"></a>
+### *Recommendation 5: Commit DoD management to a serious and determined push to Ada.*
 
 Management waffling is more likely to cause a failure in Ada than are
 technical or acceptance problems.
@@ -1017,9 +1016,8 @@ Specifically, the DoD should
 -   Mandate that where implementation exceptions are granted, software
     should nevertheless be designed using Ada as the design language.
 
-\[rec:6\]
-
-### *Recommendation 6: Move the Ada Joint Program Office into the same organization as STARS and the SEI.* {#recommendation-6-move-the-ada-joint-program-office-into-the-same-organization-as-stars-and-the-sei. .unnumbered}
+<a id="recommendation-6"></a>
+### *Recommendation 6: Move the Ada Joint Program Office into the same organization as STARS and the SEI.*
 
 The major objective for Ada has become one of implementation — using the
 Ada language for DoD systems — now that the AJPO has technical control
@@ -1027,9 +1025,8 @@ of the language. Common management of these three programs will
 strengthen each and permit easy coordination of common goals and
 objectives.
 
-\[rec:7\]
-
-### *Recommendation 7: Keep the AJPO as the technical staff support agent for the DoD’s executive agent.* {#recommendation-7-keep-the-ajpo-as-the-technical-staff-support-agent-for-the-dods-executive-agent. .unnumbered}
+<a id="recommendation-7"></a>
+### *Recommendation 7: Keep the AJPO as the technical staff support agent for the DoD’s executive agent.*
 
 Specifically, it should:
 
@@ -1078,9 +1075,8 @@ Specifically, it should:
     should not be standardized until and unless experience with
     prototypes shows implementations to be effective and efficient.
 
-\[rec:8\]
-
-### *Recommendation 8: DoD policy should continue to forbid subsetting of the Ada language.* {#recommendation-8-dod-policy-should-continue-to-forbid-subsetting-of-the-ada-language. .unnumbered}
+<a id="recommendation-8"></a>
+### *Recommendation 8: DoD policy should continue to forbid subsetting of the Ada language.*
 
 There must be only one definition of the language. Further, all
 compilers should correctly process the entire language; the validation
@@ -1098,18 +1094,16 @@ capability of the specific compilers. In the third category, today the
 Use statement might be limited because an inordinate amount of recompile
 time is needed.
 
-\[rec:9\]
-
-### *Recommendation 9: The DoD should increase investment in Ada practices education and training, for both technical and management people.* {#recommendation-9-the-dod-should-increase-investment-in-ada-practices-education-and-training-for-both-technical-and-management-people. .unnumbered}
+<a id="recommendation-9"></a>
+### *Recommendation 9: The DoD should increase investment in Ada practices education and training, for both technical and management people.*
 
 Each DoD component’s implementation plan should include provisions for
 extensive, in-depth Ada education and training. Do not underestimate the
 education and training required for managers, analysts, and
 administrators, in addition to that for software engineers.
 
-\[rec:10\]
-
-### *Recommendation 10: Allow fourth-generation languages to be used where the full life-cycle cost-effectiveness of using the language measures more than tenfold over using a general-purpose language.* {#recommendation-10-allow-fourth-generation-languages-to-be-used-where-the-full-life-cycle-cost-effectiveness-of-using-the-language-measures-more-than-tenfold-over-using-a-general-purpose-language. .unnumbered}
+<a id="recommendation-10"></a>
+### *Recommendation 10: Allow fourth-generation languages to be used where the full life-cycle cost-effectiveness of using the language measures more than tenfold over using a general-purpose language.*
 
 Marginal increases should not dictate using such languages, especially
 for long-lived, production software. The estimated cost of a program
@@ -1121,23 +1115,24 @@ costs of support software written in multiple languages.
 Strategic Defense Initiative Software
 =====================================
 
-Findings {#findings-2 .unnumbered}
+Findings
 --------
 
-### The Strategic Defense Initiative (SDI) has a monumental software problem that must be solved to attain the goals of the initiative. {#the-strategic-defense-initiative-sdi-has-a-monumental-software-problem-that-must-be-solved-to-attain-the-goals-of-the-initiative. .unnumbered}
+### The Strategic Defense Initiative (SDI) has a monumental software problem that must be solved to attain the goals of the initiative.
 
 It is critical quite out of proportion to its cost, because hardware has
 high replication costs and software does not. Initial contractor
 proposals therefore largely ignored it.
 
-### The software problem has already received considerable public attention and notoriety. {#the-software-problem-has-already-received-considerable-public-attention-and-notoriety. .unnumbered}
+### The software problem has already received considerable public attention and notoriety.
 
-### No program to address the software problem is evident. {#no-program-to-address-the-software-problem-is-evident. .unnumbered}
+### No program to address the software problem is evident.
 
-Recommendations {#rec:11 .unnumbered}
+Recommendations
 ---------------
 
-### *Recommendation 11: Focus a critical mass of software research effort on the software needs that are unique to the SDI objectives.* {#recommendation-11-focus-a-critical-mass-of-software-research-effort-on-the-software-needs-that-are-unique-to-the-sdi-objectives. .unnumbered}
+<a id="recommendation-11"></a>
+### *Recommendation 11: Focus a critical mass of software research effort on the software needs that are unique to the SDI objectives.*
 
 The SDI should use what STARS, the SET, DARPA and industry produces.
 Much of the software problem faced by the SDI is due to the magnitude of
@@ -1148,19 +1143,18 @@ their software problem is unique and concentrate its attention on
 solving the SDI-unique problem, not the general software technology
 problems.
 
-\[rec:12\]
+<a id="recommendation-12"></a>
+### *Recommendation 12: Use evolutionary acquisition, including simulation and prototyping, as discussed elsewhere in this report, to reduce risk.*
 
-### *Recommendation 12: Use evolutionary acquisition, including simulation and prototyping, as discussed elsewhere in this report, to reduce risk.* {#recommendation-12-use-evolutionary-acquisition-including-simulation-and-prototyping-as-discussed-elsewhere-in-this-report-to-reduce-risk. .unnumbered}
-
-DoD and the Civilian Software Market {#sec:civ-market}
+DoD and the Civilian Software Market
 ====================================
 
-Findings {#findings-3 .unnumbered}
+Findings
 --------
 
-### The civilian market for software is today substantially larger than the size of the DoD market, although the DoD continues to be the largest single customer for computer software \[Jorstad, 1984; Boehm, 1986\]. {#the-civilian-market-for-software-is-today-substantially-larger-than-the-size-of-the-dod-market-although-the-dod-continues-to-be-the-largest-single-customer-for-computer-software-jorstad-1984-boehm-1986. .unnumbered}
+### The civilian market for software is today substantially larger than the size of the DoD market, although the DoD continues to be the largest single customer for computer software \[Jorstad, 1984; Boehm, 1986\].
 
-### This new phenomenon requires a radical update in DoD thinking, policies, and procedures. {#this-new-phenomenon-requires-a-radical-update-in-dod-thinking-policies-and-procedures. .unnumbered}
+### This new phenomenon requires a radical update in DoD thinking, policies, and procedures.
 
 We find that in policy drafting and debate, the mass civilian market is
 generally ignored.
@@ -1213,10 +1207,11 @@ On those aspects where DoD is truly innovating technically, it can
 enlist the larger community by the very excellence of the innovations —
 the competitive marketplace is responsive to innovation.
 
-Recommendations {#rec:13 .unnumbered}
+Recommendations
 ---------------
 
-### *Recommendation 13: The Undersecretary of Defense (Acquisition) should adopt a four-category classification as the basis for acquisition policy* {#recommendation-13-the-undersecretary-of-defense-acquisition-should-adopt-a-four-category-classification-as-the-basis-for-acquisition-policy .unnumbered}
+<a id="recommendation-13"></a>
+### *Recommendation 13: The Undersecretary of Defense (Acquisition) should adopt a four-category classification as the basis for acquisition policy*
 
 We see vast differences in the software systems that DoD buys and
 builds. We recommend that these differences should be explicitly
@@ -1224,12 +1219,12 @@ recognized by an official classification into four major classes
 according to uniqueness and novelty. Acquisition guidance, policies, and
 procedures should be framed separately for each class. The classes are:
 
-  ----------- --------------------------------------------------------
-  Standard:   Off-the-shelf, commercially available
-  Extended:   Extensions of current systems, both DoD and commercial
-  Embedded:   Functionally unique and embedded in larger systems
-  Advanced:   Advanced and exploratory systems.
-  ----------- --------------------------------------------------------
+<table>
+<tr><td>  Standard: </td><td>  Off-the-shelf, commercially available  </td></tr>
+<tr><td>  Extended: </td><td>  Extensions of current systems, both DoD and commercial </td></tr>
+<tr><td>  Embedded: </td><td>  Functionally unique and embedded in larger systems </td></tr>
+<tr><td>  Advanced: </td><td>  Advanced and exploratory systems. </td></tr>
+</table>
 
 Each Program Manager would classify his system, its subsystems, major
 components, major increments, and phases into one of these classes, with
@@ -1242,18 +1237,19 @@ illustrates the categories by classifying some current acquisitions.
 It may also be wise to establish categories by size (lines of source
 code) for uniformity in description. A possibility might be:
 
-  --------- ------------------
-  Modest:   Under 2000 LOSC
-  Small:    2000-10,000 LOSC
-  Medium:   10-100 KLOSC
-  Large:    Over 100 KLOSC
-  --------- ------------------
+<table>
+<tr><td>  Modest: </td><td>  Under 2000 LOSC </td></tr>
+<tr><td>  Small:  </td><td>  2000-10,000 LOSC </td></tr>
+<tr><td>  Medium: </td><td>  10-100 KLOSC </td></tr>
+<tr><td>  Large:  </td><td>  Over 100 KLOSC </td></tr>
+</table>
 
 Then a planned undertaking could be characterized for policy or
 procedure purposes as, for example, a “Medium Extended-Class software
 project.”
 
-[4]{}
+
+### Table 5.1
 
 **STANDARD**
 
@@ -1341,7 +1337,7 @@ project.”
 
 -   Heavy User Involvement in Evolutionary Acquisition
 
-[4]{}
+### Table 5.2
 
 **STANDARD**
 
@@ -1413,11 +1409,11 @@ Strategic Defense Initiative
 
 Strategic Computing Intiative Program
 
-\[rec:14\]
+<a id="recommendation-1"></a>
+### *Recommendation 14: The Undersecretary of Defense (Acquisition) should develop acquisition policy, procedures, and guidance for each category.*
 
-### *Recommendation 14: The Undersecretary of Defense (Acquisition) should develop acquisition policy, procedures, and guidance for each category.* {#rec:15 .unnumbered}
-
-### *Recommendation 15: The Undersecretary of Defense (Acquisition) and the Assistant Secretary of Defense (Comptroller) should direct Program Managers to assume that system software requirements can be met with off the shelf subsystems and components until it is proved that they are unique.* {#recommendation-15-the-undersecretary-of-defense-acquisition-and-the-assistant-secretary-of-defense-comptroller-should-direct-program-managers-to-assume-that-system-software-requirements-can-be-met-with-off-the-shelf-subsystems-and-components-until-it-is-proved-that-they-are-unique. .unnumbered}
+<a id="recommendation-15"></a>
+### *Recommendation 15: The Undersecretary of Defense (Acquisition) and the Assistant Secretary of Defense (Comptroller) should direct Program Managers to assume that system software requirements can be met with off the shelf subsystems and components until it is proved that they are unique.*
 
 The *cheapest* way to get software is to buy it in the commercial
 marketplace rather than to build it.
@@ -1442,9 +1438,8 @@ the market, to see what is available already. Even if the best
 off-the-shelf product is not ultimately used, adopting it for pilot use
 will help radically in setting specifications for the custom product.
 
-\[rec:16\]
-
-### *Recommendation 16: All the methodological efforts, especially STARS, should look to see how commercially available software tools can be selected and standardized for DoD needs.* {#recommendation-16-all-the-methodological-efforts-especially-stars-should-look-to-see-how-commercially-available-software-tools-can-be-selected-and-standardized-for-dod-needs. .unnumbered}
+<a id="recommendation-16"></a>
+### *Recommendation 16: All the methodological efforts, especially STARS, should look to see how commercially available software tools can be selected and standardized for DoD needs.*
 
 Although end-user systems, especially embedded ones, will often need to
 be specialized, and perhaps custom-built, it will rarely be justified
@@ -1454,10 +1449,10 @@ assumption should be that marketplace tools will be used.
 DoD In a Sellers’ Market for Software
 =====================================
 
-Findings {#findings-4 .unnumbered}
+Findings
 --------
 
-### Because of the explosion of the commercial software market, DoD now Is In a sellers’ market for software-building. {#because-of-the-explosion-of-the-commercial-software-market-dod-now-is-in-a-sellers-market-for-software-building. .unnumbered}
+### Because of the explosion of the commercial software market, DoD now Is In a sellers’ market for software-building.
 
 Just as the DoD need for software is growing exponentially, and its
 software-skilled personnel grow more slowly, the same is true of the
@@ -1467,7 +1462,7 @@ the companies that have these skills, and have them organized into
 functioning, equipped teams, have many choices as to how best to market
 their services.
 
-### DoD is perceived as a poor customer, and the stable of DiD custom software vendors stays small even though the requirement grows radically. {#dod-is-perceived-as-a-poor-customer-and-the-stable-of-did-custom-software-vendors-stays-small-even-though-the-requirement-grows-radically. .unnumbered}
+### DoD is perceived as a poor customer, and the stable of DiD custom software vendors stays small even though the requirement grows radically.
 
 #### Poor Return.
 
@@ -1561,10 +1556,11 @@ attractive customer. We believe the net costs to the nation of
 weapon-system software will be lower if it does. Present practices are
 penny-wise and pound-foolish in many petty ways.
 
-Recommendations {#rec:17 .unnumbered}
+Recommendations
 ---------------
 
-### *Recommendation 17: DoD should devise increased productivity incentives for custom-built software contracts, and make such incentivized contracts the standard practice.* {#recommendation-17-dod-should-devise-increased-productivity-incentives-for-custom-built-software-contracts-and-make-such-incentivized-contracts-the-standard-practice. .unnumbered}
+<a id="recommendation-17"></a>
+### *Recommendation 17: DoD should devise increased productivity incentives for custom-built software contracts, and make such incentivized contracts the standard practice.*
 
 A new contracting form, part-way between fixed-price and cost-plus-fee,
 should be devised. For instance, on a cost-type contract, a productivity
@@ -1581,9 +1577,8 @@ productivity enhancement. Ada compilers and software development and
 maintenance environments are examples that could be purchased or
 licensed this way.
 
-\[rec:18\]
-
-### *Recommendation 18: DoD should devise increased profit incentives on software quality.* {#recommendation-18-dod-should-devise-increased-profit-incentives-on-software-quality. .unnumbered}
+<a id="recommendation-18"></a>
+### *Recommendation 18: DoD should devise increased profit incentives on software quality.*
 
 One such incentive could be a sliding profit margin based on the quality
 of the delivered complete software product. This requires quality
@@ -1595,9 +1590,8 @@ this way, high quality resulting in low maintenance would provide
 financial rewards to the contractor and operational rewards to the
 users.
 
-\[rec:19\]
-
-### *Recommendation 19: DoD should develop metrics and measuring techniques for software quality and completeness, and incorporate these routinely in contracts.* {#recommendation-19-dod-should-develop-metrics-and-measuring-techniques-for-software-quality-and-completeness-and-incorporate-these-routinely-in-contracts. .unnumbered}
+<a id="recommendation-19"></a>
+### *Recommendation 19: DoD should develop metrics and measuring techniques for software quality and completeness, and incorporate these routinely in contracts.*
 
 There are today no metrics for source-code quality, object-code quality,
 documentation quality, etc. Part of the STARS methodological effort
@@ -1633,9 +1627,8 @@ Complete software products should be mandated in contracts to include:
 -   cross-reference documentation that traces articles in the
     specifications to the corresponding source code, and vice-versa.
 
-\[rec:20\]
-
-### *Recommendation 20: DoD should develop metrics to measure implementation progress.* {#recommendation-20-dod-should-develop-metrics-to-measure-implementation-progress. .unnumbered}
+<a id="recommendation-20"></a>
+### *Recommendation 20: DoD should develop metrics to measure implementation progress.*
 
 Such metrics would help ensure that costs and schedules are being met
 and that complete products will be delivered. They might include, for
@@ -1645,11 +1638,11 @@ Development of such has in the past been part of the STARS plan; it
 should continue to be. Meanwhile, panel-judging techniques as discussed
 above can be applied to progress as well as to quality.
 
-\[rec:21\]
+<a id="recommendation-2"></a>
+### *Recommendation 21: DoD should examine and revise regulations to approach modern commercial practice insofar as practicable and appropriate.*
 
-### *Recommendation 21: DoD should examine and revise regulations to approach modern commercial practice insofar as practicable and appropriate.* {#rec:22 .unnumbered}
-
-### *Recommendation 22: DoD should follow the concepts of the proposed FAR 27.4 for data rights for military software, rather than those of the proposed DoD Supplement 27.4, or it should adopt a new “Rights In Software” Clause as recommended by Samuelson, Deasy, and Martin in Appendix A6.* {#recommendation-22-dod-should-follow-the-concepts-of-the-proposed-far-27.4-for-data-rights-for-military-software-rather-than-those-of-the-proposed-dod-supplement-27.4-or-it-should-adopt-a-new-rights-in-software-clause-as-recommended-by-samuelson-deasy-and-martin-in-appendix-a6. .unnumbered}
+<a id="recommendation-22"></a>
+### *Recommendation 22: DoD should follow the concepts of the proposed FAR 27.4 for data rights for military software, rather than those of the proposed DoD Supplement 27.4, or it should adopt a new “Rights In Software” Clause as recommended by Samuelson, Deasy, and Martin in Appendix A6.*
 
 The legal problem is highly technical. Two good solutions, the arguments
 for proposed FAR 27.4, the concerns about the clarity and applicability
@@ -1668,10 +1661,10 @@ taxpayer.
 A New Life-Cycle Model for Custom DoD Software
 ==============================================
 
-Findings {#findings-5 .unnumbered}
+Findings
 --------
 
-### The most common present method of formulating specifications — issuing a Request for Proposal, accepting bids, and then letting a contract for software delivery — is not in keeping with good modern practice and accounts for much of the mismatch between user needs and delivered function, cost, and schedule. {#the-most-common-present-method-of-formulating-specifications-issuing-a-request-for-proposal-accepting-bids-and-then-letting-a-contract-for-software-delivery-is-not-in-keeping-with-good-modern-practice-and-accounts-for-much-of-the-mismatch-between-user-needs-and-delivered-function-cost-and-schedule. .unnumbered}
+### The most common present method of formulating specifications — issuing a Request for Proposal, accepting bids, and then letting a contract for software delivery — is not in keeping with good modern practice and accounts for much of the mismatch between user needs and delivered function, cost, and schedule.
 
 As discussed above under Current Trends, we now understand the
 importance of iterative development of requirements, the testing of
@@ -1679,17 +1672,18 @@ requirements against real users’ needs by rapid prototyping, and the
 construction of systems by incremental development, with early
 incremental releases subjected to operational use.
 
-### The Task Force finds that Directive 5000.29 and STD 2167, as interpreted, have made it difficult to apply these modern methods. {#the-task-force-finds-that-directive-5000.29-and-std-2167-as-interpreted-have-made-it-difficult-to-apply-these-modern-methods. .unnumbered}
+### The Task Force finds that Directive 5000.29 and STD 2167, as interpreted, have made it difficult to apply these modern methods.
 
 Although some parts ef the recent Draft DOD-STD-2167A appear to
 encourage modern methods, the draft as a whole continues to reinforce
 exactly the document-driven, specify-then-build approach that we believe
 causes so many of DoD’s software problems.
 
-Recommendations {#rec:23 .unnumbered}
+Recommendations
 ---------------
 
-### *Recommendation 23: The Undersecretary of Defense (Acquisition) should update DoD Directive 5000.29, “Management of Computer Resources In Major Defense Systems”, so that it mandates the iterative setting of specifications, the rapid prototyping of specified systpems, and incremental development.* {#recommendation-23-the-undersecretary-of-defense-acquisition-should-update-dod-directive-5000.29-management-of-computer-resources-in-major-defense-systems-so-that-it-mandates-the-iterative-setting-of-specifications-the-rapid-prototyping-of-specified-systpems-and-incremental-development. .unnumbered}
+<a id="recommendation-23"></a>
+### *Recommendation 23: The Undersecretary of Defense (Acquisition) should update DoD Directive 5000.29, “Management of Computer Resources In Major Defense Systems”, so that it mandates the iterative setting of specifications, the rapid prototyping of specified systpems, and incremental development.*
 
 We propose that the iterative development, of specifications can be
 reconciled with the needs of fair and open competition by letting two
@@ -1714,11 +1708,11 @@ product design. This means final requirements would not be frozen until
 perhaps one-third of the way through the procurement period, a
 substantial departure from present practice.
 
-\[rec:24\]
+<a id="recommendation-2"></a>
+### *Recommendation 24: DoD STD 2167 should be further revised to remove any remaining dependence upon the assumptions of the “waterfall” model and to institutionalise rapid prototyping and incremental development.*
 
-### *Recommendation 24: DoD STD 2167 should be further revised to remove any remaining dependence upon the assumptions of the “waterfall” model and to institutionalise rapid prototyping and incremental development.* {#rec:25 .unnumbered}
-
-### *Recommendation 25: Directive 5000.29 and STD 2168 should be revised or superseded by policy to mandate risk management techniques In software acquisition, as recommended In the 1983 USAF/SAB Study.* {#recommendation-25-directive-5000.29-and-std-2168-should-be-revised-or-superseded-by-policy-to-mandate-risk-management-techniques-in-software-acquisition-as-recommended-in-the-1983-usafsab-study. .unnumbered}
+<a id="recommendation-25"></a>
+### *Recommendation 25: Directive 5000.29 and STD 2168 should be revised or superseded by policy to mandate risk management techniques In software acquisition, as recommended In the 1983 USAF/SAB Study.*
 
 The Air Force Scientific Advisory Board in 1983 identified software risk
 factors and recommended risk management techniques \[Munson, 1983\].
@@ -1739,9 +1733,8 @@ how much to use prototyping and similar risk-reduction techniques.
 
 5.  Initiate appropriate corrective actions.
 
-\[rec:26\]
-
-### *Recommendation 26: Each Service should provide its software Product Development Division with the ability to do rapid prototyping In conjunction with users.* {#recommendation-26-each-service-should-provide-its-software-product-development-division-with-the-ability-to-do-rapid-prototyping-in-conjunction-with-users. .unnumbered}
+<a id="recommendation-26"></a>
+### *Recommendation 26: Each Service should provide its software Product Development Division with the ability to do rapid prototyping In conjunction with users.*
 
 The DoD software system acquisition agents are the service product
 development divisions. Each of these divisions needs facilities and
@@ -1756,9 +1749,8 @@ are organized along mission categories, and programs in each division
 will tend to need equipment and software with similar power and
 capabilities. The facilities could also be used for Ada training.
 
-\[rec:27\]
-
-### *Recommendation 27: Each Service should provide its software Using Commands with facilities to do comprehensive operational testing and life-cycle evaluation of extensions and changes.* {#recommendation-27-each-service-should-provide-its-software-using-commands-with-facilities-to-do-comprehensive-operational-testing-and-life-cycle-evaluation-of-extensions-and-changes. .unnumbered}
+<a id="recommendation-27"></a>
+### *Recommendation 27: Each Service should provide its software Using Commands with facilities to do comprehensive operational testing and life-cycle evaluation of extensions and changes.*
 
 The user commands are responsible for defining the original
 requirements. However, many of the systems that are being developed are
@@ -1770,9 +1762,8 @@ for testing, evaluation, training, and procedure development. Throughout
 the life of the system, the user commands need the facility for testing
 and evaluation of changes and upgrades to systems.
 
-\[rec:28\]
-
-### *Recommendation 28: The Undersecretary of Defense (Acquisition) and the Assistant Secretary of Defense (Comptroller) should by directive spell out the role of Using Commands in the evolutionary and incremental development of software systems.* {#recommendation-28-the-undersecretary-of-defense-acquisition-and-the-assistant-secretary-of-defense-comptroller-should-by-directive-spell-out-the-role-of-using-commands-in-the-evolutionary-and-incremental-development-of-software-systems. .unnumbered}
+<a id="recommendation-28"></a>
+### *Recommendation 28: The Undersecretary of Defense (Acquisition) and the Assistant Secretary of Defense (Comptroller) should by directive spell out the role of Using Commands in the evolutionary and incremental development of software systems.*
 
 The relationships between Developing Commands and Using Commands for the
 different kinds of systems should be spelled out in policy statements.
@@ -1789,7 +1780,7 @@ evolutionacy acquisition procedures are used.
 Module Reuse in DoD Custom Software
 ===================================
 
-Findings {#findings-6 .unnumbered}
+Findings
 --------
 
 #### Software technology now enables the extensive reuse, even in mission-critical embedded systems, of software modules written for other systems.
@@ -1809,12 +1800,14 @@ development. There has to be incentive and compensation for this effort.
 
 #### Module exchange requires the establishment of standards of description of function and of degree of testing.
 
-Recommendations {#rec:29 .unnumbered}
+Recommendations
 ---------------
 
-### *Recommendation 29: The Undersecretary of Defense (Acquisition) should develop economic incentives, to be incorporated into standard contracts, to allow contractors to profit from offering modules for reuse, even though built with DoD funds.* {#rec:30 .unnumbered}
+<a id="recommendation-2"></a>
+### *Recommendation 29: The Undersecretary of Defense (Acquisition) should develop economic incentives, to be incorporated into standard contracts, to allow contractors to profit from offering modules for reuse, even though built with DoD funds.*
 
-### *Recommendation 30: The Undersecretary of Defense (Acquisition) should develop economic incentives, to be incorporated into all cost-plus standard contracts, to encourage contractors to buy modules and use them rather than building new ones.* {#recommendation-30-the-undersecretary-of-defense-acquisition-should-develop-economic-incentives-to-be-incorporated-into-all-cost-plus-standard-contracts-to-encourage-contractors-to-buy-modules-and-use-them-rather-than-building-new-ones. .unnumbered}
+<a id="recommendation-30"></a>
+### *Recommendation 30: The Undersecretary of Defense (Acquisition) should develop economic incentives, to be incorporated into all cost-plus standard contracts, to encourage contractors to buy modules and use them rather than building new ones.*
 
 Acquisition contracts should be structured so that contractors will be
 motivated to build and sell reusable software, and to buy it. Reusable
@@ -1824,11 +1817,11 @@ each time. The proper incentives with respect to data rights,
 warranties, licenses, liabilities, and maintenance must be included in
 the RFPs and the contracts.
 
-\[rec:31\]
+<a id="recommendation-3"></a>
+### *Recommendation 31: The Undersecretary of Defense (Acquisition) and Assistant Secretary of Defense (Comptroller) should direct Program Managers to identify in their programs those subsystems, components, and perhaps even modules, that may be expected to be acquired rather than built; and to reward such acquisition In the RFP’s.*
 
-### *Recommendation 31: The Undersecretary of Defense (Acquisition) and Assistant Secretary of Defense (Comptroller) should direct Program Managers to identify in their programs those subsystems, components, and perhaps even modules, that may be expected to be acquired rather than built; and to reward such acquisition In the RFP’s.* {#rec:32 .unnumbered}
-
-### *Recommendation 32: The Software Engineering Institute should establish a prototype module market, focussed originally on Ada modules and tools for Ada, with the objective of spinning it off when commercially viable.* {#recommendation-32-the-software-engineering-institute-should-establish-a-prototype-module-market-focussed-originally-on-ada-modules-and-tools-for-ada-with-the-objective-of-spinning-it-off-when-commercially-viable. .unnumbered}
+<a id="recommendation-32"></a>
+### *Recommendation 32: The Software Engineering Institute should establish a prototype module market, focussed originally on Ada modules and tools for Ada, with the objective of spinning it off when commercially viable.*
 
 A scheme for how such a marketplace might work, including some possible
 financial and licensing arrangements, is proposed in Appendix A7.
@@ -1840,9 +1833,8 @@ based upon licensing and license fees, and our proposal includes that.
 Rudimentary validation of compilability by the marketer may also be
 necessary.
 
-\[rec:33\]
-
-### *Recommendation 33: The Software Engineering Institute, in consultation with the Ada Joint Program Office, should establish standards of description for Ada modules to be offered through the Software Module Market.* {#recommendation-33-the-software-engineering-institute-in-consultation-with-the-ada-joint-program-office-should-establish-standards-of-description-for-ada-modules-to-be-offered-through-the-software-module-market. .unnumbered}
+<a id="recommendation-33"></a>
+### *Recommendation 33: The Software Engineering Institute, in consultation with the Ada Joint Program Office, should establish standards of description for Ada modules to be offered through the Software Module Market.*
 
 Software-Skilled People
 =======================
@@ -1859,10 +1851,10 @@ been acted upon.
 The Task Force recommends a new approach to the software personnel
 problem.
 
-Findings {#findings-7 .unnumbered}
+Findings
 --------
 
-### Previous Studies Have Made Good Recommendations {#previous-studies-have-made-good-recommendations .unnumbered}
+### Previous Studies Have Made Good Recommendations
 
 A number of previous studies of the DoD software problem have identified
 the scarcity of in-house DoD software personnel as a critical problem.
@@ -1881,7 +1873,7 @@ the problem, e.g.:
 -   Analyze the factors influencing the development and retention of DoD
     personnel with the appropriate mix of software-related skills,
 
-### Previous Recommendations Have Not Been Acted Upon {#previous-recommendations-have-not-been-acted-upon .unnumbered}
+### Previous Recommendations Have Not Been Acted Upon
 
 If these actions were vigorously pursued, they would go a long way
 toward solving the problem.
@@ -1891,9 +1883,9 @@ these previous recommendations. It is therefore unlikely that any
 effective action would result from yet another restatement of these
 recommendations by this Task Force.
 
-### We believe the pool of DoD software personnel has remained about the same size for many years. {#we-believe-the-pool-of-dod-software-personnel-has-remained-about-the-same-size-for-many-years. .unnumbered}
+### We believe the pool of DoD software personnel has remained about the same size for many years.
 
-### The national pool of software personnel Is growing rapidly. {#the-national-pool-of-software-personnel-is-growing-rapidly. .unnumbered}
+### The national pool of software personnel Is growing rapidly.
 
 The number of Bachelor’s and Master’s Degrees in Computer Science,
 Mathematics, and Statistics are shown in Table \[table:cs-degrees\].
@@ -1904,32 +1896,30 @@ in 1983 \[Hamblen, 1984\] to sustain a pool of computer specialists
 whoee size was estimated at 299,000 in 1982 \[Vetter, 1985\] and whose
 annual growth rate is estimated at about 5% \[NSF, 1984\].
 
-### It appears that DoD is not competing effectively with the private sector in attracting and retaining software personnel. {#it-appears-that-dod-is-not-competing-effectively-with-the-private-sector-in-attracting-and-retaining-software-personnel. .unnumbered}
+### It appears that DoD is not competing effectively with the private sector in attracting and retaining software personnel.
 
-  ------ ----------------- ------------------ ----------------- ------------------
-                                                                
-   Year   Math/Statistics   Computer Science   Math/Statistics   Computer Science
-   1970       27,442             1,544              5,636             1,459
-   1971       24,801             1,624              5,121             1,588
-   1972       23,713             3,402              5,198             1,977
-   1973       23,067             4,305              5,028             2,113
-   1974       21,635             4,757              4,834             2,276
-   1975       18,181             5,039              4,327             2,299
-   1976       15,984             5,664              3,857             2,603
-   1977       14,196             6,407              3,695             2,798
-   1978       12,569             7,224              3,373             3,038
-   1979       12,115             8,769              3,578             3,055
-   1980       11,473             11,213             2,868             3,647
-   1981       11,078             15,121             2,567             4,218
-   1982       11,599             20,267             2,727             4,935
-  ------ ----------------- ------------------ ----------------- ------------------
+|  Year | Math/Statistics | Computer Science | Math/Statistics | Computer Science
+| ------|-----------------|------------------|-----------------|------------------
+|       |                 |                  |                 |
+|  1970 |     27,442      |      1,544       |      5,636      |      1,459
+|  1971 |     24,801      |      1,624       |      5,121      |      1,588
+|  1972 |     23,713      |      3,402       |      5,198      |      1,977
+|  1973 |     23,067      |      4,305       |      5,028      |      2,113
+|  1974 |     21,635      |      4,757       |      4,834      |      2,276
+|  1975 |     18,181      |      5,039       |      4,327      |      2,299
+|  1976 |     15,984      |      5,664       |      3,857      |      2,603
+|  1977 |     14,196      |      6,407       |      3,695      |      2,798
+|  1978 |     12,569      |      7,224       |      3,373      |      3,038
+|  1979 |     12,115      |      8,769       |      3,578      |      3,055
+|  1980 |     11,473      |      11,213      |      2,868      |      3,647
+|  1981 |     11,078      |      15,121      |      2,567      |      4,218
+|  1982 |     11,599      |      20,267      |      2,727      |      4,935
 
-  : Degrees In Math/Statistics and Computer Science,
-  1970-82[]{data-label="table:cs-degrees"}
+  : Degrees In Math/Statistics and Computer Science, 1970-82
 
 Source: Table 12 of \[Vetter, 1985\]
 
-### DoD needs software talent primarily to support the acquisition process {#dod-needs-software-talent-primarily-to-support-the-acquisition-process .unnumbered}
+### DoD needs software talent primarily to support the acquisition process
 
 We agree with previous studies that the software personnel shortage
 hurts DoD most in the area of software acquisition management.
@@ -1951,7 +1941,7 @@ of quality assurance, configuration management; and subcontracting and
 financial management, representing user interests on change control
 boards.
 
-### DoD does not have adequate career paths for software professionals {#dod-does-not-have-adequate-career-paths-for-software-professionals .unnumbered}
+### DoD does not have adequate career paths for software professionals
 
 Some Services have no career paths; some Services alternate computer
 assignments with totally unrelated non-computer assignments, thereby
@@ -1967,7 +1957,7 @@ production people. (Building architects have to know the technologies
 better than most contractor people.) In-house software skills do not
 match those of top contractor pools.
 
-### Current deployment of the software talent pool is ineffective {#current-deployment-of-the-software-talent-pool-is-ineffective .unnumbered}
+### Current deployment of the software talent pool is ineffective
 
 Currently, many software-qualified personnel are assigned to jobs that
 could effectively be assigned to contractors. Many DoD software
@@ -1975,10 +1965,11 @@ acquisitions are either in-house development efforts staffed entirely
 with DoD personnel or contracted acquisitions with DoD staffing levels
 far below the needed 5-15%.
 
-Recommendations {#rec:34 .unnumbered}
+Recommendations
 ---------------
 
-### *Recommendation 34: Do not believe DoD can solve its skilled personnel shortage; plan how best to live with it, and how to ameliorate it.* {#recommendation-34-do-not-believe-dod-can-solve-its-skilled-personnel-shortage-plan-how-best-to-live-with-it-and-how-to-ameliorate-it. .unnumbered}
+<a id="recommendation-34"></a>
+### *Recommendation 34: Do not believe DoD can solve its skilled personnel shortage; plan how best to live with it, and how to ameliorate it.*
 
 The software personnel shortage will not disappear by direct DoD action.
 All DoD plans should be based on the assumption that an acute skill
@@ -1991,9 +1982,8 @@ Further, DoD should facilitate supplementing the software acquisition
 management process with contractor support where the supply of in-house
 personnel is insufficient.
 
-\[rec:35\]
-
-### *Recommendation 35: Use DoD people for acquisition instead of construction.* {#recommendation-35-use-dod-people-for-acquisition-instead-of-construction. .unnumbered}
+<a id="recommendation-35"></a>
+### *Recommendation 35: Use DoD people for acquisition instead of construction.*
 
 Instead of hoping that enough personnel can be hired and retained to
 satisfy the needs of the current strategy for using software personnel,
@@ -2004,9 +1994,8 @@ maintenance, limiting such to critical functions at operational bases,
 adaptation of existing software to local needs, and special
 security-sensitive work.
 
-\[rec:36\]
-
-### *Recommendation 36: Establish mechanisms for tracking personnel skills and projecting personnel needs.* {#recommendation-36-establish-mechanisms-for-tracking-personnel-skills-and-projecting-personnel-needs. .unnumbered}
+<a id="recommendation-36"></a>
+### *Recommendation 36: Establish mechanisms for tracking personnel skills and projecting personnel needs.*
 
 No meaningful studies have been found that catalog seasoned personnel,
 and no studies have been found that include uniformed personnel and
@@ -2023,18 +2012,16 @@ assignments, but also project biennially the trends by skill, by
 seniority, by median age within skill, and by years of particular skill
 experience. Such trends can then be assessed against projected needs.
 
-\[rec:37\]
-
-### *Recommendation 37: Structure some officer careers to build a cadre of technical managers with deep technical mastery and broad operational overview.* {#recommendation-37-structure-some-officer-careers-to-build-a-cadre-of-technical-managers-with-deep-technical-mastery-and-broad-operational-overview. .unnumbered}
+<a id="recommendation-37"></a>
+### *Recommendation 37: Structure some officer careers to build a cadre of technical managers with deep technical mastery and broad operational overview.*
 
 Where possible, operational assignments should be chosen to give intense
 systemusing experience in real operations, development/acquisition
 assignments should be on related software systems; and education
 assignments should focus on new technical and management approaches.
 
-\[rec:38\]
-
-### *Recommendation 38: Enhance education for software personnel.* {#recommendation-38-enhance-education-for-software-personnel. .unnumbered}
+<a id="recommendation-38"></a>
+### *Recommendation 38: Enhance education for software personnel.*
 
 DoD should implement the education and training necessary for its
 software acquisition management personnel to master both software
@@ -2043,34 +2030,34 @@ technology and acquisition management.
 Appendices
 ==========
 
-A1. The Task Force {#a1.-the-task-force .unnumbered}
+A1. The Task Force
 ------------------
 
-A2. Terms of Reference {#a2.-terms-of-reference .unnumbered}
+A2. Terms of Reference
 ----------------------
 
-A3. Meetings and Briefing {#a3.-meetings-and-briefing .unnumbered}
+A3. Meetings and Briefing
 -------------------------
 
-A4. Documents Studied {#a4.-documents-studied .unnumbered}
+A4. Documents Studied
 ---------------------
 
-A5. Software — Why Is It Hard? {#a5.-software-why-is-it-hard .unnumbered}
+A5. Software — Why Is It Hard?
 ------------------------------
 
-A6. Proposal for a New “Rights in Software” Clause {#a6.-proposal-for-a-new-rights-in-software-clause .unnumbered}
+A6. Proposal for a New “Rights in Software” Clause
 --------------------------------------------------
 
-A7. Proposal for a Module Market {#a7.-proposal-for-a-module-market .unnumbered}
+A7. Proposal for a Module Market
 --------------------------------
 
-Appendix A1 {#appendix-a1 .unnumbered}
+Appendix A1
 ===========
 
-DEFENSE SCIENCE BOARD SOFTWARE TASK FORCE {#defense-science-board-software-task-force .unnumbered}
+DEFENSE SCIENCE BOARD SOFTWARE TASK FORCE
 -----------------------------------------
 
-### Members and Key Persons {#members-and-key-persons .unnumbered}
+### Members and Key Persons
 
 **Dr. Donald Hicks, USD(R&E), Sponsor 202-695-6639**
 
@@ -2169,7 +2156,7 @@ The MITRE Corporation W90\
 McLean, VA 22102\
 703-883-6146
 
-Appendix A2 — Terms of Reference {#appendix-a2-terms-of-reference .unnumbered}
+Appendix A2 — Terms of Reference
 ================================
 
 2 NOV 1984
@@ -2228,7 +2215,7 @@ Code.
 Enclosure\
 Proposed Membership
 
-Appendix A3 — Condensed Briefings and Minutes {#appendix-a3-condensed-briefings-and-minutes .unnumbered}
+Appendix A3 — Condensed Briefings and Minutes
 =============================================
 
 The complete minutes are on file in the DSB Office. The meetings arn
@@ -2286,7 +2273,7 @@ USDR&E\
 \
 27 May ’86 & SEI & Report Discussion\
 
-Appendix A4 — Documents Studied and References {#appendix-a4-documents-studied-and-references .unnumbered}
+Appendix A4 — Documents Studied and References
 ==============================================
 
 Bailey, Elizabeth, *et al*
@@ -2432,15 +2419,15 @@ Zracket, Charles A., *et al*
 :   “Initiatives to Improve the Development of USAF C^3^I Software,”
     MITRE, March 1984
 
-Appendix A5 — Why Is Building Software Hard? {#appendix-a5-why-is-building-software-hard .unnumbered}
+Appendix A5 — Why Is Building Software Hard?
 ============================================
 
-There are no radical breakthroughs now in view; moreover the very nature
-of software makes it unlikely that there will be any – no inventions
-that will do for software productivity, reliability, and simplicity what
-electronics, transistors, large-scale integration did for computer
-hardware.[^3] We cannot expect ever to see two-fold gains every two
-years.
+There are no radical breakthroughs now in view; moreover the very nature of
+software makes it unlikely that there will be any – no inventions that will do
+for software productivity, reliability, and simplicity what electronics,
+transistors, large-scale integration did for computer
+hardware.<sup>[\*](#footnote-2)</sup> We cannot expect ever to see two-fold
+gains every two years.
 
 To see why this is so, and to determine what actions we must follow
 instead of hoping for breakthroughs, let us examine the difficulties of
@@ -2471,7 +2458,7 @@ Let us consider the inherent properties of this irreducible espence of
 modern software systems: complexity, conformity, changeability, and
 invisibility.
 
-Complexity {#complexity .unnumbered}
+Complexity
 ----------
 
 Software entities are more complex for their size than perhaps any other
@@ -2513,7 +2500,7 @@ integrity. It makes it hard to find and control all the loose ends. It
 creates the tremendous learning and understanding burden that makes
 personnel turnover a disaster.
 
-Conformity {#conformity .unnumbered}
+Conformity
 ----------
 
 Complexity alone is nothing unique to the software discipline. Physics
@@ -2537,7 +2524,7 @@ the most conformable. But in all cases, much complexity cnmes from
 conformation to other interfaces; this cannot be simplified out by any
 redesign of the software alone.
 
-Changeability {#changeability .unnumbered}
+Changeability
 -------------
 
 The software entity is constantly subject to pressures for change. Of
@@ -2571,7 +2558,7 @@ applications, users, laws, and machine vehicles. These all change
 continually, and their changes inexorably force change upon the software
 product.
 
-Invisibility {#invisibility .unnumbered}
+Invisibility
 ------------
 
 Software is invisible and unvisualizable. Geometric abstractions are
@@ -2599,7 +2586,7 @@ of some of its most powerful conceptual tools. This lack not only
 impedes the process of design within one mind, it severely hinders
 communication among minds.
 
-Past Breakthroughs Solved Accidental Difficulties {#past-breakthroughs-solved-accidental-difficulties .unnumbered}
+Past Breakthroughs Solved Accidental Difficulties
 -------------------------------------------------
 
 If we examine the three steps in software technology that have been most
@@ -2608,7 +2595,7 @@ difficulty in building software, but they have been the non-inherent,
 not the essential, difficulties. We can also see the natural limits of
 each such approach.
 
-### High-Level Languages {#high-level-languages .unnumbered}
+### High-Level Languages
 
 Surely the most powerful stroke for software productivity, reliability,
 and simplicity has been the progressive use of high-level languages for
@@ -2636,7 +2623,7 @@ Moreover, at some point the elaboration of a high-level language becomes
 a burden that increases, not reduces, the intellectual task of the user
 who rarely uses thc esoteric constructs.
 
-### Time-Sharing {#time-sharing .unnumbered}
+### Time-Sharing
 
 Most observers credit time-sharing with a major improvement in the
 productivity of programmers and in the quality of their product,
@@ -2658,7 +2645,7 @@ effect is to shorten system response time. As it goes to zero, at some
 point it passes the human threshold of noticeability, about 100
 milliseconds. Beyond that no benefits are to be expected.
 
-### Unified Programming Environments {#unified-programming-environments .unnumbered}
+### Unified Programming Environments
 
 Unix and Interlisp, the first integrated programming environments to
 come into widespread use, are perceived to have improved productivity by
@@ -2689,7 +2676,7 @@ Surely this work is worthwhile, and surely it will bear some fruit in
 both productivity and reliability. But by its very nature, the return
 from now on must be marginal.
 
-Conclusion {#conclusion .unnumbered}
+Conclusion
 ----------
 
 All of the technological attacks of the software process are
@@ -2706,17 +2693,17 @@ We are left with the inherent task — getting the complex concepts right,
 and changing them correctly as the world keeps changing about them. This
 is a human activity, and a labor-intensive one.
 
-Appendix A6 — Proposal for a new “Rights in Software” Clause {#appendix-a6-proposal-for-a-new-rights-in-software-clause .unnumbered}
+Appendix A6 — Proposal for a new “Rights in Software” Clause
 ============================================================
 
-*Porting note —* Interested readers are referred to the original PDF of
-this report[^4], or a direct search for Technical Report SEI-86-TR-2 of
-the Software Engineering Institute of Carnegie Mellon University,
-authored by Pamela Samuelson.
+*Porting note —* Interested readers are referred to the [original PDF of this
+report](https://apps.dtic.mil/dtic/tr/fulltext/u2/a188561.pdf), or a direct
+search for Technical Report SEI-86-TR-2 of the Software Engineering Institute
+of Carnegie Mellon University, authored by Pamela Samuelson.
 
 But I didn’t feel like porting over the entire report.
 
-Appendix A7 — A Proposal for an Ada Software Module Market {#appendix-a7-a-proposal-for-an-ada-software-module-market .unnumbered}
+Appendix A7 — A Proposal for an Ada Software Module Market
 ==========================================================
 
 An Ada Software Module Market enterprise could perhaps operate and
@@ -2781,189 +2768,190 @@ become viable on the following basis:
 10. For a modest surcharge, a user could get, along with the module, a
     list of the other licensed users willing to be listed.
 
-List of Recommendations {#list-of-recommendations .unnumbered}
+List of Recommendations
 =======================
 
 This section was added during the conversion of the source PDF, and *was
 not included with the original DSB report.* This groups all the
 recommendations in one location for ease of reference.
 
--   Recommendation 1 (p. ): Move STARS and rebuild it.
+-   [Recommendation 1](#recommendation-1): Move STARS and rebuild it.
 
--   Recommendation 2 (p. ): Task the STARS Office, the Ada Joint Program
+-   [Recommendation 2](#recommendation-2): Task the STARS Office, the Ada Joint Program
     Office, the Software Engineering Institute, the SDI software
     methodology program element, and the DARPA Strategic Computing
     Program to produce a one-time joint plan to demonstrate a
     coordinated DoD Software Technology Program.
 
--   Recommendation 3 (p. ): Task the new STARS Director to define a new
+-   [Recommendation 3](#recommendation-3): Task the new STARS Director to define a new
     set of program goals together with an implementation plan; emphasis
     should be on visible, early milestones that have demonstrable
     results.
 
--   Recommendation 4 (p. ): Direct STARS to choose several real programs
+-   [Recommendation 4](#recommendation-4): Direct STARS to choose several real programs
     early in development and augment their funding to ensure the use of
     existing modern practices and tools.
 
--   Recommendation 5 (p. ): Commit DoD management to a serious and
+-   [Recommendation 5](#recommendation-5): Commit DoD management to a serious and
     determined push to Ada.
 
--   Recommendation 6 (p. ): Move the Ada Joint Program Office into the
+-   [Recommendation 6](#recommendation-6): Move the Ada Joint Program Office into the
     same organization as STARS and the SEI.
 
--   Recommendation 7 (p. ): Keep the AJPO as the technical staff support
+-   [Recommendation 7](#recommendation-7): Keep the AJPO as the technical staff support
     agent for the DoD’s executive agent.
 
--   Recommendation 8 (p. ): DoD policy should continue to forbid
+-   [Recommendation 8](#recommendation-8): DoD policy should continue to forbid
     subsetting of the Ada language.
 
--   Recommendation 9 (p. ): The DoD should increase investment in Ada
+-   [Recommendation 9](#recommendation-9): The DoD should increase investment in Ada
     practices education and training, for both technical and management
     people.
 
--   Recommendation 10 (p. ): Allow fourth-generation languages to be
+-   [Recommendation 10](#recommendation-10): Allow fourth-generation languages to be
     used where the full life-cycle cost-effectiveness of using the
     language measures more than tenfold over using a general-purpose
     language.
 
--   Recommendation 11 (p. ): Focus a critical mass of software research
+-   [Recommendation 11](#recommendation-11): Focus a critical mass of software research
     effort on the software needs that are unique to the SDI objectives.
 
--   Recommendation 12 (p. ): Use evolutionary acquisition, including
+-   [Recommendation 12](#recommendation-12): Use evolutionary acquisition, including
     simulation and prototyping, as discussed elsewhere in this report,
     to reduce risk.
 
--   Recommendation 13 (p. ): The Undersecretary of Defense (Acquisition)
+-   [Recommendation 13](#recommendation-13): The Undersecretary of Defense (Acquisition)
     should adopt a four-category classification as the basis for
     acquisition policy
 
--   Recommendation 14 (p. ): The Undersecretary of Defense (Acquisition)
+-   [Recommendation 14](#recommendation-14): The Undersecretary of Defense (Acquisition)
     should develop acquisition policy, procedures, and guidance for each
     category.
 
--   Recommendation 15 (p. ): The Undersecretary of Defense (Acquisition)
+-   [Recommendation 15](#recommendation-15): The Undersecretary of Defense (Acquisition)
     and the Assistant Secretary of Defense Comptroller should direct
     Program Managers to assume that system software requirements can be
     met with off the shelf subsystems and components until it is proved
     that they are unique.
 
--   Recommendation 16 (p. ): All the methodological efforts, especially
+-   [Recommendation 16](#recommendation-16): All the methodological efforts, especially
     STARS, should look to see how commercially available software tools
     can be selected and standardized for DoD needs.
 
--   Recommendation 17 (p. ): DoD should devise increased productivity
+-   [Recommendation 17](#recommendation-17): DoD should devise increased productivity
     incentives for custom-built software contracts, and make such
     incentivized contracts the standard practice.
 
--   Recommendation 18 (p. ): DoD should devise increased profit
+-   [Recommendation 18](#recommendation-18): DoD should devise increased profit
     incentives on software quality.
 
--   Recommendation 19 (p. ): DoD should develop metrics and measuring
+-   [Recommendation 19](#recommendation-19): DoD should develop metrics and measuring
     techniques for software quality and completeness, and incorporate
     these routinely in contracts.
 
--   Recommendation 20 (p. ): DoD should develop metrics to measure
+-   [Recommendation 20](#recommendation-20): DoD should develop metrics to measure
     implementation progress.
 
--   Recommendation 21 (p. ): DoD should examine and revise regulations
+-   [Recommendation 21](#recommendation-21): DoD should examine and revise regulations
     to approach modern commercial practice insofar as practicable and
     appropriate.
 
--   Recommendation 22 (p. ): DoD should follow the concepts of the
+-   [Recommendation 22](#recommendation-22): DoD should follow the concepts of the
     proposed FAR 27.4 for data rights for military software, rather than
     those of the proposed DoD Supplement 27.4, or it should adopt a new
     “Rights In Software” Clause as recommended by Samuelson, Deasy, and
     Martin in Appendix A6.
 
--   Recommendation 23 (p. ): The Undersecretary of Defense (Acquisition)
+-   [Recommendation 23](#recommendation-23): The Undersecretary of Defense (Acquisition)
     should update DoD Directive 5000.29, “Management of Computer
     Resources In Major Defense Systems”, so that it mandates the
     iterative setting of specifications, the rapid prototyping of
     specified systpems, and incremental development.
 
--   Recommendation 24 (p. ): DoD STD 2167 should be further revised to
+-   [Recommendation 24](#recommendation-24): DoD STD 2167 should be further revised to
     remove any remaining dependence upon the assumptions of the
     “waterfall” model and to institutionalise rapid prototyping and
     incremental development.
 
--   Recommendation 25 (p. ): Directive 5000.29 and STD 2168 should be
+-   [Recommendation 25](#recommendation-25): Directive 5000.29 and STD 2168 should be
     revised or superseded by policy to mandate risk management
     techniques In software acquisition, as recommended In the 1983
     USAF/SAB Study.
 
--   Recommendation 26 (p. ): Each Service should provide its software
+-   [Recommendation 26](#recommendation-26): Each Service should provide its software
     Product Development Division with the ability to do rapid
     prototyping In conjunction with users.
 
--   Recommendation 27 (p. ): Each Service should provide its software
+-   [Recommendation 27](#recommendation-27): Each Service should provide its software
     Using Commands with facilities to do comprehensive operational
     testing and life-cycle evaluation of extensions and changes.
 
--   Recommendation 28 (p. ): The Undersecretary of Defense (Acquisition)
+-   [Recommendation 28](#recommendation-28): The Undersecretary of Defense (Acquisition)
     and the Assistant Secretary of Defense (Comptroller) should by
     directive spell out the role of Using Commands in the evolutionary
     and incremental development of software systems.
 
--   Recommendation 29 (p. ): The Undersecretary of Defense (Acquisition)
+-   [Recommendation 29](#recommendation-29): The Undersecretary of Defense (Acquisition)
     should develop economic incentives, to be incorporated into standard
     contracts, to allow contractors to profit from offering modules for
     reuse, even though built with DoD funds.
 
--   Recommendation 30 (p. ): The Undersecretary of Defense (Acquisition)
+-   [Recommendation 30](#recommendation-30): The Undersecretary of Defense (Acquisition)
     should develop economic incentives, to be incorporated into all
     cost-plus standard contracts, to encourage contractors to buy
     modules and use them rather than building new ones.
 
--   Recommendation 31 (p. ): The Undersecretary of Defense (Acquisition)
+-   [Recommendation 31](#recommendation-31): The Undersecretary of Defense (Acquisition)
     and Assistant Secretary of Defense (Comptroller) should direct
     Program Managers to identify in their programs those subsystems,
     components, and perhaps even modules, that may be expected to be
     acquired rather than built; and to reward such acquisition In the
     RFP’s.
 
--   Recommendation 32 (p. ): The Software Engineering Institute should
+-   [Recommendation 32](#recommendation-32): The Software Engineering Institute should
     establish a prototype module market, focussed originally on Ada
     modules and tools for Ada, with the objective of spinning it off
     when commercially viable.
 
--   Recommendation 33 (p. ): The Software Engineering Institute, in
+-   [Recommendation 33](#recommendation-33): The Software Engineering Institute, in
     consultation with the Ada Joint Program Office, should establish
     standards of description for Ada modules to be offered through the
     Software Module Market.
 
--   Recommendation 34 (p. ): Do not believe DoD can solve its skilled
+-   [Recommendation 34](#recommendation-34): Do not believe DoD can solve its skilled
     personnel shortage; plan how best to live with it, and how to
     ameliorate it.
 
--   Recommendation 35 (p. ): Use DoD people for acquisition instead of
+-   [Recommendation 35](#recommendation-35): Use DoD people for acquisition instead of
     construction.
 
--   Recommendation 36 (p. ): Establish mechanisms for tracking personnel
+-   [Recommendation 36](#recommendation-36): Establish mechanisms for tracking personnel
     skills and projecting personnel needs.
 
--   Recommendation 37 (p. ): Structure some officer careers to build a
+-   [Recommendation 37](#recommendation-37): Structure some officer careers to build a
     cadre of technical managers with deep technical mastery and broad
     operational overview.
 
--   Recommendation 38 (p. ): Enhance education for software personnel.
+-   [Recommendation 38](#recommendation-38): Enhance education for software personnel.
 
-[^1]: This report is an adapted version of the original report from
-    <https://apps.dtic.mil/dtic/tr/fulltext/u2/a188561.pdf> which has
-    been semi-automatically converted to a computer-readable form for
-    ease of access and reference in this modern Internet-based
-    ecosystem. The conversion was performed by Michael Pyne. He worked
-    with some level of care but may not have caught all transcription
-    errors.
+<a id="mpyne-note-1"></a>
+This report is an adapted version of the original report from
+<https://apps.dtic.mil/dtic/tr/fulltext/u2/a188561.pdf> which has
+been semi-automatically converted to a computer-readable form for
+ease of access and reference in this modern Internet-based
+ecosystem. The conversion was performed by Michael Pyne. He worked
+with some level of care but may not have caught all transcription
+errors.
 
-[^2]: Jones and Brooks had the opportunity to observe a Blue-Flag
-    simulated Air Force-Army-Marine tactical exercise. We saw a number
-    and variety of personal computers that have been integrated
-    effectively into unit operational functions; we were pleased to see
-    a light dependence on massive computer systems.
+<a id="footnote-1"></a>
+Jones and Brooks had the opportunity to observe a Blue-Flag
+simulated Air Force-Army-Marine tactical exercise. We saw a number
+and variety of personal computers that have been integrated
+effectively into unit operational functions; we were pleased to see
+a light dependence on massive computer systems.
 
-[^3]: This appendix is an extract from “No Silver Bullet”, an invited
-    paper presented in Dublin by F. P. Brooks at the 1986 Congress of
-    the International Federation of Information Processing. The full
-    paper is in the Congress Proceedings.
-
-[^4]: <https://apps.dtic.mil/dtic/tr/fulltext/u2/a188561.pdf>
+<a id="footnote-2"></a>
+This appendix is an extract from “No Silver Bullet”, an invited
+paper presented in Dublin by F. P. Brooks at the 1986 Congress of
+the International Federation of Information Processing. The full
+paper is in the Congress Proceedings.
