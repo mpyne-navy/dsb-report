@@ -14,8 +14,11 @@ at times and very large to download.
 
 So I took it upon myself to make a version that I could post on a Github.
 
-Right now there is just the LaTeX source and the generated PDF itself. Later I
-might try to do an HTML conversion but for now I am happy with where it is at.
+## Formats
+
+Right now there is the LaTeX source and the generated PDF itself. I’ve also
+used `pandoc` to create a [Markdown version](https://github.com/mpyne-navy/dsb-report/blob/master/dsb-report.md),
+though it is not quite to the quality of the PDF version at this point.
 
 # Generating the PDF
 
