@@ -1253,89 +1253,19 @@ project.”
 
 **STANDARD**
 
--   Commercial Hardware
-
--   Commercially Available Operating System
-
--   Commercially Available Application System
-
--   Fully Reusable
-
-    -   Specification
-
-    -   Documentation
-
-    -   Code
-
-**EXTENDED**
-
--   Commercial Hardware
-
--   Commercially Available Operating System
-
--   Commercially Available Software and Custom Extensions
-
--   Reusable:
-
-    -   Specifications
-
-    -   Algorithms
-
-    -   Source Code
-
-    -   Object Code
-
--   Some use of a Prototyping Facility
-
-**EMBEDDED**
-
--   Commercial and Special-Purpose Hardware
-
--   Commercial and Special-Purpose Operating System
-
--   Special-Purpose Application Software
-
--   Reusable:
-
-    -   Specifications
-
-    -   Designs
-
-    -   Algorithms
-
-    -   Code
-
--   Use of a Prototyping Facility
-
--   Risk Management Discipline
-
--   Heavy User Involvement in Evolutionary Acquisition
-
-**ADVANCED**
-
--   State-of-the-Art and Uniquely Designed Hardware
-
--    
-
--    
-
--   Uniquely Designed Software
-
--   Some Reuse:
-
-    -   Specifications
-
-    -   Algorithms
-
-    -    
-
-    -    
-
--   Use of a Prototyping Facility
-
--   Risk Management Disciplines are Critical
-
--   Heavy User Involvement in Evolutionary Acquisition
+| **STANDARD** | **EXTENDED** | **EMBEDDED** | **ADVANCED**  |
+| :--------    |  :---------  |  :---------  |   :--------   |
+| Commercial Hardware | Commercial Hardware | Commercial and Special-Purpose Hardware | State-of-the-Art and Uniquely Designed Hardware |
+| Commercially Available Operating System   | Commercially Available Operating System | Commercial and Special-Purpose Operating System |
+| Commercially Available Application System | Commercially Available Software and Custom Extensions | Special-Purpose Application Software | Uniquely Designed Software |
+| Fully Reusable:  | Reusable: | Reusable: | Some Reuse: |
+|    * Specification |    * Specifications |   * Specifications |    * Specifications |
+|    * Documentation |    * Algorithms     |   * Designs        |    * Algorithms     |
+|    * Code          |    * Source Code    |   * Algorithms     |                     |
+|                    |    * Object Code    |   * Code           |                     |
+|                    | Some use of a Prototyping Facility | Use of a Prototyping Facility | Use of a Prototyping Facility |
+|  |  | Risk Management Discipline | Risk Management Disciplines are Critical |
+|  |  | Heavy User Involvement in Evolutionary Acquisition | Heavy User Involvement in Evolutionary Acquisition |
 
 ### Table 5.2
 
