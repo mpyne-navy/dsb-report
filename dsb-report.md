@@ -2938,8 +2938,29 @@ recommendations in one location for ease of reference.
 
 # Footnotes
 
+<a id="footnote-1"></a>
+Footnote from [Current Software Trends](#current-software-trends):
+
+> Jones and Brooks had the opportunity to observe a Blue-Flag
+> simulated Air Force-Army-Marine tactical exercise. We saw a number
+> and variety of personal computers that have been integrated
+> effectively into unit operational functions; we were pleased to see
+> a light dependence on massive computer systems.
+
+<a id="footnote-2"></a>
+Footnote from [Appendix A5](#appendix-a5--why-is-building-software-hard):
+
+> This appendix is an extract from “No Silver Bullet”, an invited
+> paper presented in Dublin by F. P. Brooks at the 1986 Congress of
+> the International Federation of Information Processing. The full
+> paper is in the Congress Proceedings.
+
+---
+
+# Transcription Notes
+
 <a id="mpyne-note-1"></a>
-This report is an adapted version of the original report from
+*Transcription Note*: This report is an adapted version of the original report from
 <https://apps.dtic.mil/dtic/tr/fulltext/u2/a188561.pdf> which has
 been semi-automatically converted to a computer-readable form for
 ease of access and reference in this modern Internet-based
@@ -2947,15 +2968,3 @@ ecosystem. The conversion was performed by Michael Pyne. He worked
 with some level of care but may not have caught all transcription
 errors.
 
-<a id="footnote-1"></a>
-Jones and Brooks had the opportunity to observe a Blue-Flag
-simulated Air Force-Army-Marine tactical exercise. We saw a number
-and variety of personal computers that have been integrated
-effectively into unit operational functions; we were pleased to see
-a light dependence on massive computer systems.
-
-<a id="footnote-2"></a>
-This appendix is an extract from “No Silver Bullet”, an invited
-paper presented in Dublin by F. P. Brooks at the 1986 Congress of
-the International Federation of Information Processing. The full
-paper is in the Congress Proceedings.
