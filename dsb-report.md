@@ -2934,6 +2934,10 @@ recommendations in one location for ease of reference.
 
 -   [Recommendation 38](#recommendation-38): Enhance education for software personnel.
 
+---
+
+# Footnotes
+
 <a id="mpyne-note-1"></a>
 This report is an adapted version of the original report from
 <https://apps.dtic.mil/dtic/tr/fulltext/u2/a188561.pdf> which has
