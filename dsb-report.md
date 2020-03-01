@@ -1251,8 +1251,6 @@ project.”
 
 ### Table 5.1
 
-**STANDARD**
-
 | **STANDARD** | **EXTENDED** | **EMBEDDED** | **ADVANCED**  |
 | :--------    |  :---------  |  :---------  |   :--------   |
 | Commercial Hardware | Commercial Hardware | Commercial and Special-Purpose Hardware | State-of-the-Art and Uniquely Designed Hardware |
